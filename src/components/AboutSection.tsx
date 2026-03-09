@@ -67,7 +67,7 @@ const AboutSection = () => {
                 <p className="text-[9px] md:text-xs tracking-ultra uppercase text-foreground/40 mt-1">Sejak</p>
               </div>
               <div>
-                <p className="font-serif text-2xl md:text-4xl text-foreground">5.0</p>
+                <p className="font-display text-2xl md:text-4xl text-foreground">5.0</p>
                 <p className="text-[9px] md:text-xs tracking-ultra uppercase text-foreground/40 mt-1">Rating</p>
               </div>
             </div>
