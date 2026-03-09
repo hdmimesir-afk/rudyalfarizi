@@ -37,7 +37,7 @@ const AboutSection = () => {
               Ketika Pembimbing Anda Tepat, Ibadah Pun Sempurna
             </h2>
 
-            <div className="space-y-4 text-foreground/50 text-xs md:text-sm leading-relaxed text-justify">
+            <div className="space-y-4 text-foreground/50 text-xs md:text-sm leading-relaxed text-left">
               <p>
                 Dengan latar belakang pendidikan dari Universitas Al-Azhar, Kairo, 
                 saya memiliki pemahaman mendalam tentang fiqih manasik, sejarah Islam, 
