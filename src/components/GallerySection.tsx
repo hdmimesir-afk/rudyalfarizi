@@ -12,6 +12,15 @@ import alUla6 from "@/assets/al-ula-6.jpg";
 import alUla7 from "@/assets/al-ula-7.jpg";
 import alUla2 from "@/assets/al-ula-2.jpg";
 import alUla8 from "@/assets/al-ula-8.jpg";
+import badr1 from "@/assets/badr-1.jpg";
+import badr2 from "@/assets/badr-2.jpg";
+import badr3 from "@/assets/badr-3.jpg";
+import badr4 from "@/assets/badr-4.jpg";
+import badr5 from "@/assets/badr-5.jpg";
+import badr6 from "@/assets/badr-6.jpg";
+import badr7 from "@/assets/badr-7.jpg";
+import badr8 from "@/assets/badr-8.jpg";
+import badr9 from "@/assets/badr-9.jpg";
 
 const categories = [
   "Semua", "Al Ula", "Badr", "Hudaibiyah", "Jabal Khandamah",
