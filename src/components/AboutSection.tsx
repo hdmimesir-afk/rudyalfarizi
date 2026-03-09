@@ -1,6 +1,10 @@
+import { useState } from "react";
 import aboutImage from "@/assets/about-formal.jpg";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 const AboutSection = () => {
+  const [photoOpen, setPhotoOpen] = useState(false);
+
   return (
     <section id="about" className="py-14 md:py-40 bg-background border-t border-border">
       <div className="px-4 md:px-12">
@@ -8,8 +12,10 @@ const AboutSection = () => {
 
         {/* Title row with photo on mobile */}
         <div className="flex gap-4 md:block items-center justify-center mb-6 md:mb-0">
-          {/* Photo - small on mobile, hidden here on desktop */}
-          <div className="w-24 flex-shrink-0 md:hidden self-stretch">
+          <div
+            className="w-24 flex-shrink-0 md:hidden self-stretch cursor-pointer"
+            onClick={() => setPhotoOpen(true)}
+          >
             <img
               src={aboutImage}
               alt="Rudy Alfarizi - Muthowwif"
@@ -23,8 +29,10 @@ const AboutSection = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-24 items-start">
-          {/* Photo - hidden on mobile, shown on desktop */}
-          <div className="relative lg:order-2 hidden md:block">
+          <div
+            className="relative lg:order-2 hidden md:block cursor-pointer"
+            onClick={() => setPhotoOpen(true)}
+          >
             <img
               src={aboutImage}
               alt="Rudy Alfarizi - Muthowwif"
@@ -66,6 +74,17 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
+
+      {/* Lightbox dialog */}
+      <Dialog open={photoOpen} onOpenChange={setPhotoOpen}>
+        <DialogContent className="max-w-[90vw] md:max-w-2xl p-2 bg-background/95 backdrop-blur-sm border-border">
+          <img
+            src={aboutImage}
+            alt="Rudy Alfarizi - Muthowwif"
+            className="w-full h-auto object-contain rounded-lg"
+          />
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };
