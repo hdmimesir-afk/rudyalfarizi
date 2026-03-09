@@ -2,23 +2,17 @@ import aboutImage from "@/assets/about-formal.jpg";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-24 md:py-40 bg-background border-t border-border">
-      <div className="container mx-auto px-6 md:px-12">
-        {/* Section label */}
-        <p className="text-xs tracking-mega uppercase text-primary mb-16">About</p>
+    <section id="about" className="py-14 md:py-40 bg-background border-t border-border">
+      <div className="px-4 md:px-12">
+        <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-8 md:mb-16">About</p>
 
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
-          {/* Content */}
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-24 items-start">
           <div>
-            <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl font-light text-foreground leading-tight mb-10">
-              Ketika Pembimbing
-              <br />
-              Anda Tepat, Ibadah
-              <br />
-              Pun Sempurna.
+            <h2 className="font-serif text-2xl md:text-5xl lg:text-6xl font-light text-foreground leading-tight mb-6 md:mb-10">
+              Ketika Pembimbing Anda Tepat, Ibadah Pun Sempurna.
             </h2>
 
-            <div className="space-y-6 text-foreground/50 text-sm leading-relaxed max-w-lg">
+            <div className="space-y-4 text-foreground/50 text-xs md:text-sm leading-relaxed max-w-lg">
               <p>
                 Dengan latar belakang pendidikan dari Universitas Al-Azhar, Kairo, 
                 saya memiliki pemahaman mendalam tentang fiqih manasik, sejarah Islam, 
@@ -30,24 +24,22 @@ const AboutSection = () => {
               </p>
             </div>
 
-            {/* Stats row */}
-            <div className="grid grid-cols-3 gap-8 mt-16 pt-10 border-t border-border">
+            <div className="grid grid-cols-3 gap-4 md:gap-8 mt-10 md:mt-16 pt-6 md:pt-10 border-t border-border">
               <div>
-                <p className="font-serif text-3xl md:text-4xl text-foreground">500+</p>
-                <p className="text-xs tracking-ultra uppercase text-foreground/40 mt-2">Jamaah</p>
+                <p className="font-serif text-2xl md:text-4xl text-foreground">500+</p>
+                <p className="text-[9px] md:text-xs tracking-ultra uppercase text-foreground/40 mt-1">Jamaah</p>
               </div>
               <div>
-                <p className="font-serif text-3xl md:text-4xl text-foreground">7+</p>
-                <p className="text-xs tracking-ultra uppercase text-foreground/40 mt-2">Tahun</p>
+                <p className="font-serif text-2xl md:text-4xl text-foreground">7+</p>
+                <p className="text-[9px] md:text-xs tracking-ultra uppercase text-foreground/40 mt-1">Tahun</p>
               </div>
               <div>
-                <p className="font-serif text-3xl md:text-4xl text-foreground">5.0</p>
-                <p className="text-xs tracking-ultra uppercase text-foreground/40 mt-2">Rating</p>
+                <p className="font-serif text-2xl md:text-4xl text-foreground">5.0</p>
+                <p className="text-[9px] md:text-xs tracking-ultra uppercase text-foreground/40 mt-1">Rating</p>
               </div>
             </div>
           </div>
 
-          {/* Image */}
           <div className="relative">
             <img
               src={aboutImage}

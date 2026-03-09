@@ -9,25 +9,24 @@ const WhyChooseSection = () => {
   ];
 
   return (
-    <section className="py-24 md:py-40 bg-muted/20 border-t border-border">
-      <div className="container mx-auto px-6 md:px-12">
-        <p className="text-xs tracking-mega uppercase text-primary mb-16">Keunggulan</p>
+    <section className="py-14 md:py-40 bg-muted/20 border-t border-border">
+      <div className="px-4 md:px-12">
+        <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-8 md:mb-16">Keunggulan</p>
 
-        <h2 className="font-serif text-3xl md:text-5xl font-light text-foreground mb-20 max-w-2xl">
+        <h2 className="font-serif text-2xl md:text-5xl font-light text-foreground mb-10 md:mb-20 max-w-2xl">
           Kenapa Memilih Saya?
         </h2>
 
-        {/* Grid with borders */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
           {reasons.map((reason, index) => (
             <div
               key={index}
-              className="p-8 md:p-10 border border-border hover:bg-muted/30 transition-colors duration-300 group"
+              className="p-4 md:p-10 border border-border hover:bg-muted/30 transition-colors duration-300 group"
             >
-              <h3 className="font-serif text-xl md:text-2xl font-light text-foreground group-hover:text-primary transition-colors mb-4">
+              <h3 className="font-serif text-base md:text-2xl font-light text-foreground group-hover:text-primary transition-colors mb-2 md:mb-4">
                 {reason.title}
               </h3>
-              <p className="text-sm text-foreground/40 leading-relaxed">
+              <p className="text-[11px] md:text-sm text-foreground/40 leading-relaxed">
                 {reason.description}
               </p>
             </div>
