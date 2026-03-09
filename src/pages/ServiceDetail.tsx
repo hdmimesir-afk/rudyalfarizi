@@ -56,7 +56,7 @@ const ServiceDetail = () => {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
         <div className="text-center">
-          <h1 className="font-serif text-3xl text-foreground mb-4">Layanan tidak ditemukan</h1>
+          <h1 className="font-display text-3xl text-foreground mb-4">Layanan tidak ditemukan</h1>
           <Link to="/" className="text-primary text-sm tracking-ultra uppercase hover:underline">
             Kembali
           </Link>
