@@ -9,10 +9,12 @@ const GallerySection = () => {
   const [selectedImage, setSelectedImage] = useState<{ src: string; caption: string } | null>(null);
 
   const images = [
-    { src: gallery1, caption: "Bimbingan di Masjid Nabawi" },
-    { src: gallery2, caption: "Tawaf di Masjidil Haram" },
-    { src: gallery3, caption: "Ziarah Jabal Uhud" },
-    { src: gallery4, caption: "City Tour Jeddah" },
+    { src: gallery1, caption: "Bimbingan Umrah Private" },
+    { src: gallery2, caption: "Bimbingan Umrah Group" },
+    { src: gallery3, caption: "Badal Umrah" },
+    { src: gallery4, caption: "Private City Tour" },
+    { src: gallery1, caption: "Content Creator" },
+    { src: gallery2, caption: "Talent Umrah" },
   ];
 
   return (
