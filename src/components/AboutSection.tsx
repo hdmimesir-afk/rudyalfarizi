@@ -57,18 +57,18 @@ const AboutSection = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-3 gap-4 md:gap-8 mt-10 md:mt-16 pt-6 md:pt-10 border-t border-border text-center">
+            <div className="grid grid-cols-3 gap-3 md:gap-8 mt-8 md:mt-16 pt-5 md:pt-10 border-t border-border text-center">
               <div>
-                <p className="font-display text-2xl md:text-4xl text-foreground">500+</p>
-                <p className="text-[9px] md:text-xs tracking-ultra uppercase text-foreground/40 mt-1">Jamaah</p>
+                <p className="font-display text-xl md:text-4xl text-foreground">500+</p>
+                <p className="text-[8px] md:text-xs tracking-ultra uppercase text-foreground/40 mt-1">Jamaah</p>
               </div>
               <div>
-                <p className="font-display text-2xl md:text-4xl text-foreground">2021</p>
-                <p className="text-[9px] md:text-xs tracking-ultra uppercase text-foreground/40 mt-1">Sejak</p>
+                <p className="font-display text-xl md:text-4xl text-foreground">2021</p>
+                <p className="text-[8px] md:text-xs tracking-ultra uppercase text-foreground/40 mt-1">Sejak</p>
               </div>
               <div>
-                <p className="font-display text-2xl md:text-4xl text-foreground">5.0</p>
-                <p className="text-[9px] md:text-xs tracking-ultra uppercase text-foreground/40 mt-1">Rating</p>
+                <p className="font-display text-xl md:text-4xl text-foreground">5.0</p>
+                <p className="text-[8px] md:text-xs tracking-ultra uppercase text-foreground/40 mt-1">Rating</p>
               </div>
             </div>
           </div>

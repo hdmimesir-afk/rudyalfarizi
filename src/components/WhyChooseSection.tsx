@@ -21,12 +21,12 @@ const WhyChooseSection = () => {
           {reasons.map((reason, index) => (
             <div
               key={index}
-              className="p-4 md:p-10 border border-border hover:bg-muted/30 transition-colors duration-300 group"
+              className="p-3 md:p-10 border border-border hover:bg-muted/30 transition-colors duration-300 group"
             >
-              <h3 className="font-display text-base md:text-2xl text-foreground group-hover:text-primary transition-colors mb-2 md:mb-4">
+              <h3 className="font-display text-sm md:text-2xl text-foreground group-hover:text-primary transition-colors mb-1.5 md:mb-4">
                 {reason.title}
               </h3>
-              <p className="text-sm md:text-base text-foreground/40 leading-relaxed">
+              <p className="text-xs md:text-base text-foreground/40 leading-relaxed">
                 {reason.description}
               </p>
             </div>
