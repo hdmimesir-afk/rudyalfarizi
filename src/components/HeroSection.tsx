@@ -21,13 +21,13 @@ const HeroSection = () => {
           Muthowwif Profesional
         </p>
 
-        <h1 className="font-serif text-[3.2rem] sm:text-7xl md:text-9xl lg:text-[12rem] font-light text-foreground leading-[0.85] tracking-[0.08em] md:tracking-ultra mb-8 md:mb-12 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+        <h1 className="font-serif text-[3rem] sm:text-6xl md:text-7xl lg:text-9xl xl:text-[12rem] font-light text-foreground leading-[0.85] tracking-[0.06em] md:tracking-[0.1em] lg:tracking-ultra mb-8 md:mb-12 animate-fade-up" style={{ animationDelay: '0.15s' }}>
           RUDY
           <br />
           ALFARIZI
         </h1>
 
-        <div className="flex items-center justify-between max-w-sm md:max-w-4xl mx-auto mb-8 md:mb-12 animate-fade-up" style={{ animationDelay: '0.3s' }}>
+        <div className="flex items-center justify-between max-w-xs sm:max-w-sm md:max-w-2xl lg:max-w-4xl mx-auto mb-8 md:mb-12 animate-fade-up" style={{ animationDelay: '0.3s' }}>
           <p className="text-[9px] md:text-xs tracking-widest md:tracking-ultra uppercase text-foreground/40 text-left">
             Pembimbing Ibadah
             <br />
