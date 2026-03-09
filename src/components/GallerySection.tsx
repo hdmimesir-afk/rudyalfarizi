@@ -12,6 +12,15 @@ import alUla6 from "@/assets/al-ula-6.jpg";
 import alUla7 from "@/assets/al-ula-7.jpg";
 import alUla2 from "@/assets/al-ula-2.jpg";
 import alUla8 from "@/assets/al-ula-8.jpg";
+import badr1 from "@/assets/badr-1.jpg";
+import badr2 from "@/assets/badr-2.jpg";
+import badr3 from "@/assets/badr-3.jpg";
+import badr4 from "@/assets/badr-4.jpg";
+import badr5 from "@/assets/badr-5.jpg";
+import badr6 from "@/assets/badr-6.jpg";
+import badr7 from "@/assets/badr-7.jpg";
+import badr8 from "@/assets/badr-8.jpg";
+import badr9 from "@/assets/badr-9.jpg";
 
 const categories = [
   "Semua", "Al Ula", "Badr", "Hudaibiyah", "Jabal Khandamah",
@@ -27,7 +36,15 @@ const images = [
   { src: gallery3, caption: "Gua Tsur", category: "Jabal Tsur", span: "col-span-1 row-span-1" },
   { src: gallery2, caption: "Bimbingan Private", category: "Jamaah Private", span: "col-span-2 row-span-1" },
   { src: gallery4, caption: "Kota Thoif", category: "Thoif", span: "col-span-1 row-span-1" },
-  { src: gallery1, caption: "Medan Perang Badr", category: "Badr", span: "col-span-1 row-span-2" },
+  { src: badr1, caption: "I Love Badr", category: "Badr", span: "col-span-2 row-span-1" },
+  { src: badr2, caption: "Selfie di Badr", category: "Badr", span: "col-span-1 row-span-1" },
+  { src: badr3, caption: "Jamaah di Gunung Badr", category: "Badr", span: "col-span-1 row-span-2" },
+  { src: badr4, caption: "Sumur Badr", category: "Badr", span: "col-span-1 row-span-1" },
+  { src: badr5, caption: "Maqam Syuhada Badr", category: "Badr", span: "col-span-1 row-span-2" },
+  { src: badr6, caption: "Bukit Pasir Badr", category: "Badr", span: "col-span-2 row-span-1" },
+  { src: badr7, caption: "Masjid Badr", category: "Badr", span: "col-span-1 row-span-2" },
+  { src: badr8, caption: "Kuliner di Badr", category: "Badr", span: "col-span-1 row-span-1" },
+  { src: badr9, caption: "Foto Bersama Jamaah", category: "Badr", span: "col-span-2 row-span-1" },
   { src: gallery3, caption: "Sumur Hudaibiyah", category: "Hudaibiyah", span: "col-span-1 row-span-1" },
   { src: alUla1, caption: "Tim Al Ula", category: "Al Ula", span: "col-span-2 row-span-1" },
   { src: alUla3, caption: "Old Town Al Ula", category: "Al Ula", span: "col-span-1 row-span-2" },
