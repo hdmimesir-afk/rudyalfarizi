@@ -3,7 +3,7 @@ import aboutImage from "@/assets/about-formal.jpg";
 const AboutSection = () => {
   return (
     <section id="about" className="py-14 md:py-40 bg-background border-t border-border">
-      <div className="px-4 md:px-12">
+      <div className="px-6 md:px-16 lg:px-24">
         <p className="hidden md:block text-[10px] md:text-xs tracking-mega uppercase text-primary mb-8 md:mb-16">About</p>
 
         {/* Title row with photo on mobile */}
