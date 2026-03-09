@@ -79,7 +79,7 @@ const ServiceDetail = () => {
 
         <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-6 md:mb-10">Layanan</p>
 
-        <h1 className="font-serif text-3xl md:text-6xl lg:text-7xl font-light text-foreground leading-tight mb-4 md:mb-6">
+        <h1 className="font-display text-3xl md:text-6xl lg:text-7xl text-foreground leading-tight mb-4 md:mb-6">
           {service.title}
         </h1>
 
