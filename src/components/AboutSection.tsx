@@ -41,7 +41,7 @@ const AboutSection = () => {
           </div>
 
           <div className="lg:order-1">
-            <h2 className="hidden md:block font-['Hubhead_2'] text-5xl lg:text-6xl text-foreground leading-tight mb-10">
+            <h2 className="hidden md:block font-display text-5xl lg:text-6xl text-foreground leading-tight mb-10">
               Ketika Pembimbing Anda Tepat, Ibadah Pun Sempurna
             </h2>
 
