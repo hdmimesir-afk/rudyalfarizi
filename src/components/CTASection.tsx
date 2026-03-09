@@ -13,7 +13,7 @@ const CTASection = () => {
           Siap memulai perjalanan suci Anda?
         </h2>
 
-        <p className="text-foreground/40 text-xs md:text-sm max-w-lg mx-auto mb-8 md:mb-16 leading-relaxed">
+        <p className="text-foreground/40 text-sm md:text-base max-w-lg mx-auto mb-8 md:mb-16 leading-relaxed">
           Konsultasikan rencana umrah Anda. Mari wujudkan ibadah 
           yang khusyuk dan tak terlupakan di Tanah Suci.
         </p>
