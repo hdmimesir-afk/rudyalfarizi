@@ -118,7 +118,7 @@ const GallerySection = () => {
           </div>
 
           {/* Photography-style Grid */}
-          <div className="columns-2 md:columns-3 lg:columns-4 gap-2 md:gap-3 space-y-2 md:space-y-3">
+          <div className="columns-2 md:columns-3 lg:columns-4 gap-0.5 space-y-0.5">
             {filteredImages.map((image, index) => (
               <div
                 key={`${image.category}-${index}`}
