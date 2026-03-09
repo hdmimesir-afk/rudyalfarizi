@@ -9,7 +9,7 @@
 @font-face {
   font-family: 'Hubhead';
   src: url('/fonts/Hubhead-3.otf') format('opentype');
-  font-weight: 700;
+  font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
@@ -18,7 +18,7 @@
   font-family: 'SK Modernist Mono';
   src: url('/fonts/Sk-Modernist-Mono.otf') format('opentype'),
        url('/fonts/SK-Modernist-Mono.otf') format('opentype');
-  font-weight: 400;
+  font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
