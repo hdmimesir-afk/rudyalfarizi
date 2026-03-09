@@ -94,9 +94,9 @@
   }
 
   body {
-    @apply bg-background text-foreground;
-    font-family: 'Outfit', system-ui, sans-serif;
-    font-weight: 300;
+    @apply bg-background text-foreground text-left;
+    font-family: 'SK Modernist Mono', 'Outfit', system-ui, sans-serif;
+    font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
