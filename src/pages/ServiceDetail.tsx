@@ -5,6 +5,15 @@ import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
+import badr1 from "@/assets/badr-1.jpg";
+import badr2 from "@/assets/badr-2.jpg";
+import badr3 from "@/assets/badr-3.jpg";
+import badr4 from "@/assets/badr-4.jpg";
+import badr5 from "@/assets/badr-5.jpg";
+import badr6 from "@/assets/badr-6.jpg";
+import badr7 from "@/assets/badr-7.jpg";
+import badr8 from "@/assets/badr-8.jpg";
+import badr9 from "@/assets/badr-9.jpg";
 
 const dummyPhotos: Record<string, { src: string; caption: string }[]> = {
   "umrah-private": [
