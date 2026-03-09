@@ -90,7 +90,7 @@ const ServiceDetail = () => {
 
       {/* Photo Grid */}
       <div className="px-6 md:px-16 lg:px-24 pb-20 md:pb-32">
-        <div className="columns-2 md:columns-3 gap-2 md:gap-3 space-y-2 md:space-y-3">
+        <div className="columns-2 md:columns-3 gap-0.5 space-y-0.5">
           {photos.map((photo, index) => (
             <div
               key={index}
