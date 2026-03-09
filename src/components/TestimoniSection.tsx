@@ -22,22 +22,23 @@ const TestimoniSection = () => {
       <div className="px-4 md:px-12">
         <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-8 md:mb-16">Testimoni</p>
 
-        <h2 className="font-serif text-2xl md:text-5xl font-light text-foreground mb-10 md:mb-20 max-w-2xl">
+        <h2 className="font-serif text-2xl md:text-5xl font-light text-secondary-foreground mb-10 md:mb-20 max-w-2xl">
           Kesan Jamaah
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-px bg-border">
+        <div className="grid md:grid-cols-3 gap-px bg-secondary-foreground/10">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-background p-5 md:p-12 flex flex-col justify-between min-h-[200px] md:min-h-[320px]"
+              className="p-5 md:p-12 flex flex-col justify-between min-h-[200px] md:min-h-[320px]"
+              style={{ backgroundColor: 'hsl(40 20% 95%)' }}
             >
-              <p className="font-serif text-base md:text-xl text-foreground/80 leading-relaxed italic">
+              <p className="font-serif text-base md:text-xl text-secondary-foreground/70 leading-relaxed italic">
                 "{testimonial.content}"
               </p>
-              <div className="mt-5 md:mt-8 pt-4 md:pt-6 border-t border-border">
-                <p className="text-xs md:text-sm text-foreground tracking-wide">{testimonial.name}</p>
-                <p className="text-[10px] md:text-xs text-foreground/40 mt-0.5">{testimonial.role}</p>
+              <div className="mt-5 md:mt-8 pt-4 md:pt-6 border-t border-secondary-foreground/10">
+                <p className="text-xs md:text-sm text-secondary-foreground tracking-wide">{testimonial.name}</p>
+                <p className="text-[10px] md:text-xs text-secondary-foreground/40 mt-0.5">{testimonial.role}</p>
               </div>
             </div>
           ))}

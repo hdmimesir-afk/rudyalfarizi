@@ -42,7 +42,7 @@ const ServicesSection = () => {
       <div className="px-4 md:px-12">
         <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-8 md:mb-16">Layanan</p>
 
-        <h2 className="font-serif text-2xl md:text-5xl font-light text-foreground mb-10 md:mb-20 max-w-2xl">
+        <h2 className="font-serif text-2xl md:text-5xl font-light text-secondary-foreground mb-10 md:mb-20 max-w-2xl">
           Berbagai Layanan untuk Perjalanan Ibadah Anda
         </h2>
 
@@ -51,13 +51,13 @@ const ServicesSection = () => {
             <Link
               key={index}
               to={`/layanan/${service.slug}`}
-              className="p-4 md:p-10 border border-border hover:bg-muted/30 transition-colors duration-300 group relative"
+              className="p-4 md:p-10 border border-secondary-foreground/10 hover:bg-secondary-foreground/5 transition-colors duration-300 group relative"
             >
-              <ArrowUpRight className="absolute top-3 right-3 md:top-6 md:right-6 h-4 w-4 text-foreground/20 group-hover:text-primary transition-colors" />
-              <h3 className="font-serif text-base md:text-2xl font-light text-foreground group-hover:text-primary transition-colors mb-2 md:mb-4">
+              <ArrowUpRight className="absolute top-3 right-3 md:top-6 md:right-6 h-4 w-4 text-secondary-foreground/20 group-hover:text-primary transition-colors" />
+              <h3 className="font-serif text-base md:text-2xl font-light text-secondary-foreground group-hover:text-primary transition-colors mb-2 md:mb-4">
                 {service.title}
               </h3>
-              <p className="text-[11px] md:text-sm text-foreground/40 leading-relaxed">
+              <p className="text-[11px] md:text-sm text-secondary-foreground/50 leading-relaxed">
                 {service.description}
               </p>
             </Link>
