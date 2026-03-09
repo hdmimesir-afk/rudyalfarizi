@@ -6,9 +6,9 @@ const AboutSection = () => {
   const [photoOpen, setPhotoOpen] = useState(false);
 
   return (
-    <section id="about" className="py-14 md:py-40 bg-background border-t border-border">
+    <section id="about" className="py-10 md:py-40 bg-background border-t border-border">
       <div className="px-4 md:px-12">
-        <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-8 md:mb-16">About</p>
+        <p className="text-[8px] md:text-xs tracking-mega uppercase text-primary mb-6 md:mb-16">About</p>
 
         {/* Title row with photo on mobile */}
         <div className="flex gap-4 md:block items-center justify-center mb-6 md:mb-0">
