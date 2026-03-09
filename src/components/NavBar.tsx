@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -23,54 +22,56 @@ const NavBar = () => {
   };
 
   const navLinks = [
-    { label: "Beranda", id: "hero" },
-    { label: "Tentang", id: "about" },
+    { label: "About", id: "about" },
     { label: "Layanan", id: "services" },
     { label: "Galeri", id: "gallery" },
     { label: "Testimoni", id: "testimonials" },
-    { label: "FAQ", id: "faq" },
   ];
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? "bg-background/95 backdrop-blur-md shadow-elegant"
+          ? "bg-background/95 backdrop-blur-md border-b border-border"
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-6 md:px-12">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <button
-            onClick={() => scrollToSection("hero")}
-            className="text-2xl font-serif font-bold text-secondary hover:text-primary transition-colors"
-          >
-            Rudy Alfarizi
-          </button>
-
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          {/* Left nav */}
+          <div className="hidden md:flex items-center gap-10">
             {navLinks.map((link) => (
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                className="text-xs tracking-ultra uppercase text-foreground/60 hover:text-primary transition-colors duration-300"
               >
                 {link.label}
               </button>
             ))}
-            <Button
+          </div>
+
+          {/* Center logo */}
+          <button
+            onClick={() => scrollToSection("hero")}
+            className="font-serif text-2xl tracking-ultra text-foreground hover:text-primary transition-colors"
+          >
+            RA
+          </button>
+
+          {/* Right CTA */}
+          <div className="hidden md:block">
+            <button
               onClick={() => scrollToSection("contact")}
-              className="gradient-gold text-primary-foreground shadow-gold hover:opacity-90"
+              className="text-xs tracking-ultra uppercase border border-primary text-primary px-6 py-3 hover:bg-primary hover:text-primary-foreground transition-all duration-300"
             >
               Konsultasi
-            </Button>
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-secondary"
+            className="md:hidden p-2 text-foreground"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -79,23 +80,23 @@ const NavBar = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-background/95 backdrop-blur-md border-t border-border py-4 animate-fade-in">
-            {navLinks.map((link) => (
+          <div className="md:hidden border-t border-border py-8 animate-fade-in">
+            <div className="flex flex-col items-center gap-6">
+              {navLinks.map((link) => (
+                <button
+                  key={link.id}
+                  onClick={() => scrollToSection(link.id)}
+                  className="text-xs tracking-ultra uppercase text-foreground/60 hover:text-primary transition-colors"
+                >
+                  {link.label}
+                </button>
+              ))}
               <button
-                key={link.id}
-                onClick={() => scrollToSection(link.id)}
-                className="block w-full text-left px-4 py-3 text-muted-foreground hover:text-primary hover:bg-muted/50 transition-colors"
-              >
-                {link.label}
-              </button>
-            ))}
-            <div className="px-4 pt-3">
-              <Button
                 onClick={() => scrollToSection("contact")}
-                className="w-full gradient-gold text-primary-foreground shadow-gold"
+                className="text-xs tracking-ultra uppercase border border-primary text-primary px-6 py-3 hover:bg-primary hover:text-primary-foreground transition-all mt-2"
               >
                 Konsultasi
-              </Button>
+              </button>
             </div>
           </div>
         )}

@@ -12,52 +12,36 @@ const GallerySection = () => {
   ];
 
   return (
-    <section id="gallery" className="py-20 md:py-32 bg-background">
-      <div className="container mx-auto px-4">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <div className="h-px w-8 bg-primary" />
-            <span className="text-primary text-sm font-medium tracking-widest uppercase">
-              Galeri Kegiatan
-            </span>
-            <div className="h-px w-8 bg-primary" />
-          </div>
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-secondary mb-4">
-            Momen Berharga Bersama Jamaah
-          </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Dokumentasi perjalanan spiritual yang tak terlupakan bersama jamaah 
-            di berbagai lokasi suci dan bersejarah.
-          </p>
-        </div>
+    <section id="gallery" className="py-24 md:py-40 bg-background border-t border-border">
+      <div className="container mx-auto px-6 md:px-12">
+        {/* Section label */}
+        <p className="text-xs tracking-mega uppercase text-primary mb-16">Galeri</p>
+
+        <h2 className="font-serif text-3xl md:text-5xl font-light text-foreground mb-16 max-w-2xl">
+          Momen Berharga Bersama Jamaah
+        </h2>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2">
           {images.map((image, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-xl aspect-square cursor-pointer"
+              className="group relative overflow-hidden aspect-[3/4] cursor-pointer"
             >
               <img
                 src={image.src}
                 alt={image.caption}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
               />
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 via-secondary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              {/* Caption */}
-              <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                <p className="text-cream text-sm font-medium">{image.caption}</p>
+              {/* Caption overlay */}
+              <div className="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                <p className="text-xs tracking-ultra uppercase text-foreground">
+                  {image.caption}
+                </p>
               </div>
             </div>
           ))}
         </div>
-
-        {/* Additional note */}
-        <p className="text-center text-sm text-muted-foreground mt-8">
-          * Foto-foto dokumentasi akan diganti dengan foto asli setelah disediakan
-        </p>
       </div>
     </section>
   );

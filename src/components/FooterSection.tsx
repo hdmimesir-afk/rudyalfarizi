@@ -11,37 +11,30 @@ const FooterSection = () => {
   };
 
   return (
-    <footer className="bg-foreground text-background py-12">
-      <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+    <footer className="bg-background border-t border-border py-16">
+      <div className="container mx-auto px-6 md:px-12">
+        <div className="grid md:grid-cols-3 gap-12 mb-16">
           {/* Brand */}
           <div>
-            <h3 className="font-serif text-2xl font-bold text-cream mb-4">
+            <h3 className="font-serif text-3xl text-foreground mb-4 tracking-ultra">
               Rudy Alfarizi
             </h3>
-            <p className="text-cream/60 text-sm leading-relaxed">
-              Muthowwif profesional dengan pengalaman membimbing 
-              jamaah umrah di Tanah Suci. Alumni Al-Azhar, Kairo.
+            <p className="text-foreground/30 text-sm leading-relaxed">
+              Muthowwif profesional. Alumni Al-Azhar, Kairo.
             </p>
           </div>
 
-          {/* Quick Links */}
+          {/* Links */}
           <div>
-            <h4 className="font-semibold text-cream mb-4">Menu</h4>
-            <ul className="space-y-2">
-              {[
-                { label: "Beranda", id: "hero" },
-                { label: "Tentang", id: "about" },
-                { label: "Layanan", id: "services" },
-                { label: "Galeri", id: "gallery" },
-                { label: "FAQ", id: "faq" },
-              ].map((link) => (
-                <li key={link.id}>
+            <p className="text-xs tracking-ultra uppercase text-foreground/40 mb-6">Menu</p>
+            <ul className="space-y-3">
+              {["about", "services", "gallery", "faq"].map((id) => (
+                <li key={id}>
                   <button
-                    onClick={() => scrollToSection(link.id)}
-                    className="text-cream/60 hover:text-primary transition-colors text-sm"
+                    onClick={() => scrollToSection(id)}
+                    className="text-sm text-foreground/40 hover:text-primary transition-colors capitalize"
                   >
-                    {link.label}
+                    {id === "faq" ? "FAQ" : id}
                   </button>
                 </li>
               ))}
@@ -50,25 +43,25 @@ const FooterSection = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold text-cream mb-4">Kontak</h4>
+            <p className="text-xs tracking-ultra uppercase text-foreground/40 mb-6">Kontak</p>
             <ul className="space-y-3">
               <li>
                 <a
                   href="https://wa.me/6285219527294"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-cream/60 hover:text-primary transition-colors text-sm"
+                  className="flex items-center gap-3 text-sm text-foreground/40 hover:text-primary transition-colors"
                 >
-                  <MessageCircle className="h-4 w-4" />
+                  <MessageCircle size={14} />
                   +62 852-1952-7294
                 </a>
               </li>
               <li>
                 <a
                   href="mailto:rudyalfarizi26@gmail.com"
-                  className="flex items-center gap-2 text-cream/60 hover:text-primary transition-colors text-sm"
+                  className="flex items-center gap-3 text-sm text-foreground/40 hover:text-primary transition-colors"
                 >
-                  <Mail className="h-4 w-4" />
+                  <Mail size={14} />
                   rudyalfarizi26@gmail.com
                 </a>
               </li>
@@ -77,9 +70,9 @@ const FooterSection = () => {
                   href="https://instagram.com/rudyalfarizi26"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-cream/60 hover:text-primary transition-colors text-sm"
+                  className="flex items-center gap-3 text-sm text-foreground/40 hover:text-primary transition-colors"
                 >
-                  <Instagram className="h-4 w-4" />
+                  <Instagram size={14} />
                   @rudyalfarizi26
                 </a>
               </li>
@@ -87,17 +80,14 @@ const FooterSection = () => {
           </div>
         </div>
 
-        {/* Divider */}
-        <div className="border-t border-cream/10 pt-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-cream/40 text-sm">
-              © {currentYear} Rudy Alfarizi. All rights reserved.
-            </p>
-            <p className="text-cream/40 text-sm">
-              Designed by{" "}
-              <span className="text-primary font-medium">SYMP Studio</span>
-            </p>
-          </div>
+        {/* Bottom */}
+        <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-xs text-foreground/20">
+            © {currentYear} Rudy Alfarizi
+          </p>
+          <p className="text-xs text-foreground/20">
+            Designed by <span className="text-primary">SYMP Studio</span>
+          </p>
         </div>
       </div>
     </footer>
