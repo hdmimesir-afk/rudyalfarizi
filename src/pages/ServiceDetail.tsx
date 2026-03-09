@@ -89,7 +89,7 @@ const ServiceDetail = () => {
       </div>
 
       {/* Photo Grid */}
-      <div className="px-4 md:px-12 pb-20 md:pb-32">
+      <div className="px-6 md:px-16 lg:px-24 pb-20 md:pb-32">
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-1 md:gap-2">
           {photos.map((photo, index) => (
             <div
