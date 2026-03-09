@@ -117,7 +117,7 @@ const ServiceDetail = () => {
 
       {/* CTA */}
       <div className="px-4 md:px-12 pb-16 md:pb-24 text-center border-t border-border pt-16">
-        <h2 className="font-serif text-2xl md:text-4xl font-light text-foreground mb-6">
+        <h2 className="font-display text-2xl md:text-4xl text-foreground mb-6">
           Tertarik dengan layanan ini?
         </h2>
         <a
