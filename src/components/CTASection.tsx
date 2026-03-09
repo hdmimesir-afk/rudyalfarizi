@@ -10,7 +10,7 @@ const CTASection = () => {
         <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-6 md:mb-12">Hubungi</p>
 
         <h2 className="font-display text-3xl md:text-6xl lg:text-7xl text-foreground leading-tight mb-6 md:mb-12 max-w-4xl mx-auto">
-          Siap Memulai Perjalanan Suci Anda?
+          Siap memulai perjalanan suci Anda?
         </h2>
 
         <p className="text-foreground/40 text-xs md:text-sm max-w-lg mx-auto mb-8 md:mb-16 leading-relaxed">

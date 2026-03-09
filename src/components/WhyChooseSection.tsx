@@ -26,7 +26,7 @@ const WhyChooseSection = () => {
               <h3 className="font-serif text-base md:text-2xl font-light text-foreground group-hover:text-primary transition-colors mb-2 md:mb-4">
                 {reason.title}
               </h3>
-              <p className="text-[11px] md:text-sm text-foreground/40 leading-relaxed">
+              <p className="text-[11px] md:text-sm text-foreground/40 leading-relaxed text-justify">
                 {reason.description}
               </p>
             </div>

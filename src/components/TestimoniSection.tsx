@@ -23,7 +23,7 @@ const TestimoniSection = () => {
         <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-8 md:mb-16">Testimoni</p>
 
         <h2 className="font-display text-2xl md:text-5xl text-foreground mb-10 md:mb-20 max-w-2xl">
-          Kesan Jamaah
+          Kesan jamaah
         </h2>
 
         <div className="grid md:grid-cols-3 gap-px bg-border">
