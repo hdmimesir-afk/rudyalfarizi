@@ -99,7 +99,7 @@ const ServiceDetail = () => {
               <img
                 src={photo.src}
                 alt={photo.caption}
-                className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700"
               />
               <div className="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-3 md:p-6">
                 <p className="text-[9px] md:text-xs tracking-widest md:tracking-ultra uppercase text-foreground">
