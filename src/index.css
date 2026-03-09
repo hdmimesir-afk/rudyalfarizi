@@ -17,6 +17,14 @@
 }
 
 @font-face {
+  font-family: 'Hubhead 2';
+  src: url('/fonts/Hubhead-2.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'Creato Display';
   src: url('/fonts/CreatoDisplay-Bold.otf') format('opentype');
   font-weight: 700;
