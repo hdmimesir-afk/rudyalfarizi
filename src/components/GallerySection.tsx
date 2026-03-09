@@ -5,17 +5,43 @@ import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
 
+const categories = [
+  "Semua",
+  "Al Ula",
+  "Badr",
+  "Hudaibiyah",
+  "Jabal Khandamah",
+  "Jabal Nur",
+  "Jabal Tsur",
+  "Jamaah Private",
+  "Jeddah",
+  "Madinah",
+  "Makkah",
+  "Thoif",
+];
+
+const images = [
+  { src: gallery1, caption: "Masjid Nabawi", category: "Madinah" },
+  { src: gallery2, caption: "Masjidil Haram", category: "Makkah" },
+  { src: gallery3, caption: "Jabal Uhud", category: "Madinah" },
+  { src: gallery4, caption: "Corniche Jeddah", category: "Jeddah" },
+  { src: gallery1, caption: "Gua Hira", category: "Jabal Nur" },
+  { src: gallery3, caption: "Gua Tsur", category: "Jabal Tsur" },
+  { src: gallery2, caption: "Bimbingan Private", category: "Jamaah Private" },
+  { src: gallery4, caption: "Kota Thoif", category: "Thoif" },
+  { src: gallery1, caption: "Medan Perang Badr", category: "Badr" },
+  { src: gallery3, caption: "Sumur Hudaibiyah", category: "Hudaibiyah" },
+  { src: gallery2, caption: "Hegra Al Ula", category: "Al Ula" },
+  { src: gallery4, caption: "Jabal Khandamah", category: "Jabal Khandamah" },
+];
+
 const GallerySection = () => {
   const [selectedImage, setSelectedImage] = useState<{ src: string; caption: string } | null>(null);
+  const [activeCategory, setActiveCategory] = useState("Semua");
 
-  const images = [
-    { src: gallery1, caption: "Bimbingan Umrah Private" },
-    { src: gallery2, caption: "Bimbingan Umrah Group" },
-    { src: gallery3, caption: "Badal Umrah" },
-    { src: gallery4, caption: "Private City Tour" },
-    { src: gallery1, caption: "Content Creator" },
-    { src: gallery2, caption: "Talent Umrah" },
-  ];
+  const filteredImages = activeCategory === "Semua"
+    ? images
+    : images.filter((img) => img.category === activeCategory);
 
   return (
     <>
@@ -23,14 +49,31 @@ const GallerySection = () => {
         <div className="px-6 md:px-16 lg:px-24">
           <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-8 md:mb-16">Galeri</p>
 
-          <h2 className="font-display text-2xl md:text-5xl text-foreground mb-8 md:mb-16 max-w-2xl">
+          <h2 className="font-display text-2xl md:text-5xl text-foreground mb-8 md:mb-12 max-w-2xl">
             Momen berharga bersama jamaah
           </h2>
 
+          {/* Category Filter */}
+          <div className="flex flex-wrap gap-2 md:gap-3 mb-8 md:mb-12">
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setActiveCategory(cat)}
+                className={`text-[9px] md:text-[11px] tracking-widest uppercase px-3 py-1.5 md:px-4 md:py-2 border transition-all duration-300 ${
+                  activeCategory === cat
+                    ? "border-primary bg-primary text-primary-foreground"
+                    : "border-border text-foreground/40 hover:text-foreground hover:border-foreground/30"
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-1 md:gap-2">
-            {images.map((image, index) => (
+            {filteredImages.map((image, index) => (
               <div
-                key={index}
+                key={`${image.category}-${index}`}
                 onClick={() => setSelectedImage(image)}
                 className="group relative overflow-hidden aspect-square md:aspect-[3/4] cursor-pointer"
               >
@@ -39,7 +82,10 @@ const GallerySection = () => {
                   alt={image.caption}
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                 />
-                <div className="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-3 md:p-6">
+                <div className="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-3 md:p-6">
+                  <p className="text-[8px] md:text-[10px] tracking-widest uppercase text-primary mb-1">
+                    {image.category}
+                  </p>
                   <p className="text-[9px] md:text-xs tracking-widest md:tracking-ultra uppercase text-foreground">
                     {image.caption}
                   </p>
