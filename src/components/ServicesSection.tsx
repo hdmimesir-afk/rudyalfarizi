@@ -43,7 +43,7 @@ const ServicesSection = () => {
         <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-8 md:mb-16">Layanan</p>
 
         <h2 className="font-display text-2xl md:text-5xl text-foreground mb-10 md:mb-20 max-w-2xl">
-          Berbagai Layanan untuk Perjalanan Ibadah Anda
+          Berbagai layanan untuk perjalanan ibadah Anda
         </h2>
 
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
