@@ -56,7 +56,7 @@ const ServiceDetail = () => {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
         <div className="text-center">
-          <h1 className="font-serif text-3xl text-foreground mb-4">Layanan tidak ditemukan</h1>
+          <h1 className="font-display text-3xl text-foreground mb-4">Layanan tidak ditemukan</h1>
           <Link to="/" className="text-primary text-sm tracking-ultra uppercase hover:underline">
             Kembali
           </Link>
@@ -68,7 +68,7 @@ const ServiceDetail = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <div className="px-4 md:px-12 pt-8 pb-4">
+      <div className="px-6 md:px-16 lg:px-24 pt-8 pb-4">
         <Link
           to="/#services"
           className="inline-flex items-center gap-2 text-[10px] md:text-xs tracking-ultra uppercase text-foreground/40 hover:text-primary transition-colors mb-10 md:mb-16"
@@ -79,7 +79,7 @@ const ServiceDetail = () => {
 
         <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-6 md:mb-10">Layanan</p>
 
-        <h1 className="font-serif text-3xl md:text-6xl lg:text-7xl font-light text-foreground leading-tight mb-4 md:mb-6">
+        <h1 className="font-display text-3xl md:text-6xl lg:text-7xl text-foreground leading-tight mb-4 md:mb-6">
           {service.title}
         </h1>
 
@@ -89,7 +89,7 @@ const ServiceDetail = () => {
       </div>
 
       {/* Photo Grid */}
-      <div className="px-4 md:px-12 pb-20 md:pb-32">
+      <div className="px-6 md:px-16 lg:px-24 pb-20 md:pb-32">
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-1 md:gap-2">
           {photos.map((photo, index) => (
             <div
@@ -116,8 +116,8 @@ const ServiceDetail = () => {
       </div>
 
       {/* CTA */}
-      <div className="px-4 md:px-12 pb-16 md:pb-24 text-center border-t border-border pt-16">
-        <h2 className="font-serif text-2xl md:text-4xl font-light text-foreground mb-6">
+      <div className="px-6 md:px-16 lg:px-24 pb-16 md:pb-24 text-center border-t border-border pt-16">
+        <h2 className="font-display text-2xl md:text-4xl text-foreground mb-6">
           Tertarik dengan layanan ini?
         </h2>
         <a
