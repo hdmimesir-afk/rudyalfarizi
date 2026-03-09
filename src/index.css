@@ -16,7 +16,8 @@
 
 @font-face {
   font-family: 'SK Modernist Mono';
-  src: url('/fonts/Sk-Modernist-Mono.otf') format('opentype');
+  src: url('/fonts/Sk-Modernist-Mono.otf') format('opentype'),
+       url('/fonts/SK-Modernist-Mono.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
