@@ -27,7 +27,12 @@ const images = [
   { src: gallery4, caption: "Kota Thoif", category: "Thoif", span: "col-span-1 row-span-1" },
   { src: gallery1, caption: "Medan Perang Badr", category: "Badr", span: "col-span-1 row-span-2" },
   { src: gallery3, caption: "Sumur Hudaibiyah", category: "Hudaibiyah", span: "col-span-1 row-span-1" },
-  { src: gallery2, caption: "Hegra Al Ula", category: "Al Ula", span: "col-span-2 row-span-1" },
+  { src: alUla1, caption: "Tim Al Ula", category: "Al Ula", span: "col-span-2 row-span-1" },
+  { src: alUla3, caption: "Old Town Al Ula", category: "Al Ula", span: "col-span-1 row-span-2" },
+  { src: alUla4, caption: "Maraya Concert Hall", category: "Al Ula", span: "col-span-1 row-span-1" },
+  { src: alUla5, caption: "Kuliner Al Ula", category: "Al Ula", span: "col-span-1 row-span-1" },
+  { src: alUla6, caption: "Desert Safari", category: "Al Ula", span: "col-span-2 row-span-1" },
+  { src: alUla7, caption: "Jamaah di Al Ula", category: "Al Ula", span: "col-span-1 row-span-2" },
   { src: gallery4, caption: "Jabal Khandamah", category: "Jabal Khandamah", span: "col-span-1 row-span-1" },
 ];
 
