@@ -77,16 +77,15 @@
 
   body {
     @apply bg-background text-foreground text-left;
-    font-family: 'SK Modernist Mono', 'Outfit', system-ui, sans-serif;
+    font-family: 'SK Modernist Mono', system-ui, sans-serif;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
+    font-family: 'Hubhead', sans-serif;
+    letter-spacing: 0.05em;
   }
 }
 
