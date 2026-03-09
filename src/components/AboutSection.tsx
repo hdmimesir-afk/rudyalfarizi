@@ -23,7 +23,7 @@ const AboutSection = () => {
             />
           </div>
           
-          <h2 className="font-['Hubhead_2'] text-2xl text-foreground leading-tight md:hidden">
+          <h2 className="font-display text-2xl text-foreground leading-tight md:hidden">
             Ketika Pembimbing Anda Tepat, Ibadah Pun Sempurna
           </h2>
         </div>
