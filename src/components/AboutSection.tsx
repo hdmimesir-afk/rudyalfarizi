@@ -6,18 +6,34 @@ const AboutSection = () => {
       <div className="px-4 md:px-12">
         <p className="hidden md:block text-[10px] md:text-xs tracking-mega uppercase text-primary mb-8 md:mb-16">About</p>
 
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-24 items-start">
-          {/* Photo first on mobile, second on desktop */}
-           <div className="relative lg:order-2">
+        {/* Title row with photo on mobile */}
+        <div className="flex gap-4 md:block items-start mb-6 md:mb-0">
+          {/* Photo - small on mobile, hidden here on desktop */}
+          <div className="w-28 h-28 flex-shrink-0 md:hidden">
             <img
               src={aboutImage}
               alt="Rudy Alfarizi - Muthowwif"
-              className="w-full h-auto object-cover aspect-[4/5] md:aspect-[3/4] max-h-[360px] md:max-h-none transition-all duration-700"
+              className="w-full h-full object-cover rounded-2xl"
+            />
+          </div>
+          
+          <h2 className="font-['Hubhead_2'] text-2xl md:text-5xl lg:text-6xl text-foreground leading-tight md:hidden">
+            Ketika Pembimbing Anda Tepat, Ibadah Pun Sempurna
+          </h2>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-24 items-start">
+          {/* Photo - hidden on mobile, shown on desktop */}
+          <div className="relative lg:order-2 hidden md:block">
+            <img
+              src={aboutImage}
+              alt="Rudy Alfarizi - Muthowwif"
+              className="w-full h-auto object-cover aspect-[3/4] transition-all duration-700"
             />
           </div>
 
           <div className="lg:order-1">
-            <h2 className="font-['Hubhead_2'] text-3xl md:text-5xl lg:text-6xl text-foreground leading-tight mb-6 md:mb-10">
+            <h2 className="hidden md:block font-['Hubhead_2'] text-5xl lg:text-6xl text-foreground leading-tight mb-10">
               Ketika Pembimbing Anda Tepat, Ibadah Pun Sempurna
             </h2>
 
