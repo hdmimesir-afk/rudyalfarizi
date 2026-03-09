@@ -4,24 +4,24 @@ const AboutSection = () => {
   return (
     <section id="about" className="py-14 md:py-40 bg-background border-t border-border">
       <div className="px-4 md:px-12">
-        <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-8 md:mb-16">About</p>
-
-        {/* Mobile: photo right after label */}
-        <div className="relative mb-8 lg:hidden">
-          <img
-            src={aboutImage}
-            alt="Rudy Alfarizi - Muthowwif"
-            className="w-full h-auto object-cover aspect-[3/4] transition-all duration-700"
-          />
-        </div>
+        <p className="hidden md:block text-[10px] md:text-xs tracking-mega uppercase text-primary mb-8 md:mb-16">About</p>
 
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-24 items-start">
-          <div>
-            <h2 className="font-display text-2xl md:text-5xl lg:text-6xl text-foreground leading-tight mb-6 md:mb-10 capitalize normal-case">
-              Ketika pembimbing Anda tepat, ibadah pun sempurna.
+          {/* Photo first on mobile, second on desktop */}
+          <div className="relative lg:order-2">
+            <img
+              src={aboutImage}
+              alt="Rudy Alfarizi - Muthowwif"
+              className="w-full h-auto object-cover aspect-[3/4] transition-all duration-700"
+            />
+          </div>
+
+          <div className="lg:order-1">
+            <h2 className="font-display text-3xl md:text-5xl lg:text-6xl text-foreground leading-tight mb-6 md:mb-10">
+              Ketika Pembimbing Anda Tepat, Ibadah Pun Sempurna
             </h2>
 
-            <div className="space-y-4 text-foreground/50 text-xs md:text-sm leading-relaxed max-w-lg text-justify">
+            <div className="space-y-4 text-foreground/50 text-xs md:text-sm leading-relaxed text-justify">
               <p>
                 Dengan latar belakang pendidikan dari Universitas Al-Azhar, Kairo, 
                 saya memiliki pemahaman mendalam tentang fiqih manasik, sejarah Islam, 
@@ -47,15 +47,6 @@ const AboutSection = () => {
                 <p className="text-[9px] md:text-xs tracking-ultra uppercase text-foreground/40 mt-1">Rating</p>
               </div>
             </div>
-          </div>
-
-          {/* Desktop: photo on right */}
-          <div className="relative hidden lg:flex">
-            <img
-              src={aboutImage}
-              alt="Rudy Alfarizi - Muthowwif"
-              className="w-full h-auto object-cover aspect-[3/4] transition-all duration-700"
-            />
           </div>
         </div>
       </div>
