@@ -10,6 +10,8 @@ import alUla4 from "@/assets/al-ula-4.jpg";
 import alUla5 from "@/assets/al-ula-5.jpg";
 import alUla6 from "@/assets/al-ula-6.jpg";
 import alUla7 from "@/assets/al-ula-7.jpg";
+import alUla2 from "@/assets/al-ula-2.jpg";
+import alUla8 from "@/assets/al-ula-8.jpg";
 
 const categories = [
   "Semua", "Al Ula", "Badr", "Hudaibiyah", "Jabal Khandamah",
