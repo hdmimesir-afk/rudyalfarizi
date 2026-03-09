@@ -38,7 +38,7 @@ export { services };
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="py-14 md:py-40 bg-background border-t border-border">
+    <section id="services" className="py-14 md:py-40 border-t border-border" style={{ backgroundColor: 'hsl(40 20% 95%)' }}>
       <div className="px-4 md:px-12">
         <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-8 md:mb-16">Layanan</p>
 
