@@ -32,7 +32,7 @@ const FooterSection = () => {
                 <li key={id}>
                   <button
                     onClick={() => scrollToSection(id)}
-                    className="text-xs text-foreground/40 hover:text-primary transition-colors capitalize"
+                    className="text-[10px] md:text-xs text-foreground/40 hover:text-primary transition-colors capitalize"
                   >
                     {id === "faq" ? "FAQ" : id}
                   </button>
