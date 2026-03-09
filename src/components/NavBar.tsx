@@ -36,7 +36,7 @@ const NavBar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="px-4 md:px-12">
+      <div className="px-6 md:px-16 lg:px-24">
         <div className="flex items-center justify-between h-14 md:h-20">
           {/* Left nav */}
           <div className="hidden md:flex items-center gap-10">
