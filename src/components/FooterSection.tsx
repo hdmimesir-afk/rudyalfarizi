@@ -16,7 +16,7 @@ const FooterSection = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 mb-10 md:mb-16">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <h3 className="font-serif text-xl md:text-3xl text-foreground mb-3 tracking-ultra">
+            <h3 className="font-display text-xl md:text-3xl text-foreground mb-3 tracking-wide">
               Rudy Alfarizi
             </h3>
             <p className="text-foreground/30 text-xs leading-relaxed">

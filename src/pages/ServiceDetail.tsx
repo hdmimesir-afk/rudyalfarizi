@@ -56,7 +56,7 @@ const ServiceDetail = () => {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
         <div className="text-center">
-          <h1 className="font-serif text-3xl text-foreground mb-4">Layanan tidak ditemukan</h1>
+          <h1 className="font-display text-3xl text-foreground mb-4">Layanan tidak ditemukan</h1>
           <Link to="/" className="text-primary text-sm tracking-ultra uppercase hover:underline">
             Kembali
           </Link>
@@ -79,7 +79,7 @@ const ServiceDetail = () => {
 
         <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-6 md:mb-10">Layanan</p>
 
-        <h1 className="font-serif text-3xl md:text-6xl lg:text-7xl font-light text-foreground leading-tight mb-4 md:mb-6">
+        <h1 className="font-display text-3xl md:text-6xl lg:text-7xl text-foreground leading-tight mb-4 md:mb-6">
           {service.title}
         </h1>
 
@@ -117,7 +117,7 @@ const ServiceDetail = () => {
 
       {/* CTA */}
       <div className="px-4 md:px-12 pb-16 md:pb-24 text-center border-t border-border pt-16">
-        <h2 className="font-serif text-2xl md:text-4xl font-light text-foreground mb-6">
+        <h2 className="font-display text-2xl md:text-4xl text-foreground mb-6">
           Tertarik dengan layanan ini?
         </h2>
         <a

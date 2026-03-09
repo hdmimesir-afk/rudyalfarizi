@@ -23,7 +23,7 @@ const AboutSection = () => {
             />
           </div>
           
-          <h2 className="font-['Hubhead_2'] text-2xl text-foreground leading-tight md:hidden">
+          <h2 className="font-display text-2xl text-foreground leading-tight md:hidden">
             Ketika Pembimbing Anda Tepat, Ibadah Pun Sempurna
           </h2>
         </div>
@@ -41,7 +41,7 @@ const AboutSection = () => {
           </div>
 
           <div className="lg:order-1">
-            <h2 className="hidden md:block font-['Hubhead_2'] text-5xl lg:text-6xl text-foreground leading-tight mb-10">
+            <h2 className="hidden md:block font-display text-5xl lg:text-6xl text-foreground leading-tight mb-10">
               Ketika Pembimbing Anda Tepat, Ibadah Pun Sempurna
             </h2>
 
@@ -59,15 +59,15 @@ const AboutSection = () => {
 
             <div className="grid grid-cols-3 gap-4 md:gap-8 mt-10 md:mt-16 pt-6 md:pt-10 border-t border-border text-center">
               <div>
-                <p className="font-serif text-2xl md:text-4xl text-foreground">500+</p>
+                <p className="font-display text-2xl md:text-4xl text-foreground">500+</p>
                 <p className="text-[9px] md:text-xs tracking-ultra uppercase text-foreground/40 mt-1">Jamaah</p>
               </div>
               <div>
-                <p className="font-serif text-2xl md:text-4xl text-foreground">2021</p>
+                <p className="font-display text-2xl md:text-4xl text-foreground">2021</p>
                 <p className="text-[9px] md:text-xs tracking-ultra uppercase text-foreground/40 mt-1">Sejak</p>
               </div>
               <div>
-                <p className="font-serif text-2xl md:text-4xl text-foreground">5.0</p>
+                <p className="font-display text-2xl md:text-4xl text-foreground">5.0</p>
                 <p className="text-[9px] md:text-xs tracking-ultra uppercase text-foreground/40 mt-1">Rating</p>
               </div>
             </div>
