@@ -14,7 +14,7 @@ const WhyChooseSection = () => {
         <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-8 md:mb-16">Keunggulan</p>
 
         <h2 className="font-display text-2xl md:text-5xl text-foreground mb-10 md:mb-20 max-w-2xl">
-          Kenapa Memilih Saya?
+          Kenapa memilih saya?
         </h2>
 
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
