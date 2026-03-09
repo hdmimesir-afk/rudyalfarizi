@@ -1,74 +1,33 @@
-import { Check, Shield, Heart, BookOpen, Clock, Award } from "lucide-react";
-
 const WhyChooseSection = () => {
   const reasons = [
-    {
-      icon: BookOpen,
-      title: "Ilmu Mendalam",
-      description: "Lulusan Al-Azhar dengan penguasaan fiqih manasik dan sejarah Islam yang komprehensif.",
-    },
-    {
-      icon: Heart,
-      title: "Khidmat & Sabar",
-      description: "Melayani dengan sepenuh hati, penuh kesabaran, dan kasih sayang kepada setiap jamaah.",
-    },
-    {
-      icon: Shield,
-      title: "Terpercaya",
-      description: "Pengalaman membimbing ratusan jamaah dengan track record yang terjaga.",
-    },
-    {
-      icon: Clock,
-      title: "Fleksibel",
-      description: "Jadwal yang dapat disesuaikan dengan kebutuhan jamaah atau travel umrah.",
-    },
-    {
-      icon: Award,
-      title: "Profesional",
-      description: "Standar pelayanan tinggi dengan dokumentasi dan koordinasi yang terorganisir.",
-    },
-    {
-      icon: Check,
-      title: "Privasi Terjaga",
-      description: "Ideal untuk VVIP, tokoh publik, atau keluarga yang membutuhkan privasi ekstra.",
-    },
+    { title: "Ilmu Mendalam", description: "Lulusan Al-Azhar dengan penguasaan fiqih manasik dan sejarah Islam." },
+    { title: "Khidmat & Sabar", description: "Melayani dengan sepenuh hati dan kasih sayang kepada setiap jamaah." },
+    { title: "Terpercaya", description: "Pengalaman membimbing ratusan jamaah dengan track record yang terjaga." },
+    { title: "Fleksibel", description: "Jadwal dapat disesuaikan dengan kebutuhan jamaah atau travel umrah." },
+    { title: "Profesional", description: "Standar pelayanan tinggi dengan dokumentasi dan koordinasi terorganisir." },
+    { title: "Privasi Terjaga", description: "Ideal untuk VVIP, tokoh publik, atau keluarga yang butuh privasi." },
   ];
 
   return (
-    <section className="py-20 md:py-32 bg-secondary text-secondary-foreground">
-      <div className="container mx-auto px-4">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <div className="h-px w-8 bg-primary" />
-            <span className="text-primary text-sm font-medium tracking-widest uppercase">
-              Keunggulan
-            </span>
-            <div className="h-px w-8 bg-primary" />
-          </div>
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-cream mb-4">
-            Kenapa Memilih Saya?
-          </h2>
-          <p className="text-cream/70 max-w-2xl mx-auto">
-            Berikut alasan mengapa jamaah dan travel umrah mempercayakan 
-            bimbingan ibadah mereka kepada saya.
-          </p>
-        </div>
+    <section className="py-24 md:py-40 bg-muted/20 border-t border-border">
+      <div className="container mx-auto px-6 md:px-12">
+        <p className="text-xs tracking-mega uppercase text-primary mb-16">Keunggulan</p>
 
-        {/* Reasons Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <h2 className="font-serif text-3xl md:text-5xl font-light text-foreground mb-20 max-w-2xl">
+          Kenapa Memilih Saya?
+        </h2>
+
+        {/* Grid with borders */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3">
           {reasons.map((reason, index) => (
             <div
               key={index}
-              className="group p-6 rounded-xl border border-cream/10 hover:border-primary/50 bg-cream/5 hover:bg-cream/10 transition-all duration-300"
+              className="p-8 md:p-10 border border-border hover:bg-muted/30 transition-colors duration-300 group"
             >
-              <div className="w-12 h-12 rounded-lg gradient-gold flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <reason.icon className="h-6 w-6 text-primary-foreground" />
-              </div>
-              <h3 className="font-serif text-xl font-bold text-cream mb-2">
+              <h3 className="font-serif text-xl md:text-2xl font-light text-foreground group-hover:text-primary transition-colors mb-4">
                 {reason.title}
               </h3>
-              <p className="text-cream/70 text-sm leading-relaxed">
+              <p className="text-sm text-foreground/40 leading-relaxed">
                 {reason.description}
               </p>
             </div>

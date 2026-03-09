@@ -1,102 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
-    /* Luxury Islamic color palette */
-    --background: 40 30% 97%;
-    --foreground: 220 40% 15%;
+    /* Apollo-inspired: Dark brown + cream + coral */
+    --background: 24 18% 11%;
+    --foreground: 35 25% 90%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 40% 15%;
+    --card: 24 18% 14%;
+    --card-foreground: 35 25% 90%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 40% 15%;
+    --popover: 24 18% 14%;
+    --popover-foreground: 35 25% 90%;
 
-    --primary: 42 65% 52%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 8 100% 68%;
+    --primary-foreground: 24 18% 11%;
 
-    --secondary: 220 45% 18%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 35 20% 85%;
+    --secondary-foreground: 24 18% 11%;
 
-    --muted: 40 20% 90%;
-    --muted-foreground: 220 20% 40%;
+    --muted: 24 12% 18%;
+    --muted-foreground: 35 15% 55%;
 
-    --accent: 42 75% 45%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 8 100% 68%;
+    --accent-foreground: 24 18% 11%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 40 20% 88%;
-    --input: 40 20% 88%;
-    --ring: 42 65% 52%;
+    --border: 24 12% 20%;
+    --input: 24 12% 20%;
+    --ring: 8 100% 68%;
 
-    --radius: 0.75rem;
+    --radius: 0rem;
 
-    /* Custom gold gradient */
-    --gradient-gold: linear-gradient(135deg, hsl(42 75% 45%) 0%, hsl(42 65% 52%) 50%, hsl(45 70% 60%) 100%);
-    
-    /* Shadow with gold tint */
-    --shadow-gold: 0 10px 40px -10px hsl(42 65% 52% / 0.25);
-    --shadow-elegant: 0 20px 60px -15px hsl(220 40% 15% / 0.15);
-
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 42 65% 52%;
-  }
-
-  .dark {
-    --background: 220 40% 12%;
-    --foreground: 40 30% 95%;
-
-    --card: 220 40% 15%;
-    --card-foreground: 40 30% 95%;
-
-    --popover: 220 40% 15%;
-    --popover-foreground: 40 30% 95%;
-
-    --primary: 42 75% 55%;
-    --primary-foreground: 220 40% 12%;
-
-    --secondary: 220 35% 20%;
-    --secondary-foreground: 40 30% 95%;
-
-    --muted: 220 35% 22%;
-    --muted-foreground: 40 15% 70%;
-
-    --accent: 42 70% 50%;
-    --accent-foreground: 220 40% 12%;
-
-    --destructive: 0 62.8% 50.6%;
-    --destructive-foreground: 40 30% 95%;
-
-    --border: 220 35% 22%;
-    --input: 220 35% 22%;
-    --ring: 42 75% 55%;
-    
-    --gradient-gold: linear-gradient(135deg, hsl(42 70% 50%) 0%, hsl(42 75% 55%) 50%, hsl(45 80% 60%) 100%);
-    --shadow-gold: 0 10px 40px -10px hsl(42 75% 55% / 0.3);
-    --shadow-elegant: 0 20px 60px -15px hsl(0 0% 0% / 0.4);
-
-    --sidebar-background: 220 40% 10%;
-    --sidebar-foreground: 40 30% 95%;
-    --sidebar-primary: 42 75% 55%;
-    --sidebar-primary-foreground: 220 40% 12%;
-    --sidebar-accent: 220 35% 18%;
-    --sidebar-accent-foreground: 40 30% 95%;
-    --sidebar-border: 220 35% 18%;
-    --sidebar-ring: 42 75% 55%;
+    --sidebar-background: 24 18% 9%;
+    --sidebar-foreground: 35 25% 90%;
+    --sidebar-primary: 8 100% 68%;
+    --sidebar-primary-foreground: 24 18% 11%;
+    --sidebar-accent: 24 12% 16%;
+    --sidebar-accent-foreground: 35 25% 90%;
+    --sidebar-border: 24 12% 18%;
+    --sidebar-ring: 8 100% 68%;
   }
 }
 
@@ -107,30 +55,29 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-    font-feature-settings: "kern" 1;
+    font-family: 'Outfit', system-ui, sans-serif;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
-    font-feature-settings: "kern" 1, "liga" 1;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
   }
 }
 
-/* Custom gradient utilities */
 @layer utilities {
-  .gradient-gold {
-    background: var(--gradient-gold);
+  .tracking-ultra {
+    letter-spacing: 0.3em;
   }
-  
-  .shadow-gold {
-    box-shadow: var(--shadow-gold);
+
+  .tracking-mega {
+    letter-spacing: 0.5em;
   }
-  
-  .shadow-elegant {
-    box-shadow: var(--shadow-elegant);
-  }
-  
-  .text-gradient-gold {
-    @apply bg-clip-text text-transparent;
-    background: var(--gradient-gold);
+
+  .border-grid {
+    border-color: hsl(var(--border));
   }
 }
