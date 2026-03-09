@@ -54,7 +54,7 @@ const ServicesSection = () => {
               className="p-4 md:p-10 border border-border hover:bg-muted/30 transition-colors duration-300 group relative"
             >
               <ArrowUpRight className="absolute top-3 right-3 md:top-6 md:right-6 h-4 w-4 text-foreground/20 group-hover:text-primary transition-colors" />
-              <h3 className="font-serif text-base md:text-2xl font-light text-foreground group-hover:text-primary transition-colors mb-2 md:mb-4">
+              <h3 className="font-display text-base md:text-2xl text-foreground group-hover:text-primary transition-colors mb-2 md:mb-4">
                 {service.title}
               </h3>
               <p className="text-[11px] md:text-sm text-foreground/50 leading-relaxed text-justify">
