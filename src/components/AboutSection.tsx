@@ -40,11 +40,11 @@ const AboutSection = () => {
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative flex justify-center lg:justify-end">
             <img
               src={aboutImage}
               alt="Rudy Alfarizi - Muthowwif"
-              className="w-full h-auto object-cover aspect-[3/4] grayscale hover:grayscale-0 transition-all duration-700"
+              className="w-3/4 lg:w-2/3 h-auto object-cover aspect-[3/4] grayscale hover:grayscale-0 transition-all duration-700"
             />
           </div>
         </div>
