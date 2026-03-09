@@ -13,7 +13,7 @@ const GallerySection = () => {
 
   return (
     <section id="gallery" className="py-14 md:py-40 bg-background border-t border-border">
-      <div className="px-4 md:px-12">
+      <div className="px-6 md:px-16 lg:px-24">
         <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-8 md:mb-16">Galeri</p>
 
         <h2 className="font-display text-2xl md:text-5xl text-foreground mb-8 md:mb-16 max-w-2xl">
