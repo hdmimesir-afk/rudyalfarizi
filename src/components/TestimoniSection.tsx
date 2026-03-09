@@ -18,11 +18,11 @@ const TestimoniSection = () => {
   ];
 
   return (
-    <section id="testimonials" className="py-24 md:py-40 bg-background border-t border-border">
-      <div className="container mx-auto px-6 md:px-12">
-        <p className="text-xs tracking-mega uppercase text-primary mb-16">Testimoni</p>
+    <section id="testimonials" className="py-14 md:py-40 bg-background border-t border-border">
+      <div className="px-4 md:px-12">
+        <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-8 md:mb-16">Testimoni</p>
 
-        <h2 className="font-serif text-3xl md:text-5xl font-light text-foreground mb-20 max-w-2xl">
+        <h2 className="font-serif text-2xl md:text-5xl font-light text-foreground mb-10 md:mb-20 max-w-2xl">
           Kesan Jamaah
         </h2>
 
@@ -30,14 +30,14 @@ const TestimoniSection = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-background p-8 md:p-12 flex flex-col justify-between min-h-[320px]"
+              className="bg-background p-5 md:p-12 flex flex-col justify-between min-h-[200px] md:min-h-[320px]"
             >
-              <p className="font-serif text-lg md:text-xl text-foreground/80 leading-relaxed italic">
+              <p className="font-serif text-base md:text-xl text-foreground/80 leading-relaxed italic">
                 "{testimonial.content}"
               </p>
-              <div className="mt-8 pt-6 border-t border-border">
-                <p className="text-sm text-foreground tracking-wide">{testimonial.name}</p>
-                <p className="text-xs text-foreground/40 mt-1">{testimonial.role}</p>
+              <div className="mt-5 md:mt-8 pt-4 md:pt-6 border-t border-border">
+                <p className="text-xs md:text-sm text-foreground tracking-wide">{testimonial.name}</p>
+                <p className="text-[10px] md:text-xs text-foreground/40 mt-0.5">{testimonial.role}</p>
               </div>
             </div>
           ))}

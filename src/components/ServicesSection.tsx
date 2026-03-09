@@ -28,32 +28,30 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="py-24 md:py-40 bg-background border-t border-border">
-      <div className="container mx-auto px-6 md:px-12">
-        {/* Section label */}
-        <p className="text-xs tracking-mega uppercase text-primary mb-16">Layanan</p>
+    <section id="services" className="py-14 md:py-40 bg-background border-t border-border">
+      <div className="px-4 md:px-12">
+        <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-8 md:mb-16">Layanan</p>
 
-        <h2 className="font-serif text-3xl md:text-5xl font-light text-foreground mb-20 max-w-2xl">
+        <h2 className="font-serif text-2xl md:text-5xl font-light text-foreground mb-10 md:mb-20 max-w-2xl">
           Berbagai Layanan untuk Perjalanan Ibadah Anda
         </h2>
 
-        {/* Services list with border lines */}
         <div className="border-t border-border">
           {services.map((service) => (
             <div
               key={service.num}
-              className="group grid grid-cols-12 gap-4 py-8 border-b border-border hover:bg-muted/30 transition-colors duration-300 cursor-default px-4"
+              className="group flex flex-col md:grid md:grid-cols-12 gap-1 md:gap-4 py-5 md:py-8 border-b border-border hover:bg-muted/30 transition-colors duration-300 cursor-default px-2 md:px-4"
             >
-              <div className="col-span-1">
-                <span className="text-xs text-foreground/30 font-sans">{service.num}</span>
+              <div className="md:col-span-1">
+                <span className="text-[10px] text-foreground/30 font-sans">{service.num}</span>
               </div>
-              <div className="col-span-11 md:col-span-4">
-                <h3 className="font-serif text-xl md:text-2xl font-light text-foreground group-hover:text-primary transition-colors">
+              <div className="md:col-span-4">
+                <h3 className="font-serif text-lg md:text-2xl font-light text-foreground group-hover:text-primary transition-colors">
                   {service.title}
                 </h3>
               </div>
-              <div className="col-span-12 md:col-span-7 md:col-start-6">
-                <p className="text-sm text-foreground/40 leading-relaxed">
+              <div className="md:col-span-7 md:col-start-6 mt-1 md:mt-0">
+                <p className="text-xs md:text-sm text-foreground/40 leading-relaxed">
                   {service.description}
                 </p>
               </div>

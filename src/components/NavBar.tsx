@@ -36,8 +36,8 @@ const NavBar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-6 md:px-12">
-        <div className="flex items-center justify-between h-20">
+      <div className="px-4 md:px-12">
+        <div className="flex items-center justify-between h-14 md:h-20">
           {/* Left nav */}
           <div className="hidden md:flex items-center gap-10">
             {navLinks.map((link) => (
@@ -54,7 +54,7 @@ const NavBar = () => {
           {/* Center logo */}
           <button
             onClick={() => scrollToSection("hero")}
-            className="font-serif text-2xl tracking-ultra text-foreground hover:text-primary transition-colors"
+            className="font-serif text-lg md:text-2xl tracking-ultra text-foreground hover:text-primary transition-colors"
           >
             RA
           </button>
@@ -71,29 +71,29 @@ const NavBar = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-foreground"
+            className="md:hidden p-1.5 text-foreground"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden border-t border-border py-8 animate-fade-in">
-            <div className="flex flex-col items-center gap-6">
+          <div className="md:hidden border-t border-border py-5 animate-fade-in">
+            <div className="flex flex-col items-center gap-4">
               {navLinks.map((link) => (
                 <button
                   key={link.id}
                   onClick={() => scrollToSection(link.id)}
-                  className="text-xs tracking-ultra uppercase text-foreground/60 hover:text-primary transition-colors"
+                  className="text-[10px] tracking-ultra uppercase text-foreground/60 hover:text-primary transition-colors"
                 >
                   {link.label}
                 </button>
               ))}
               <button
                 onClick={() => scrollToSection("contact")}
-                className="text-xs tracking-ultra uppercase border border-primary text-primary px-6 py-3 hover:bg-primary hover:text-primary-foreground transition-all mt-2"
+                className="text-[10px] tracking-ultra uppercase border border-primary text-primary px-5 py-2.5 hover:bg-primary hover:text-primary-foreground transition-all mt-1"
               >
                 Konsultasi
               </button>

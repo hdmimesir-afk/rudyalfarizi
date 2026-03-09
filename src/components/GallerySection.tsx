@@ -12,30 +12,27 @@ const GallerySection = () => {
   ];
 
   return (
-    <section id="gallery" className="py-24 md:py-40 bg-background border-t border-border">
-      <div className="container mx-auto px-6 md:px-12">
-        {/* Section label */}
-        <p className="text-xs tracking-mega uppercase text-primary mb-16">Galeri</p>
+    <section id="gallery" className="py-14 md:py-40 bg-background border-t border-border">
+      <div className="px-4 md:px-12">
+        <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-8 md:mb-16">Galeri</p>
 
-        <h2 className="font-serif text-3xl md:text-5xl font-light text-foreground mb-16 max-w-2xl">
+        <h2 className="font-serif text-2xl md:text-5xl font-light text-foreground mb-8 md:mb-16 max-w-2xl">
           Momen Berharga Bersama Jamaah
         </h2>
 
-        {/* Gallery Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-1 md:gap-2">
           {images.map((image, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden aspect-[3/4] cursor-pointer"
+              className="group relative overflow-hidden aspect-square md:aspect-[3/4] cursor-pointer"
             >
               <img
                 src={image.src}
                 alt={image.caption}
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
               />
-              {/* Caption overlay */}
-              <div className="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
-                <p className="text-xs tracking-ultra uppercase text-foreground">
+              <div className="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-3 md:p-6">
+                <p className="text-[9px] md:text-xs tracking-widest md:tracking-ultra uppercase text-foreground">
                   {image.caption}
                 </p>
               </div>

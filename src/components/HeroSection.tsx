@@ -14,54 +14,48 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background"
+      className="relative min-h-[85vh] md:min-h-screen flex items-center justify-center overflow-hidden bg-background"
     >
-      {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 text-center">
-        {/* Top subtitle */}
-        <p className="text-xs tracking-mega uppercase text-foreground/50 mb-8 animate-fade-up">
+      <div className="relative z-10 w-full px-4 md:px-12 text-center">
+        <p className="text-[10px] md:text-xs tracking-mega uppercase text-foreground/50 mb-5 md:mb-8 animate-fade-up">
           Muthowwif Profesional
         </p>
 
-        {/* Giant name */}
-        <h1 className="font-serif text-6xl sm:text-8xl md:text-9xl lg:text-[12rem] font-light text-foreground leading-[0.85] tracking-ultra mb-12 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+        <h1 className="font-serif text-[3.2rem] sm:text-7xl md:text-9xl lg:text-[12rem] font-light text-foreground leading-[0.85] tracking-[0.08em] md:tracking-ultra mb-8 md:mb-12 animate-fade-up" style={{ animationDelay: '0.15s' }}>
           RUDY
           <br />
           ALFARIZI
         </h1>
 
-        {/* Side labels */}
-        <div className="flex items-center justify-between max-w-4xl mx-auto mb-12 animate-fade-up" style={{ animationDelay: '0.3s' }}>
-          <p className="text-xs tracking-ultra uppercase text-foreground/40 text-left">
+        <div className="flex items-center justify-between max-w-sm md:max-w-4xl mx-auto mb-8 md:mb-12 animate-fade-up" style={{ animationDelay: '0.3s' }}>
+          <p className="text-[9px] md:text-xs tracking-widest md:tracking-ultra uppercase text-foreground/40 text-left">
             Pembimbing Ibadah
             <br />
             Umrah & Haji
           </p>
-          <p className="text-xs tracking-ultra uppercase text-foreground/40 text-right">
+          <p className="text-[9px] md:text-xs tracking-widest md:tracking-ultra uppercase text-foreground/40 text-right">
             Makkah · Madinah
             <br />
             Saudi Arabia
           </p>
         </div>
 
-        {/* CTA */}
         <a
           href={whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block text-xs tracking-ultra uppercase border border-primary text-primary px-10 py-4 hover:bg-primary hover:text-primary-foreground transition-all duration-300 animate-fade-up"
+          className="inline-block text-[10px] md:text-xs tracking-widest md:tracking-ultra uppercase border border-primary text-primary px-7 py-3 md:px-10 md:py-4 hover:bg-primary hover:text-primary-foreground transition-all duration-300 animate-fade-up"
           style={{ animationDelay: '0.45s' }}
         >
           Konsultasi Jadwal
         </a>
       </div>
 
-      {/* Scroll indicator */}
       <button
         onClick={scrollToAbout}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 text-foreground/30 hover:text-primary transition-colors"
+        className="absolute bottom-6 md:bottom-10 left-1/2 -translate-x-1/2 text-foreground/30 hover:text-primary transition-colors"
       >
-        <ChevronDown size={28} className="animate-bounce" />
+        <ChevronDown size={22} className="animate-bounce" />
       </button>
     </section>
   );
