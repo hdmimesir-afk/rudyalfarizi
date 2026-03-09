@@ -40,6 +40,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'SK Modernist Mono';
+  src: url('/fonts/SK-Modernist-Mono.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
