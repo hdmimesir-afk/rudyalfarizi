@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        serif: ['Hubhead', 'sans-serif'],
-        sans: ['SK Modernist Mono', 'system-ui', 'sans-serif'],
+        serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+        sans: ['Creato Display', 'Outfit', 'system-ui', 'sans-serif'],
         display: ['Hubhead', 'sans-serif'],
       },
       letterSpacing: {

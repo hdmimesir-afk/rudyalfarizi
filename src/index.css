@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap');
+
 @font-face {
   font-family: 'Montecatini Pro';
   src: url('/fonts/MontecatiniPro-NormaleUltra.ttf') format('truetype');
@@ -8,17 +10,32 @@
 
 @font-face {
   font-family: 'Hubhead';
-  src: url('/fonts/Hubhead-3.otf') format('opentype');
-  font-weight: 100 900;
+  src: url('/fonts/Hubhead.otf') format('opentype');
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'SK Modernist Mono';
-  src: url('/fonts/Sk-Modernist-Mono.otf') format('opentype'),
-       url('/fonts/SK-Modernist-Mono.otf') format('opentype');
-  font-weight: 100 900;
+  font-family: 'Hubhead 2';
+  src: url('/fonts/Hubhead-2.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Creato Display';
+  src: url('/fonts/CreatoDisplay-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Creato Display';
+  src: url('/fonts/CreatoDisplay-Medium.otf') format('opentype');
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
@@ -77,16 +94,17 @@
   }
 
   body {
-    @apply bg-background text-foreground text-left;
-    font-family: 'SK Modernist Mono', system-ui, sans-serif;
-    font-weight: 400;
+    @apply bg-background text-foreground;
+    font-family: 'Outfit', system-ui, sans-serif;
+    font-weight: 300;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Hubhead', sans-serif;
-    letter-spacing: 0.05em;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
   }
 }
 

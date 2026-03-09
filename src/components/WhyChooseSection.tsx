@@ -9,11 +9,11 @@ const WhyChooseSection = () => {
   ];
 
   return (
-    <section className="py-10 md:py-40 bg-muted/20 border-t border-border">
+    <section className="py-14 md:py-40 bg-muted/20 border-t border-border">
       <div className="px-4 md:px-12">
-        <p className="text-[8px] md:text-xs tracking-mega uppercase text-primary mb-6 md:mb-16">Keunggulan</p>
+        <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-8 md:mb-16">Keunggulan</p>
 
-        <h2 className="font-display text-lg md:text-5xl text-foreground mb-8 md:mb-20 max-w-2xl">
+        <h2 className="font-display text-2xl md:text-5xl text-foreground mb-10 md:mb-20 max-w-2xl">
           Kenapa memilih saya?
         </h2>
 
@@ -21,12 +21,12 @@ const WhyChooseSection = () => {
           {reasons.map((reason, index) => (
             <div
               key={index}
-              className="p-3 md:p-10 border border-border hover:bg-muted/30 transition-colors duration-300 group"
+              className="p-4 md:p-10 border border-border hover:bg-muted/30 transition-colors duration-300 group"
             >
-              <h3 className="font-display text-sm md:text-2xl text-foreground group-hover:text-primary transition-colors mb-1.5 md:mb-4">
+              <h3 className="font-display text-base md:text-2xl text-foreground group-hover:text-primary transition-colors mb-2 md:mb-4">
                 {reason.title}
               </h3>
-              <p className="text-xs md:text-base text-foreground/40 leading-relaxed">
+              <p className="text-[11px] md:text-sm text-foreground/40 leading-relaxed text-justify">
                 {reason.description}
               </p>
             </div>

@@ -23,12 +23,12 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-background/80" />
       </div>
       <div className="relative z-10 w-full px-4 md:px-12 text-center">
-        <p className="text-[8px] md:text-xs tracking-mega uppercase text-foreground/50 mb-4 md:mb-8 animate-fade-up">
+        <p className="text-[10px] md:text-xs tracking-mega uppercase text-foreground/50 mb-5 md:mb-8 animate-fade-up">
           Muthowwif Profesional
         </p>
 
         <h1
-          className="text-[2.5rem] sm:text-6xl md:text-7xl lg:text-9xl xl:text-[12rem] text-foreground leading-[0.85] tracking-[0.02em] md:tracking-[0.04em] mb-6 md:mb-12 animate-fade-up uppercase"
+          className="text-[3rem] sm:text-6xl md:text-7xl lg:text-9xl xl:text-[12rem] text-foreground leading-[0.85] tracking-[0.02em] md:tracking-[0.04em] mb-8 md:mb-12 animate-fade-up uppercase"
           style={{ fontFamily: "'Montecatini Pro', serif", animationDelay: '0.15s' }}
         >
           RUDY
@@ -36,13 +36,13 @@ const HeroSection = () => {
           ALFARIZI
         </h1>
 
-        <div className="flex items-center justify-between max-w-[280px] sm:max-w-sm md:max-w-2xl lg:max-w-4xl mx-auto mb-6 md:mb-12 animate-fade-up" style={{ animationDelay: '0.3s' }}>
-          <p className="text-[8px] md:text-xs tracking-widest md:tracking-ultra uppercase text-foreground/40 text-left">
+        <div className="flex items-center justify-between max-w-xs sm:max-w-sm md:max-w-2xl lg:max-w-4xl mx-auto mb-8 md:mb-12 animate-fade-up" style={{ animationDelay: '0.3s' }}>
+          <p className="text-[9px] md:text-xs tracking-widest md:tracking-ultra uppercase text-foreground/40 text-left">
             Pembimbing Ibadah
             <br />
             Umrah & Haji
           </p>
-          <p className="text-[8px] md:text-xs tracking-widest md:tracking-ultra uppercase text-foreground/40 text-right">
+          <p className="text-[9px] md:text-xs tracking-widest md:tracking-ultra uppercase text-foreground/40 text-right">
             Makkah · Madinah
             <br />
             Saudi Arabia
@@ -53,7 +53,7 @@ const HeroSection = () => {
           href={whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block text-[8px] md:text-xs tracking-widest md:tracking-ultra uppercase border border-primary text-primary px-6 py-2.5 md:px-10 md:py-4 hover:bg-primary hover:text-primary-foreground transition-all duration-300 animate-fade-up"
+          className="inline-block text-[10px] md:text-xs tracking-widest md:tracking-ultra uppercase border border-primary text-primary px-7 py-3 md:px-10 md:py-4 hover:bg-primary hover:text-primary-foreground transition-all duration-300 animate-fade-up"
           style={{ animationDelay: '0.45s' }}
         >
           Konsultasi Jadwal
