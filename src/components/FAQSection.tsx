@@ -35,7 +35,7 @@ const FAQSection = () => {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-24">
           <div>
             <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-6 md:mb-16">FAQ</p>
-            <h2 className="font-sans text-2xl md:text-5xl font-bold text-foreground leading-tight mb-6 lg:mb-0">
+            <h2 className="font-display text-2xl md:text-5xl text-foreground leading-tight mb-6 lg:mb-0">
               Pertanyaan yang Sering Diajukan
             </h2>
           </div>

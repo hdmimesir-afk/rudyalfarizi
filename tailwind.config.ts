@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         serif: ['Cormorant Garamond', 'Georgia', 'serif'],
         sans: ['Creato Display', 'Outfit', 'system-ui', 'sans-serif'],
+        display: ['Hubhead', 'sans-serif'],
       },
       letterSpacing: {
         ultra: '0.3em',

@@ -16,7 +16,7 @@ const GallerySection = () => {
       <div className="px-4 md:px-12">
         <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-8 md:mb-16">Galeri</p>
 
-        <h2 className="font-sans text-2xl md:text-5xl font-bold text-foreground mb-8 md:mb-16 max-w-2xl">
+        <h2 className="font-display text-2xl md:text-5xl text-foreground mb-8 md:mb-16 max-w-2xl">
           Momen Berharga Bersama Jamaah
         </h2>
 
