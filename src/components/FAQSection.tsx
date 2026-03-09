@@ -30,12 +30,12 @@ const FAQSection = () => {
   ];
 
   return (
-    <section id="faq" className="py-14 md:py-40 bg-background border-t border-border">
+    <section id="faq" className="py-10 md:py-40 bg-background border-t border-border">
       <div className="px-4 md:px-12">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-24">
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-24">
           <div>
-            <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-6 md:mb-16">FAQ</p>
-             <h2 className="font-display text-2xl md:text-5xl text-foreground leading-tight mb-6 lg:mb-0">
+            <p className="text-[8px] md:text-xs tracking-mega uppercase text-primary mb-4 md:mb-16">FAQ</p>
+             <h2 className="font-display text-lg md:text-5xl text-foreground leading-tight mb-4 lg:mb-0">
                Pertanyaan yang sering diajukan
              </h2>
           </div>
@@ -48,10 +48,10 @@ const FAQSection = () => {
                   value={`item-${index}`}
                   className="border-b border-border py-0"
                 >
-                  <AccordionTrigger className="text-left text-sm md:text-base text-foreground hover:text-primary py-4 md:py-6 font-sans font-normal tracking-wide [&>svg]:text-primary [&>svg]:h-3.5 [&>svg]:w-3.5">
+                  <AccordionTrigger className="text-left text-xs md:text-base text-foreground hover:text-primary py-3 md:py-6 font-sans font-normal tracking-wide [&>svg]:text-primary [&>svg]:h-3 [&>svg]:w-3">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-foreground/40 text-sm md:text-base pb-4 md:pb-6 leading-relaxed">
+                  <AccordionContent className="text-foreground/40 text-xs md:text-base pb-3 md:pb-6 leading-relaxed">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>

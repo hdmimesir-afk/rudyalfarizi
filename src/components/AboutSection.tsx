@@ -6,9 +6,9 @@ const AboutSection = () => {
   const [photoOpen, setPhotoOpen] = useState(false);
 
   return (
-    <section id="about" className="py-14 md:py-40 bg-background border-t border-border">
+    <section id="about" className="py-10 md:py-40 bg-background border-t border-border">
       <div className="px-4 md:px-12">
-        <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-8 md:mb-16">About</p>
+        <p className="text-[8px] md:text-xs tracking-mega uppercase text-primary mb-6 md:mb-16">About</p>
 
         {/* Title row with photo on mobile */}
         <div className="flex gap-4 md:block items-center justify-center mb-6 md:mb-0">
@@ -23,7 +23,7 @@ const AboutSection = () => {
             />
           </div>
           
-          <h2 className="font-display text-2xl text-foreground leading-tight md:hidden">
+          <h2 className="font-display text-lg text-foreground leading-tight md:hidden">
             Ketika Pembimbing Anda Tepat, Ibadah Pun Sempurna
           </h2>
         </div>
@@ -45,7 +45,7 @@ const AboutSection = () => {
               Ketika Pembimbing Anda Tepat, Ibadah Pun Sempurna
             </h2>
 
-            <div className="space-y-4 text-foreground/50 text-sm md:text-base leading-relaxed">
+            <div className="space-y-3 text-foreground/50 text-xs md:text-base leading-relaxed">
               <p>
                 Dengan latar belakang pendidikan dari Universitas Al-Azhar, Kairo, 
                 saya memiliki pemahaman mendalam tentang fiqih manasik, sejarah Islam, 
@@ -57,18 +57,18 @@ const AboutSection = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-3 gap-4 md:gap-8 mt-10 md:mt-16 pt-6 md:pt-10 border-t border-border text-center">
+            <div className="grid grid-cols-3 gap-3 md:gap-8 mt-8 md:mt-16 pt-5 md:pt-10 border-t border-border text-center">
               <div>
-                <p className="font-display text-2xl md:text-4xl text-foreground">500+</p>
-                <p className="text-[9px] md:text-xs tracking-ultra uppercase text-foreground/40 mt-1">Jamaah</p>
+                <p className="font-display text-xl md:text-4xl text-foreground">500+</p>
+                <p className="text-[8px] md:text-xs tracking-ultra uppercase text-foreground/40 mt-1">Jamaah</p>
               </div>
               <div>
-                <p className="font-display text-2xl md:text-4xl text-foreground">2021</p>
-                <p className="text-[9px] md:text-xs tracking-ultra uppercase text-foreground/40 mt-1">Sejak</p>
+                <p className="font-display text-xl md:text-4xl text-foreground">2021</p>
+                <p className="text-[8px] md:text-xs tracking-ultra uppercase text-foreground/40 mt-1">Sejak</p>
               </div>
               <div>
-                <p className="font-display text-2xl md:text-4xl text-foreground">5.0</p>
-                <p className="text-[9px] md:text-xs tracking-ultra uppercase text-foreground/40 mt-1">Rating</p>
+                <p className="font-display text-xl md:text-4xl text-foreground">5.0</p>
+                <p className="text-[8px] md:text-xs tracking-ultra uppercase text-foreground/40 mt-1">Rating</p>
               </div>
             </div>
           </div>
