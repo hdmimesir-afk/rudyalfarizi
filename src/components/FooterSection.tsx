@@ -43,7 +43,7 @@ const FooterSection = () => {
 
           {/* Contact */}
           <div>
-            <p className="text-[9px] md:text-xs tracking-ultra uppercase text-foreground/40 mb-4 md:mb-6">Kontak</p>
+            <p className="text-[8px] md:text-xs tracking-ultra uppercase text-foreground/40 mb-3 md:mb-6">Kontak</p>
             <ul className="space-y-2">
               <li>
                 <a
