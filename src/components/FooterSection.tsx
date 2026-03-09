@@ -50,7 +50,7 @@ const FooterSection = () => {
                   href="https://wa.me/6285219527294"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-xs text-foreground/40 hover:text-primary transition-colors"
+                  className="flex items-center gap-2 text-[10px] md:text-xs text-foreground/40 hover:text-primary transition-colors"
                 >
                   <MessageCircle size={12} />
                   +62 852-1952-7294
