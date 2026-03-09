@@ -26,7 +26,7 @@ const FooterSection = () => {
 
           {/* Links */}
           <div>
-            <p className="text-[9px] md:text-xs tracking-ultra uppercase text-foreground/40 mb-4 md:mb-6">Menu</p>
+            <p className="text-[8px] md:text-xs tracking-ultra uppercase text-foreground/40 mb-3 md:mb-6">Menu</p>
             <ul className="space-y-2">
               {["about", "services", "gallery", "faq"].map((id) => (
                 <li key={id}>
