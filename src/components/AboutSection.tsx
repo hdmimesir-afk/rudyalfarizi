@@ -7,9 +7,9 @@ const AboutSection = () => {
         <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-8 md:mb-16">About</p>
 
         {/* Title row with photo on mobile */}
-        <div className="flex flex-col items-center gap-4 md:block mb-6 md:mb-0">
+        <div className="flex gap-4 md:block items-center justify-center mb-6 md:mb-0">
           {/* Photo - small on mobile, hidden here on desktop */}
-          <div className="w-28 h-28 md:hidden">
+          <div className="w-24 flex-shrink-0 md:hidden self-stretch">
             <img
               src={aboutImage}
               alt="Rudy Alfarizi - Muthowwif"
@@ -17,7 +17,7 @@ const AboutSection = () => {
             />
           </div>
           
-          <h2 className="font-['Hubhead_2'] text-2xl text-foreground leading-tight md:hidden text-center">
+          <h2 className="font-['Hubhead_2'] text-2xl text-foreground leading-tight md:hidden">
             Ketika Pembimbing Anda Tepat, Ibadah Pun Sempurna
           </h2>
         </div>
