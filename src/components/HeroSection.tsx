@@ -21,7 +21,10 @@ const HeroSection = () => {
           Muthowwif Profesional
         </p>
 
-        <h1 className="font-serif text-[3rem] sm:text-6xl md:text-7xl lg:text-9xl xl:text-[12rem] font-light text-foreground leading-[0.85] tracking-[0.06em] md:tracking-[0.1em] lg:tracking-ultra mb-8 md:mb-12 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+        <h1
+          className="text-[3rem] sm:text-6xl md:text-7xl lg:text-9xl xl:text-[12rem] text-foreground leading-[0.85] tracking-[0.02em] md:tracking-[0.04em] mb-8 md:mb-12 animate-fade-up uppercase"
+          style={{ fontFamily: "'Montecatini Pro', serif", animationDelay: '0.15s' }}
+        >
           RUDY
           <br />
           ALFARIZI
