@@ -59,7 +59,7 @@ const FooterSection = () => {
               <li>
                 <a
                   href="mailto:rudyalfarizi26@gmail.com"
-                  className="flex items-center gap-2 text-xs text-foreground/40 hover:text-primary transition-colors"
+                  className="flex items-center gap-2 text-[10px] md:text-xs text-foreground/40 hover:text-primary transition-colors"
                 >
                   <Mail size={12} />
                   rudyalfarizi26@gmail.com
