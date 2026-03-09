@@ -1,4 +1,5 @@
 import { ChevronDown } from "lucide-react";
+import heroKabah from "@/assets/hero-kabah.jpg";
 
 const HeroSection = () => {
   const scrollToAbout = () => {
@@ -16,6 +17,11 @@ const HeroSection = () => {
       id="hero"
       className="relative min-h-[85vh] md:min-h-screen flex items-center justify-center overflow-hidden bg-background"
     >
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <img src={heroKabah} alt="" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-background/80" />
+      </div>
       <div className="relative z-10 w-full px-4 md:px-12 text-center">
         <p className="text-[10px] md:text-xs tracking-mega uppercase text-foreground/50 mb-5 md:mb-8 animate-fade-up">
           Muthowwif Profesional
