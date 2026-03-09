@@ -117,40 +117,23 @@ const GallerySection = () => {
             </button>
           </div>
 
-          {/* Masonry-style Grid */}
-          {activeCategory === "Semua" ? (
-            <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[140px] md:auto-rows-[200px] lg:auto-rows-[240px] gap-1.5 md:gap-2.5">
-              {filteredImages.map((image, index) => (
-                <div
-                  key={`${image.category}-${index}`}
-                  onClick={() => setSelectedIndex(index)}
-                  className={`group relative overflow-hidden cursor-pointer ${image.span}`}
-                >
-                  <img
-                    src={image.src}
-                    alt={image.caption}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700"
-                  />
-                </div>
-              ))}
-            </div>
-          ) : (
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-1.5 md:gap-2.5">
-              {filteredImages.map((image, index) => (
-                <div
-                  key={`${image.category}-${index}`}
-                  onClick={() => setSelectedIndex(index)}
-                  className="group relative overflow-hidden cursor-pointer aspect-[3/4]"
-                >
-                  <img
-                    src={image.src}
-                    alt={image.caption}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700"
-                  />
-                </div>
-              ))}
-            </div>
-          )}
+          {/* Photography-style Grid */}
+          <div className="columns-2 md:columns-3 lg:columns-4 gap-2 md:gap-3 space-y-2 md:space-y-3">
+            {filteredImages.map((image, index) => (
+              <div
+                key={`${image.category}-${index}`}
+                onClick={() => setSelectedIndex(index)}
+                className="group relative overflow-hidden cursor-pointer break-inside-avoid"
+              >
+                <img
+                  src={image.src}
+                  alt={image.caption}
+                  className="w-full h-auto object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500" />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

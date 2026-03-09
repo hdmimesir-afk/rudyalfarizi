@@ -90,19 +90,19 @@ const ServiceDetail = () => {
 
       {/* Photo Grid */}
       <div className="px-6 md:px-16 lg:px-24 pb-20 md:pb-32">
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-1 md:gap-2">
+        <div className="columns-2 md:columns-3 gap-2 md:gap-3 space-y-2 md:space-y-3">
           {photos.map((photo, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden aspect-[4/5] cursor-pointer"
+              className="group relative overflow-hidden break-inside-avoid cursor-pointer"
             >
               <img
                 src={photo.src}
                 alt={photo.caption}
-                className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700"
+                className="w-full h-auto object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out"
               />
-              <div className="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-3 md:p-6">
-                <p className="text-[9px] md:text-xs tracking-widest md:tracking-ultra uppercase text-foreground">
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-500 flex items-end">
+                <p className="text-[9px] md:text-xs tracking-widest md:tracking-ultra uppercase text-white px-3 pb-3 md:px-6 md:pb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   {photo.caption}
                 </p>
               </div>
