@@ -30,12 +30,12 @@ const FAQSection = () => {
   ];
 
   return (
-    <section id="faq" className="py-14 md:py-40 bg-background border-t border-border">
+    <section id="faq" className="py-10 md:py-40 bg-background border-t border-border">
       <div className="px-4 md:px-12">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-24">
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-24">
           <div>
-            <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-6 md:mb-16">FAQ</p>
-             <h2 className="font-display text-2xl md:text-5xl text-foreground leading-tight mb-6 lg:mb-0">
+            <p className="text-[8px] md:text-xs tracking-mega uppercase text-primary mb-4 md:mb-16">FAQ</p>
+             <h2 className="font-display text-lg md:text-5xl text-foreground leading-tight mb-4 lg:mb-0">
                Pertanyaan yang sering diajukan
              </h2>
           </div>
