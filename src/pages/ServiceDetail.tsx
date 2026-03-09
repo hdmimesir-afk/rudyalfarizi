@@ -5,6 +5,15 @@ import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
+import badr1 from "@/assets/badr-1.jpg";
+import badr2 from "@/assets/badr-2.jpg";
+import badr3 from "@/assets/badr-3.jpg";
+import badr4 from "@/assets/badr-4.jpg";
+import badr5 from "@/assets/badr-5.jpg";
+import badr6 from "@/assets/badr-6.jpg";
+import badr7 from "@/assets/badr-7.jpg";
+import badr8 from "@/assets/badr-8.jpg";
+import badr9 from "@/assets/badr-9.jpg";
 
 const dummyPhotos: Record<string, { src: string; caption: string }[]> = {
   "umrah-private": [
@@ -30,12 +39,15 @@ const dummyPhotos: Record<string, { src: string; caption: string }[]> = {
     { src: gallery4, caption: "Doa di Multazam" },
   ],
   "city-tour": [
-    { src: gallery3, caption: "Jabal Uhud" },
-    { src: gallery4, caption: "Masjid Quba" },
-    { src: gallery1, caption: "Al-Ula Heritage" },
-    { src: gallery2, caption: "Jeddah Old Town" },
-    { src: gallery3, caption: "Thaif Rose Garden" },
-    { src: gallery4, caption: "Badr Battlefield" },
+    { src: badr1, caption: "Panorama Badr" },
+    { src: badr2, caption: "Situs Perang Badr" },
+    { src: badr3, caption: "Pemandangan Badr" },
+    { src: badr4, caption: "Gunung Badr" },
+    { src: badr5, caption: "Masjid Al-Areesha" },
+    { src: badr6, caption: "Landmark Badr" },
+    { src: badr7, caption: "Ziarah Badr" },
+    { src: badr8, caption: "Sunset di Badr" },
+    { src: badr9, caption: "Maqam Syuhada Badr" },
   ],
   "content-creator": [
     { src: gallery1, caption: "Behind the scenes" },
