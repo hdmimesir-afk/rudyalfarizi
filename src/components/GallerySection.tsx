@@ -27,7 +27,7 @@ const GallerySection = () => {
             Momen berharga bersama jamaah
           </h2>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-1 md:gap-2">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-1 md:gap-2">
             {images.map((image, index) => (
               <div
                 key={index}
