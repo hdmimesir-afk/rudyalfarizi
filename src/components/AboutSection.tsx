@@ -8,16 +8,16 @@ const AboutSection = () => {
 
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-24 items-start">
           {/* Photo first on mobile, second on desktop */}
-          <div className="relative lg:order-2">
+           <div className="relative lg:order-2">
             <img
               src={aboutImage}
               alt="Rudy Alfarizi - Muthowwif"
-              className="w-full h-auto object-cover aspect-[3/4] transition-all duration-700"
+              className="w-full h-auto object-cover aspect-[4/5] md:aspect-[3/4] max-h-[360px] md:max-h-none transition-all duration-700"
             />
           </div>
 
           <div className="lg:order-1">
-            <h2 className="font-display text-3xl md:text-5xl lg:text-6xl text-foreground leading-tight mb-6 md:mb-10">
+            <h2 className="font-['Hubhead_2'] text-3xl md:text-5xl lg:text-6xl text-foreground leading-tight mb-6 md:mb-10">
               Ketika Pembimbing Anda Tepat, Ibadah Pun Sempurna
             </h2>
 
