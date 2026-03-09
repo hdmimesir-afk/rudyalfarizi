@@ -4,6 +4,12 @@ import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
+import alUla1 from "@/assets/al-ula-1.jpg";
+import alUla3 from "@/assets/al-ula-3.jpg";
+import alUla4 from "@/assets/al-ula-4.jpg";
+import alUla5 from "@/assets/al-ula-5.jpg";
+import alUla6 from "@/assets/al-ula-6.jpg";
+import alUla7 from "@/assets/al-ula-7.jpg";
 
 const categories = [
   "Semua", "Al Ula", "Badr", "Hudaibiyah", "Jabal Khandamah",
