@@ -68,7 +68,7 @@ const ServiceDetail = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <div className="px-4 md:px-12 pt-8 pb-4">
+      <div className="px-6 md:px-16 lg:px-24 pt-8 pb-4">
         <Link
           to="/#services"
           className="inline-flex items-center gap-2 text-[10px] md:text-xs tracking-ultra uppercase text-foreground/40 hover:text-primary transition-colors mb-10 md:mb-16"
