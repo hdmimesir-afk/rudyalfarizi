@@ -7,21 +7,21 @@ const AboutSection = () => {
         <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-8 md:mb-16">About</p>
 
         {/* Mobile: photo right after label */}
-        <div className="relative flex justify-center mb-8 lg:hidden">
+        <div className="relative mb-8 lg:hidden">
           <img
             src={aboutImage}
             alt="Rudy Alfarizi - Muthowwif"
-            className="w-3/4 h-auto object-cover aspect-[3/4] transition-all duration-700"
+            className="w-full h-auto object-cover aspect-[3/4] transition-all duration-700"
           />
         </div>
 
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-24 items-start">
           <div>
-            <h2 className="font-display text-2xl md:text-5xl lg:text-6xl text-foreground leading-tight mb-6 md:mb-10">
-              Ketika Pembimbing Anda Tepat, Ibadah Pun Sempurna.
+            <h2 className="font-display text-2xl md:text-5xl lg:text-6xl text-foreground leading-tight mb-6 md:mb-10 capitalize normal-case">
+              Ketika pembimbing Anda tepat, ibadah pun sempurna.
             </h2>
 
-            <div className="space-y-4 text-foreground/50 text-xs md:text-sm leading-relaxed max-w-lg">
+            <div className="space-y-4 text-foreground/50 text-xs md:text-sm leading-relaxed max-w-lg text-justify">
               <p>
                 Dengan latar belakang pendidikan dari Universitas Al-Azhar, Kairo, 
                 saya memiliki pemahaman mendalam tentang fiqih manasik, sejarah Islam, 
@@ -50,11 +50,11 @@ const AboutSection = () => {
           </div>
 
           {/* Desktop: photo on right */}
-          <div className="relative hidden lg:flex justify-end">
+          <div className="relative hidden lg:flex">
             <img
               src={aboutImage}
               alt="Rudy Alfarizi - Muthowwif"
-              className="w-2/3 h-auto object-cover aspect-[3/4] transition-all duration-700"
+              className="w-full h-auto object-cover aspect-[3/4] transition-all duration-700"
             />
           </div>
         </div>
