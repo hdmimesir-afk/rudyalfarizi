@@ -22,7 +22,7 @@ const TestimoniSection = () => {
       <div className="px-4 md:px-12">
         <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-8 md:mb-16">Testimoni</p>
 
-        <h2 className="font-serif text-2xl md:text-5xl font-light text-secondary-foreground mb-10 md:mb-20 max-w-2xl">
+        <h2 className="font-sans text-2xl md:text-5xl font-bold text-secondary-foreground mb-10 md:mb-20 max-w-2xl">
           Kesan Jamaah
         </h2>
 

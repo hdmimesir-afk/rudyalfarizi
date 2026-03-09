@@ -8,7 +8,7 @@ const AboutSection = () => {
 
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-24 items-start">
           <div>
-            <h2 className="font-serif text-2xl md:text-5xl lg:text-6xl font-light text-foreground leading-tight mb-6 md:mb-10">
+            <h2 className="font-sans text-2xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6 md:mb-10">
               Ketika Pembimbing Anda Tepat, Ibadah Pun Sempurna.
             </h2>
 
