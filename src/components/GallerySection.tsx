@@ -10,6 +10,8 @@ import alUla4 from "@/assets/al-ula-4.jpg";
 import alUla5 from "@/assets/al-ula-5.jpg";
 import alUla6 from "@/assets/al-ula-6.jpg";
 import alUla7 from "@/assets/al-ula-7.jpg";
+import alUla2 from "@/assets/al-ula-2.jpg";
+import alUla8 from "@/assets/al-ula-8.jpg";
 
 const categories = [
   "Semua", "Al Ula", "Badr", "Hudaibiyah", "Jabal Khandamah",
@@ -33,6 +35,8 @@ const images = [
   { src: alUla5, caption: "Kuliner Al Ula", category: "Al Ula", span: "col-span-1 row-span-1" },
   { src: alUla6, caption: "Desert Safari", category: "Al Ula", span: "col-span-2 row-span-1" },
   { src: alUla7, caption: "Jamaah di Al Ula", category: "Al Ula", span: "col-span-1 row-span-2" },
+  { src: alUla2, caption: "Wisata Old Town", category: "Al Ula", span: "col-span-1 row-span-1" },
+  { src: alUla8, caption: "Bandara Al Ula", category: "Al Ula", span: "col-span-2 row-span-1" },
   { src: gallery4, caption: "Jabal Khandamah", category: "Jabal Khandamah", span: "col-span-1 row-span-1" },
 ];
 
