@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
@@ -6,18 +6,8 @@ import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
 
 const categories = [
-  "Semua",
-  "Al Ula",
-  "Badr",
-  "Hudaibiyah",
-  "Jabal Khandamah",
-  "Jabal Nur",
-  "Jabal Tsur",
-  "Jamaah Private",
-  "Jeddah",
-  "Madinah",
-  "Makkah",
-  "Thoif",
+  "Semua", "Al Ula", "Badr", "Hudaibiyah", "Jabal Khandamah",
+  "Jabal Nur", "Jabal Tsur", "Jamaah Private", "Jeddah", "Madinah", "Makkah", "Thoif",
 ];
 
 const images = [
@@ -38,6 +28,7 @@ const images = [
 const GallerySection = () => {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [activeCategory, setActiveCategory] = useState("Semua");
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   const filteredImages = activeCategory === "Semua"
     ? images
@@ -46,14 +37,15 @@ const GallerySection = () => {
   const selectedImage = selectedIndex !== null ? filteredImages[selectedIndex] : null;
 
   const goNext = () => {
-    if (selectedIndex !== null) {
-      setSelectedIndex((selectedIndex + 1) % filteredImages.length);
-    }
+    if (selectedIndex !== null) setSelectedIndex((selectedIndex + 1) % filteredImages.length);
+  };
+  const goPrev = () => {
+    if (selectedIndex !== null) setSelectedIndex((selectedIndex - 1 + filteredImages.length) % filteredImages.length);
   };
 
-  const goPrev = () => {
-    if (selectedIndex !== null) {
-      setSelectedIndex((selectedIndex - 1 + filteredImages.length) % filteredImages.length);
+  const scrollCategories = (dir: "left" | "right") => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({ left: dir === "left" ? -160 : 160, behavior: "smooth" });
     }
   };
 
@@ -73,21 +65,41 @@ const GallerySection = () => {
             </p>
           </div>
 
-          {/* Category Filter */}
-          <div className="flex gap-2 md:gap-3 mb-10 md:mb-14 overflow-x-auto pb-2 scrollbar-none">
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setActiveCategory(cat)}
-                className={`text-[9px] md:text-[11px] tracking-widest uppercase px-3 py-1.5 md:px-4 md:py-2 border whitespace-nowrap transition-all duration-300 ${
-                  activeCategory === cat
-                    ? "border-primary bg-primary text-primary-foreground"
-                    : "border-border text-foreground/40 hover:text-foreground hover:border-foreground/30"
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
+          {/* Category Filter with arrows */}
+          <div className="relative flex items-center gap-2 mb-10 md:mb-14">
+            <button
+              onClick={() => scrollCategories("left")}
+              className="flex-shrink-0 w-7 h-7 flex items-center justify-center text-foreground/30 hover:text-foreground transition-colors"
+            >
+              <ChevronLeft size={16} />
+            </button>
+
+            <div
+              ref={scrollRef}
+              className="flex gap-2 md:gap-3 overflow-x-auto scrollbar-none"
+              style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+            >
+              {categories.map((cat) => (
+                <button
+                  key={cat}
+                  onClick={() => setActiveCategory(cat)}
+                  className={`text-[9px] md:text-[11px] tracking-widest uppercase px-3 py-1.5 md:px-4 md:py-2 border whitespace-nowrap transition-all duration-300 ${
+                    activeCategory === cat
+                      ? "border-primary bg-primary text-primary-foreground"
+                      : "border-border text-foreground/40 hover:text-foreground hover:border-foreground/30"
+                  }`}
+                >
+                  {cat}
+                </button>
+              ))}
+            </div>
+
+            <button
+              onClick={() => scrollCategories("right")}
+              className="flex-shrink-0 w-7 h-7 flex items-center justify-center text-foreground/30 hover:text-foreground transition-colors"
+            >
+              <ChevronRight size={16} />
+            </button>
           </div>
 
           {/* Masonry-style Grid */}
@@ -104,14 +116,6 @@ const GallerySection = () => {
                     alt={image.caption}
                     className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-3 md:p-6">
-                    <p className="text-[8px] md:text-[10px] tracking-widest uppercase text-primary mb-0.5">
-                      {image.category}
-                    </p>
-                    <p className="text-[10px] md:text-sm tracking-wide text-foreground font-light">
-                      {image.caption}
-                    </p>
-                  </div>
                 </div>
               ))}
             </div>
@@ -128,14 +132,6 @@ const GallerySection = () => {
                     alt={image.caption}
                     className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-3 md:p-6">
-                    <p className="text-[8px] md:text-[10px] tracking-widest uppercase text-primary mb-0.5">
-                      {image.category}
-                    </p>
-                    <p className="text-[10px] md:text-sm tracking-wide text-foreground font-light">
-                      {image.caption}
-                    </p>
-                  </div>
                 </div>
               ))}
             </div>
@@ -149,7 +145,6 @@ const GallerySection = () => {
           className="fixed inset-0 z-[100] bg-background/95 backdrop-blur-md flex items-center justify-center animate-fade-in"
           onClick={() => setSelectedIndex(null)}
         >
-          {/* Close */}
           <button
             onClick={() => setSelectedIndex(null)}
             className="absolute top-6 right-6 text-foreground/40 hover:text-foreground transition-colors z-10"
@@ -157,12 +152,10 @@ const GallerySection = () => {
             <X size={20} />
           </button>
 
-          {/* Counter */}
           <div className="absolute top-6 left-6 text-[10px] md:text-xs tracking-widest text-foreground/30">
             {(selectedIndex ?? 0) + 1} / {filteredImages.length}
           </div>
 
-          {/* Prev */}
           <button
             onClick={(e) => { e.stopPropagation(); goPrev(); }}
             className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 text-foreground/30 hover:text-foreground transition-colors"
@@ -170,7 +163,6 @@ const GallerySection = () => {
             <ChevronLeft size={28} />
           </button>
 
-          {/* Next */}
           <button
             onClick={(e) => { e.stopPropagation(); goNext(); }}
             className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 text-foreground/30 hover:text-foreground transition-colors"
@@ -178,7 +170,6 @@ const GallerySection = () => {
             <ChevronRight size={28} />
           </button>
 
-          {/* Image */}
           <div className="max-w-5xl w-full px-16" onClick={(e) => e.stopPropagation()}>
             <img
               src={selectedImage.src}
