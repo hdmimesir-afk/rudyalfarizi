@@ -19,6 +19,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/layanan/:slug" element={<ServiceDetail />} />
+          <Route path="/gallery/:slug" element={<GalleryDetail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
