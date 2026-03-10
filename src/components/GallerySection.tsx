@@ -1,208 +1,82 @@
-import { useState, useRef } from "react";
-import { X, ChevronLeft, ChevronRight } from "lucide-react";
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
-import alUla1 from "@/assets/al-ula-1.jpg";
-import alUla3 from "@/assets/al-ula-3.jpg";
-import alUla4 from "@/assets/al-ula-4.jpg";
-import alUla5 from "@/assets/al-ula-5.jpg";
-import alUla6 from "@/assets/al-ula-6.jpg";
-import alUla7 from "@/assets/al-ula-7.jpg";
-import alUla2 from "@/assets/al-ula-2.jpg";
-import alUla8 from "@/assets/al-ula-8.jpg";
-import badr1 from "@/assets/badr-1.jpg";
-import badr2 from "@/assets/badr-2.jpg";
-import badr3 from "@/assets/badr-3.jpg";
-import badr4 from "@/assets/badr-4.jpg";
-import badr5 from "@/assets/badr-5.jpg";
-import badr6 from "@/assets/badr-6.jpg";
-import badr7 from "@/assets/badr-7.jpg";
-import badr8 from "@/assets/badr-8.jpg";
-import badr9 from "@/assets/badr-9.jpg";
+import { useNavigate } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
+import { galleryLocations } from "@/data/galleryData";
 
-const categories = [
-  "Semua", "Al Ula", "Badr", "Hudaibiyah", "Jabal Khandamah",
-  "Jabal Nur", "Jabal Tsur", "Jamaah Private", "Jeddah", "Madinah", "Makkah", "Thoif",
-];
-
-const images = [
-  { src: gallery1, caption: "Masjid Nabawi", category: "Madinah", span: "col-span-2 row-span-2" },
-  { src: gallery2, caption: "Masjidil Haram", category: "Makkah", span: "col-span-1 row-span-1" },
-  { src: gallery3, caption: "Jabal Uhud", category: "Madinah", span: "col-span-1 row-span-2" },
-  { src: gallery4, caption: "Corniche Jeddah", category: "Jeddah", span: "col-span-1 row-span-1" },
-  { src: gallery1, caption: "Gua Hira", category: "Jabal Nur", span: "col-span-1 row-span-1" },
-  { src: gallery3, caption: "Gua Tsur", category: "Jabal Tsur", span: "col-span-1 row-span-1" },
-  { src: gallery2, caption: "Bimbingan Private", category: "Jamaah Private", span: "col-span-2 row-span-1" },
-  { src: gallery4, caption: "Kota Thoif", category: "Thoif", span: "col-span-1 row-span-1" },
-  { src: badr1, caption: "I Love Badr", category: "Badr", span: "col-span-2 row-span-1" },
-  { src: badr2, caption: "Selfie di Badr", category: "Badr", span: "col-span-1 row-span-1" },
-  { src: badr3, caption: "Jamaah di Gunung Badr", category: "Badr", span: "col-span-1 row-span-2" },
-  { src: badr4, caption: "Sumur Badr", category: "Badr", span: "col-span-1 row-span-1" },
-  { src: badr5, caption: "Maqam Syuhada Badr", category: "Badr", span: "col-span-1 row-span-2" },
-  { src: badr6, caption: "Bukit Pasir Badr", category: "Badr", span: "col-span-2 row-span-1" },
-  { src: badr7, caption: "Masjid Badr", category: "Badr", span: "col-span-1 row-span-2" },
-  { src: badr8, caption: "Kuliner di Badr", category: "Badr", span: "col-span-1 row-span-1" },
-  { src: badr9, caption: "Foto Bersama Jamaah", category: "Badr", span: "col-span-2 row-span-1" },
-  { src: gallery3, caption: "Sumur Hudaibiyah", category: "Hudaibiyah", span: "col-span-1 row-span-1" },
-  { src: alUla1, caption: "Tim Al Ula", category: "Al Ula", span: "col-span-2 row-span-1" },
-  { src: alUla3, caption: "Old Town Al Ula", category: "Al Ula", span: "col-span-1 row-span-2" },
-  { src: alUla4, caption: "Maraya Concert Hall", category: "Al Ula", span: "col-span-1 row-span-1" },
-  { src: alUla5, caption: "Kuliner Al Ula", category: "Al Ula", span: "col-span-1 row-span-1" },
-  { src: alUla6, caption: "Desert Safari", category: "Al Ula", span: "col-span-2 row-span-1" },
-  { src: alUla7, caption: "Jamaah di Al Ula", category: "Al Ula", span: "col-span-1 row-span-2" },
-  { src: alUla2, caption: "Wisata Old Town", category: "Al Ula", span: "col-span-1 row-span-1" },
-  { src: alUla8, caption: "Bandara Al Ula", category: "Al Ula", span: "col-span-2 row-span-1" },
-  { src: gallery4, caption: "Jabal Khandamah", category: "Jabal Khandamah", span: "col-span-1 row-span-1" },
-];
+const PREVIEW_COUNT = 6;
 
 const GallerySection = () => {
-  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
-  const [activeCategory, setActiveCategory] = useState("Semua");
-  const scrollRef = useRef<HTMLDivElement>(null);
-
-  const filteredImages = activeCategory === "Semua"
-    ? images
-    : images.filter((img) => img.category === activeCategory);
-
-  const selectedImage = selectedIndex !== null ? filteredImages[selectedIndex] : null;
-
-  const goNext = () => {
-    if (selectedIndex !== null) setSelectedIndex((selectedIndex + 1) % filteredImages.length);
-  };
-  const goPrev = () => {
-    if (selectedIndex !== null) setSelectedIndex((selectedIndex - 1 + filteredImages.length) % filteredImages.length);
-  };
-
-  const scrollCategories = (dir: "left" | "right") => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollBy({ left: dir === "left" ? -160 : 160, behavior: "smooth" });
-    }
-  };
+  const navigate = useNavigate();
 
   return (
-    <>
-      <section id="gallery" className="py-14 md:py-40 bg-background border-t border-border">
-        <div className="px-6 md:px-16 lg:px-24">
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-8 md:mb-12 gap-6">
-            <div>
-              <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-8 md:mb-16">Galeri</p>
-              <h2 className="font-display text-2xl md:text-5xl text-foreground max-w-2xl">
-                Momen berharga bersama jamaah
-              </h2>
-            </div>
-            <p className="text-[10px] md:text-xs text-foreground/30 tracking-widest uppercase">
-              {filteredImages.length} Foto
-            </p>
-          </div>
+    <section id="gallery" className="py-14 md:py-40 bg-background border-t border-border">
+      <div className="px-6 md:px-16 lg:px-24">
+        <div className="mb-16 md:mb-24">
+          <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-8 md:mb-16">
+            Galeri
+          </p>
+          <h2 className="font-display text-2xl md:text-5xl text-foreground max-w-2xl">
+            Momen berharga bersama jamaah
+          </h2>
+        </div>
 
-          {/* Category Filter with arrows */}
-          <div className="relative flex items-center gap-2 mb-10 md:mb-14">
-            <button
-              onClick={() => scrollCategories("left")}
-              className="flex-shrink-0 w-7 h-7 flex items-center justify-center text-foreground/30 hover:text-foreground transition-colors"
-            >
-              <ChevronLeft size={16} />
-            </button>
+        <div className="space-y-20 md:space-y-32">
+          {galleryLocations.map((location) => {
+            const previewImages = location.images.slice(0, PREVIEW_COUNT);
 
-            <div
-              ref={scrollRef}
-              className="flex gap-2 md:gap-3 overflow-x-auto scrollbar-none"
-              style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-            >
-              {categories.map((cat) => (
-                <button
-                  key={cat}
-                  onClick={() => setActiveCategory(cat)}
-                  className={`text-[9px] md:text-[11px] tracking-widest uppercase px-3 py-1.5 md:px-4 md:py-2 border whitespace-nowrap transition-all duration-300 ${
-                    activeCategory === cat
-                      ? "border-primary bg-primary text-primary-foreground"
-                      : "border-border text-foreground/40 hover:text-foreground hover:border-foreground/30"
-                  }`}
-                >
-                  {cat}
-                </button>
-              ))}
-            </div>
+            return (
+              <div key={location.slug}>
+                {/* Location title */}
+                <div className="flex items-end justify-between mb-6 md:mb-10 border-b border-border pb-4">
+                  <h3 className="font-display text-xl md:text-3xl text-foreground">
+                    {location.name}
+                  </h3>
+                  <span className="text-[10px] md:text-xs text-foreground/30 tracking-widest uppercase">
+                    {location.images.length} Foto
+                  </span>
+                </div>
 
-            <button
-              onClick={() => scrollCategories("right")}
-              className="flex-shrink-0 w-7 h-7 flex items-center justify-center text-foreground/30 hover:text-foreground transition-colors"
-            >
-              <ChevronRight size={16} />
-            </button>
-          </div>
+                {/* 3x2 Preview Grid */}
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-1">
+                  {previewImages.map((image, index) => (
+                    <div
+                      key={index}
+                      className="group relative aspect-[4/3] overflow-hidden cursor-pointer"
+                      onClick={() => navigate(`/gallery/${location.slug}`)}
+                    >
+                      <img
+                        src={image.src}
+                        alt={image.caption}
+                        className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                        loading="lazy"
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-500 flex items-end">
+                        <p className="text-[10px] md:text-xs text-foreground/0 group-hover:text-foreground/90 tracking-wide px-3 pb-3 transition-colors duration-500">
+                          {image.caption}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
 
-          {/* Photography-style Grid */}
-          <div className="columns-2 md:columns-3 lg:columns-4 gap-0.5 space-y-0.5">
-            {filteredImages.map((image, index) => (
-              <div
-                key={`${image.category}-${index}`}
-                onClick={() => setSelectedIndex(index)}
-                className="group relative overflow-hidden cursor-pointer break-inside-avoid"
-              >
-                <img
-                  src={image.src}
-                  alt={image.caption}
-                  className="w-full h-auto object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out"
-                />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500" />
+                {/* More Photos button */}
+                <div className="mt-6 md:mt-8 flex justify-center">
+                  <button
+                    onClick={() => navigate(`/gallery/${location.slug}`)}
+                    className="group flex items-center gap-3 text-[10px] md:text-xs tracking-widest uppercase border border-border px-6 py-3 md:px-8 md:py-4 text-foreground/60 hover:text-foreground hover:border-primary transition-all duration-300"
+                  >
+                    More Photos
+                    <ArrowRight
+                      size={14}
+                      className="group-hover:translate-x-1 transition-transform duration-300"
+                    />
+                  </button>
+                </div>
               </div>
-            ))}
-          </div>
+            );
+          })}
         </div>
-      </section>
-
-      {/* Lightbox */}
-      {selectedImage && (
-        <div
-          className="fixed inset-0 z-[100] bg-background/95 backdrop-blur-md flex items-center justify-center animate-fade-in"
-          onClick={() => setSelectedIndex(null)}
-        >
-          <button
-            onClick={() => setSelectedIndex(null)}
-            className="absolute top-6 right-6 text-foreground/40 hover:text-foreground transition-colors z-10"
-          >
-            <X size={20} />
-          </button>
-
-          <div className="absolute top-6 left-6 text-[10px] md:text-xs tracking-widest text-foreground/30">
-            {(selectedIndex ?? 0) + 1} / {filteredImages.length}
-          </div>
-
-          <button
-            onClick={(e) => { e.stopPropagation(); goPrev(); }}
-            className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 text-foreground/30 hover:text-foreground transition-colors"
-          >
-            <ChevronLeft size={28} />
-          </button>
-
-          <button
-            onClick={(e) => { e.stopPropagation(); goNext(); }}
-            className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 text-foreground/30 hover:text-foreground transition-colors"
-          >
-            <ChevronRight size={28} />
-          </button>
-
-          <div className="max-w-5xl w-full px-16" onClick={(e) => e.stopPropagation()}>
-            <img
-              src={selectedImage.src}
-              alt={selectedImage.caption}
-              className="w-full h-auto max-h-[75vh] object-contain"
-            />
-            <div className="mt-4 text-center">
-              <p className="text-[8px] md:text-[10px] tracking-widest uppercase text-primary mb-1">
-                {selectedImage.category}
-              </p>
-              <p className="text-[10px] md:text-sm tracking-wide text-foreground/60 font-light">
-                {selectedImage.caption}
-              </p>
-            </div>
-          </div>
-        </div>
-      )}
-    </>
+      </div>
+    </section>
   );
 };
 
