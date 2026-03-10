@@ -11,24 +11,7 @@ const GalleryDetail = () => {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
   const location = galleryLocations.find((loc) => loc.slug === slug);
-
-  if (!location) {
-    return (
-      <div className="min-h-screen bg-background flex items-center justify-center">
-        <div className="text-center">
-          <h1 className="font-display text-3xl text-foreground mb-4">Lokasi tidak ditemukan</h1>
-          <button
-            onClick={() => navigate("/#gallery")}
-            className="text-xs tracking-widest uppercase text-primary hover:text-foreground transition-colors"
-          >
-            Kembali ke Galeri
-          </button>
-        </div>
-      </div>
-    );
-  }
-
-  const { images } = location;
+  const images = location?.images ?? [];
   const selectedImage = selectedIndex !== null ? images[selectedIndex] : null;
 
   const goNext = () => {
@@ -49,6 +32,22 @@ const GalleryDetail = () => {
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
   }, [selectedIndex]);
+
+  if (!location) {
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center">
+        <div className="text-center">
+          <h1 className="font-display text-3xl text-foreground mb-4">Lokasi tidak ditemukan</h1>
+          <button
+            onClick={() => navigate("/#gallery")}
+            className="text-xs tracking-widest uppercase text-primary hover:text-foreground transition-colors"
+          >
+            Kembali ke Galeri
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-background">
