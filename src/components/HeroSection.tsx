@@ -53,7 +53,7 @@ const HeroSection = () => {
           href={whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block mt-4 md:mt-8 text-[10px] md:text-xs tracking-widest md:tracking-ultra uppercase border border-primary text-primary px-7 py-3 md:px-10 md:py-4 hover:bg-primary hover:text-primary-foreground transition-all duration-300 animate-fade-up"
+          className="inline-block mt-4 md:mt-8 text-[10px] md:text-xs tracking-widest md:tracking-ultra uppercase border border-primary text-primary px-7 py-3 md:px-10 md:py-4 rounded-md hover:bg-primary hover:text-primary-foreground transition-all duration-300 animate-fade-up"
           style={{ animationDelay: '0.45s' }}
         >
           Konsultasi Jadwal

@@ -126,7 +126,7 @@ export const galleryLocations: GalleryLocation[] = [
   {
     name: "Thoif",
     slug: "thoif",
-    description: "Kota pegunungan sejuk dengan kebun buah dan peninggalan sejarah Islam.",
+    description: "Pegunungan sejuk bersejarah",
     images: [
       { src: thoif1, caption: "Masjid Abdullah bin Abbas" },
       { src: thoif2, caption: "Kuliner di Thoif" },

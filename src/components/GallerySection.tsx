@@ -125,7 +125,7 @@ const GallerySection = () => {
                   <div className="mt-6 md:mt-8 flex justify-center">
                     <button
                       onClick={() => navigate(`/gallery/${location.slug}`)}
-                      className="group flex items-center gap-3 text-[10px] md:text-xs tracking-widest uppercase border border-border px-6 py-3 md:px-8 md:py-4 text-foreground/60 hover:text-foreground hover:border-primary transition-all duration-300"
+                      className="group flex items-center gap-3 text-[10px] md:text-xs tracking-widest uppercase border border-border px-6 py-3 md:px-8 md:py-4 rounded-md text-foreground/60 hover:text-foreground hover:border-primary transition-all duration-300"
                     >
                       More Photos
                       <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform duration-300" />

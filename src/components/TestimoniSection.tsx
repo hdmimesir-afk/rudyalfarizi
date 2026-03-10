@@ -3,41 +3,38 @@ const TestimoniSection = () => {
     {
       name: "H. Ahmad Fauzi",
       role: "Pengusaha, Jakarta",
-      content: "Alhamdulillah, umrah bersama Ustadz Rudy sangat berkesan. Bimbingannya detail, sabar, dan penuh ilmu.",
+      content: "Bimbingannya detail, sabar, dan penuh ilmu. Sangat berkesan.",
     },
     {
       name: "Ibu Siti Rahayu",
       role: "Owner Travel Barokah",
-      content: "Sudah 3 kali bekerjasama dengan Ustadz Rudy. Jamaah selalu puas dengan bimbingannya yang profesional.",
+      content: "Sudah 3 kali bekerjasama. Jamaah selalu puas dengan bimbingannya.",
     },
     {
       name: "Dr. Hendra Wijaya",
       role: "Dokter, Surabaya",
-      content: "Private umrah untuk keluarga kami berjalan sempurna. Sangat fleksibel dan komprehensif.",
+      content: "Private umrah berjalan sempurna. Fleksibel dan komprehensif.",
     },
   ];
 
   return (
-    <section id="testimonials" className="py-14 md:py-40 bg-background border-t border-border">
+    <section id="testimonials" className="py-14 md:py-32 bg-background border-t border-border">
       <div className="px-6 md:px-16 lg:px-24">
-        <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-8 md:mb-16">Testimoni</p>
+        <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-6 md:mb-10">Testimoni</p>
 
-        <h2 className="font-display text-2xl md:text-5xl text-foreground mb-10 md:mb-20 max-w-2xl">
-          Kesan jamaah
-        </h2>
-
-        <div className="grid md:grid-cols-3 gap-px bg-border">
+        <div className="space-y-6 md:space-y-0 md:grid md:grid-cols-3 md:gap-px md:bg-border">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="p-5 md:p-12 flex flex-col justify-between min-h-[200px] md:min-h-[320px] bg-background"
+              className="md:bg-background md:p-8 flex flex-col gap-3"
             >
-              <p className="font-serif text-base md:text-xl text-foreground leading-relaxed italic">
+              <p className="text-sm md:text-base text-foreground leading-relaxed">
                 "{testimonial.content}"
               </p>
-              <div className="mt-5 md:mt-8 pt-4 md:pt-6 border-t border-border">
-                <p className="text-xs md:text-sm text-foreground tracking-wide">{testimonial.name}</p>
-                <p className="text-[10px] md:text-xs text-foreground mt-0.5">{testimonial.role}</p>
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-foreground tracking-wide">{testimonial.name}</span>
+                <span className="text-[10px] text-foreground/50">·</span>
+                <span className="text-[10px] text-foreground/50">{testimonial.role}</span>
               </div>
             </div>
           ))}
