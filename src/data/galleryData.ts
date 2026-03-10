@@ -56,7 +56,7 @@ export const galleryLocations: GalleryLocation[] = [
   {
     name: "Al Ula",
     slug: "al-ula",
-    description: "Kota kuno warisan UNESCO dengan formasi batuan spektakuler dan situs bersejarah Hegra.",
+    description: "Warisan kuno UNESCO",
     images: [
       { src: alUla1, caption: "Tim Al Ula" },
       { src: alUla2, caption: "Wisata Old Town" },
