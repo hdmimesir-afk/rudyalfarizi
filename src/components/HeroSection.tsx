@@ -23,7 +23,7 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-background/80" />
       </div>
       <div className="relative z-10 w-full px-4 md:px-12 text-center">
-        <p className="text-[10px] md:text-xs tracking-mega uppercase text-foreground/50 mb-5 md:mb-8 animate-fade-up">
+        <p className="text-[10px] md:text-xs tracking-mega uppercase text-foreground mb-5 md:mb-8 animate-fade-up">
           Muthowwif Profesional
         </p>
 
