@@ -48,6 +48,7 @@ export interface GalleryImage {
 export interface GalleryLocation {
   name: string;
   slug: string;
+  description: string;
   images: GalleryImage[];
 }
 
