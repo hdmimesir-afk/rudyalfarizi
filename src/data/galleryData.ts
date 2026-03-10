@@ -87,6 +87,7 @@ export const galleryLocations: GalleryLocation[] = [
   {
     name: "Madinah",
     slug: "madinah",
+    description: "Kota Nabi Muhammad ﷺ, rumah bagi Masjid Nabawi dan makam Rasulullah.",
     images: [
       { src: madinah7, caption: "Raudhah Masjid Nabawi" },
       { src: madinah2, caption: "Stasiun Kereta Madinah" },
