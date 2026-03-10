@@ -23,7 +23,7 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-background/80" />
       </div>
       <div className="relative z-10 w-full px-4 md:px-12 text-center">
-        <p className="text-[10px] md:text-xs tracking-mega uppercase text-foreground/50 mb-5 md:mb-8 animate-fade-up">
+        <p className="text-[10px] md:text-xs tracking-mega uppercase text-foreground mb-5 md:mb-8 animate-fade-up">
           Muthowwif Profesional
         </p>
 
@@ -37,12 +37,12 @@ const HeroSection = () => {
         </h1>
 
         <div className="flex items-center justify-between max-w-xs sm:max-w-sm md:max-w-2xl lg:max-w-4xl mx-auto mb-8 md:mb-12 animate-fade-up" style={{ animationDelay: '0.3s' }}>
-          <p className="text-[9px] md:text-xs tracking-widest md:tracking-ultra uppercase text-foreground/40 text-left">
+          <p className="text-[9px] md:text-xs tracking-widest md:tracking-ultra uppercase text-foreground text-left">
             Pembimbing Ibadah
             <br />
             Umrah & Haji
           </p>
-          <p className="text-[9px] md:text-xs tracking-widest md:tracking-ultra uppercase text-foreground/40 text-right">
+          <p className="text-[9px] md:text-xs tracking-widest md:tracking-ultra uppercase text-foreground text-right">
             Makkah · Madinah
             <br />
             Saudi Arabia
@@ -53,7 +53,7 @@ const HeroSection = () => {
           href={whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block mt-4 md:mt-8 text-[10px] md:text-xs tracking-widest md:tracking-ultra uppercase border border-primary text-primary px-7 py-3 md:px-10 md:py-4 hover:bg-primary hover:text-primary-foreground transition-all duration-300 animate-fade-up"
+          className="inline-block mt-4 md:mt-8 text-[10px] md:text-xs tracking-widest md:tracking-ultra uppercase border border-primary text-primary px-7 py-3 md:px-10 md:py-4 rounded-md hover:bg-primary hover:text-primary-foreground transition-all duration-300 animate-fade-up"
           style={{ animationDelay: '0.45s' }}
         >
           Konsultasi Jadwal
