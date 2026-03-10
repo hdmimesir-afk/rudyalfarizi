@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import rudyIcon from "@/assets/rudy-icon.png";
 import { Menu, X } from "lucide-react";
 
 const NavBar = () => {
