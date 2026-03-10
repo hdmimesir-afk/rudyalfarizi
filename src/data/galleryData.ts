@@ -1,5 +1,9 @@
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
+import jeddah1 from "@/assets/jeddah-1.jpg";
+import jeddah2 from "@/assets/jeddah-2.jpg";
+import jeddah3 from "@/assets/jeddah-3.jpg";
+import jeddah4 from "@/assets/jeddah-4.jpg";
+import jeddah5 from "@/assets/jeddah-5.jpg";
+import jeddah6 from "@/assets/jeddah-6.jpg";
 import alUla1 from "@/assets/al-ula-1.jpg";
 import alUla2 from "@/assets/al-ula-2.jpg";
 import alUla3 from "@/assets/al-ula-3.jpg";
@@ -99,24 +103,24 @@ export const galleryLocations: GalleryLocation[] = [
     name: "Jeddah",
     slug: "jeddah",
     images: [
-      { src: gallery4, caption: "Corniche Jeddah" },
-      { src: gallery2, caption: "Al Balad" },
-      { src: gallery4, caption: "Floating Mosque" },
-      { src: gallery2, caption: "King Fahd Fountain" },
-      { src: gallery4, caption: "Red Sea Mall" },
-      { src: gallery2, caption: "Jeddah Tower" },
+      { src: jeddah1, caption: "Nonton Bola Al Nassr" },
+      { src: jeddah2, caption: "City Tour Jeddah" },
+      { src: jeddah3, caption: "Nonton Timnas Indonesia" },
+      { src: jeddah4, caption: "Bandara King Abdulaziz" },
+      { src: jeddah5, caption: "Kuliner di Jeddah" },
+      { src: jeddah6, caption: "Tiba di Jeddah" },
     ],
   },
   {
     name: "Thoif",
     slug: "thoif",
     images: [
-      { src: gallery4, caption: "Kota Thoif" },
-      { src: gallery2, caption: "Masjid Abdullah bin Abbas" },
-      { src: gallery4, caption: "Kebun Anggur" },
-      { src: gallery2, caption: "Shubra Palace" },
-      { src: gallery4, caption: "Pasar Al Hada" },
-      { src: gallery2, caption: "Al Rudaf Park" },
+      { src: jeddah1, caption: "Kota Thoif" },
+      { src: jeddah2, caption: "Masjid Abdullah bin Abbas" },
+      { src: jeddah3, caption: "Kebun Anggur" },
+      { src: jeddah4, caption: "Shubra Palace" },
+      { src: jeddah5, caption: "Pasar Al Hada" },
+      { src: jeddah6, caption: "Al Rudaf Park" },
     ],
   },
 ];
