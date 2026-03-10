@@ -71,6 +71,7 @@ export const galleryLocations: GalleryLocation[] = [
   {
     name: "Badr",
     slug: "badr",
+    description: "Lokasi bersejarah Perang Badr, tempat pertempuran pertama dalam sejarah Islam.",
     images: [
       { src: badr1, caption: "I Love Badr" },
       { src: badr2, caption: "Selfie di Badr" },
