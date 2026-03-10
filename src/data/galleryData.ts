@@ -103,12 +103,12 @@ export const galleryLocations: GalleryLocation[] = [
     name: "Jeddah",
     slug: "jeddah",
     images: [
-      { src: gallery4, caption: "Corniche Jeddah" },
-      { src: gallery2, caption: "Al Balad" },
-      { src: gallery4, caption: "Floating Mosque" },
-      { src: gallery2, caption: "King Fahd Fountain" },
-      { src: gallery4, caption: "Red Sea Mall" },
-      { src: gallery2, caption: "Jeddah Tower" },
+      { src: jeddah1, caption: "Nonton Bola Al Nassr" },
+      { src: jeddah2, caption: "City Tour Jeddah" },
+      { src: jeddah3, caption: "Nonton Timnas Indonesia" },
+      { src: jeddah4, caption: "Bandara King Abdulaziz" },
+      { src: jeddah5, caption: "Kuliner di Jeddah" },
+      { src: jeddah6, caption: "Tiba di Jeddah" },
     ],
   },
   {
