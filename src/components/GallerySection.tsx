@@ -66,6 +66,18 @@ const GallerySection = () => {
     setLightbox({ ...lightbox, imageIdx: (lightbox.imageIdx - 1 + currentLocation.images.length) % currentLocation.images.length });
   };
 
+  // Keyboard navigation
+  useEffect(() => {
+    if (!lightbox) return;
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setLightbox(null);
+      if (e.key === "ArrowRight") goNext();
+      if (e.key === "ArrowLeft") goPrev();
+    };
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  }, [lightbox]);
+
   return (
     <>
       <section id="gallery" className="py-14 md:py-40 border-t border-border" style={{ backgroundColor: "hsl(var(--gallery-bg))" }}>

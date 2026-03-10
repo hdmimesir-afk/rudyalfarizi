@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { X, ChevronLeft, ChevronRight, ArrowLeft } from "lucide-react";
 import { galleryLocations } from "@/data/galleryData";

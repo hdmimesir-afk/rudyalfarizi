@@ -5,6 +5,15 @@ import aboutImage from "@/assets/about-formal.jpg";
 const AboutSection = () => {
   const [showLightbox, setShowLightbox] = useState(false);
 
+  useEffect(() => {
+    if (!showLightbox) return;
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setShowLightbox(false);
+    };
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  }, [showLightbox]);
+
   return (
     <>
       <section id="about" className="py-14 md:py-40 bg-background border-t border-border">
