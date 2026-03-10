@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { X, ChevronLeft, ChevronRight, ArrowLeft } from "lucide-react";
 import { galleryLocations } from "@/data/galleryData";
@@ -11,6 +11,27 @@ const GalleryDetail = () => {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
   const location = galleryLocations.find((loc) => loc.slug === slug);
+  const images = location?.images ?? [];
+  const selectedImage = selectedIndex !== null ? images[selectedIndex] : null;
+
+  const goNext = () => {
+    if (selectedIndex !== null) setSelectedIndex((selectedIndex + 1) % images.length);
+  };
+  const goPrev = () => {
+    if (selectedIndex !== null) setSelectedIndex((selectedIndex - 1 + images.length) % images.length);
+  };
+
+  // Keyboard navigation
+  useEffect(() => {
+    if (selectedIndex === null) return;
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setSelectedIndex(null);
+      if (e.key === "ArrowRight") goNext();
+      if (e.key === "ArrowLeft") goPrev();
+    };
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  }, [selectedIndex]);
 
   if (!location) {
     return (
@@ -27,16 +48,6 @@ const GalleryDetail = () => {
       </div>
     );
   }
-
-  const { images } = location;
-  const selectedImage = selectedIndex !== null ? images[selectedIndex] : null;
-
-  const goNext = () => {
-    if (selectedIndex !== null) setSelectedIndex((selectedIndex + 1) % images.length);
-  };
-  const goPrev = () => {
-    if (selectedIndex !== null) setSelectedIndex((selectedIndex - 1 + images.length) % images.length);
-  };
 
   return (
     <div className="min-h-screen bg-background">
