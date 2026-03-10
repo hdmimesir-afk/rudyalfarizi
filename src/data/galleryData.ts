@@ -1,7 +1,3 @@
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
 import alUla1 from "@/assets/al-ula-1.jpg";
 import alUla2 from "@/assets/al-ula-2.jpg";
 import alUla3 from "@/assets/al-ula-3.jpg";
