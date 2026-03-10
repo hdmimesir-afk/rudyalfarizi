@@ -68,7 +68,7 @@ const NavBar = () => {
               onClick={() => scrollToSection("hero")}
               className="hover:opacity-80 transition-opacity"
             >
-              <img src={rudyIcon} alt="Rudy Alfarizi" className="h-8 md:h-10 w-auto" />
+              <img src={rudyIcon} alt="Rudy Alfarizi" className="h-5 md:h-7 w-auto" />
             </button>
 
             {/* Right CTA - desktop */}
