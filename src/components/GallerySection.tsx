@@ -97,13 +97,18 @@ const GallerySection = () => {
 
               return (
                 <div key={location.slug}>
-                  <div className="flex items-end justify-between mb-6 md:mb-10 border-b border-border pb-4">
-                    <h3 className="font-display text-xl md:text-3xl text-foreground">
-                      {location.name}
-                    </h3>
-                    <span className="text-[10px] md:text-xs text-foreground/30 tracking-widest uppercase">
-                      {location.images.length} Foto
-                    </span>
+                  <div className="mb-6 md:mb-10 border-b border-border pb-4">
+                    <div className="flex items-end justify-between">
+                      <h3 className="font-display text-xl md:text-3xl text-foreground">
+                        {location.name}
+                      </h3>
+                      <span className="text-[10px] md:text-xs text-foreground/30 tracking-widest uppercase">
+                        {location.images.length} Foto
+                      </span>
+                    </div>
+                    <p className="text-[11px] md:text-sm text-foreground/60 mt-2 max-w-lg">
+                      {location.description}
+                    </p>
                   </div>
 
                   <div className="grid grid-cols-2 md:grid-cols-3 gap-1">

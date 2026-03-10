@@ -48,6 +48,7 @@ export interface GalleryImage {
 export interface GalleryLocation {
   name: string;
   slug: string;
+  description: string;
   images: GalleryImage[];
 }
 
@@ -55,6 +56,7 @@ export const galleryLocations: GalleryLocation[] = [
   {
     name: "Al Ula",
     slug: "al-ula",
+    description: "Kota kuno warisan UNESCO dengan formasi batuan spektakuler dan situs bersejarah Hegra.",
     images: [
       { src: alUla1, caption: "Tim Al Ula" },
       { src: alUla2, caption: "Wisata Old Town" },
@@ -69,6 +71,7 @@ export const galleryLocations: GalleryLocation[] = [
   {
     name: "Badr",
     slug: "badr",
+    description: "Lokasi bersejarah Perang Badr, tempat pertempuran pertama dalam sejarah Islam.",
     images: [
       { src: badr1, caption: "I Love Badr" },
       { src: badr2, caption: "Selfie di Badr" },
@@ -84,6 +87,7 @@ export const galleryLocations: GalleryLocation[] = [
   {
     name: "Madinah",
     slug: "madinah",
+    description: "Kota Nabi Muhammad ﷺ, rumah bagi Masjid Nabawi dan makam Rasulullah.",
     images: [
       { src: madinah7, caption: "Raudhah Masjid Nabawi" },
       { src: madinah2, caption: "Stasiun Kereta Madinah" },
@@ -96,6 +100,7 @@ export const galleryLocations: GalleryLocation[] = [
   {
     name: "Makkah",
     slug: "makkah",
+    description: "Kota suci umat Islam, tempat Ka'bah dan Masjidil Haram berada.",
     images: [
       { src: makkah1, caption: "Jamaah di Ka'bah" },
       { src: makkah5, caption: "Selfie di Masjidil Haram" },
@@ -108,6 +113,7 @@ export const galleryLocations: GalleryLocation[] = [
   {
     name: "Jeddah",
     slug: "jeddah",
+    description: "Gerbang utama menuju Tanah Suci dengan pesona kota modern dan sejarah.",
     images: [
       { src: jeddah1, caption: "Nonton Bola Al Nassr" },
       { src: jeddah2, caption: "City Tour Jeddah" },
@@ -120,6 +126,7 @@ export const galleryLocations: GalleryLocation[] = [
   {
     name: "Thoif",
     slug: "thoif",
+    description: "Kota pegunungan sejuk dengan kebun buah dan peninggalan sejarah Islam.",
     images: [
       { src: thoif1, caption: "Masjid Abdullah bin Abbas" },
       { src: thoif2, caption: "Kuliner di Thoif" },
