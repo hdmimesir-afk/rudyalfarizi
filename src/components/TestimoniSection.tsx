@@ -32,7 +32,7 @@ const TestimoniSection = () => {
               key={index}
               className="p-5 md:p-12 flex flex-col justify-between min-h-[200px] md:min-h-[320px] bg-background"
             >
-              <p className="font-serif text-base md:text-xl text-foreground/70 leading-relaxed italic">
+              <p className="font-serif text-base md:text-xl text-foreground leading-relaxed italic">
                 "{testimonial.content}"
               </p>
               <div className="mt-5 md:mt-8 pt-4 md:pt-6 border-t border-border">
