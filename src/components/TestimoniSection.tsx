@@ -37,7 +37,7 @@ const TestimoniSection = () => {
               </p>
               <div className="mt-5 md:mt-8 pt-4 md:pt-6 border-t border-border">
                 <p className="text-xs md:text-sm text-foreground tracking-wide">{testimonial.name}</p>
-                <p className="text-[10px] md:text-xs text-foreground/40 mt-0.5">{testimonial.role}</p>
+                <p className="text-[10px] md:text-xs text-foreground mt-0.5">{testimonial.role}</p>
               </div>
             </div>
           ))}
