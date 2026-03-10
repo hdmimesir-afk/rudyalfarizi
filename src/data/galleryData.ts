@@ -21,6 +21,12 @@ import badr6 from "@/assets/badr-6.jpg";
 import badr7 from "@/assets/badr-7.jpg";
 import badr8 from "@/assets/badr-8.jpg";
 import badr9 from "@/assets/badr-9.jpg";
+import makkah1 from "@/assets/makkah-1.jpg";
+import makkah2 from "@/assets/makkah-2.jpg";
+import makkah3 from "@/assets/makkah-3.jpg";
+import makkah4 from "@/assets/makkah-4.jpg";
+import makkah5 from "@/assets/makkah-5.jpg";
+import makkah7 from "@/assets/makkah-7.jpg";
 
 export interface GalleryImage {
   src: string;
