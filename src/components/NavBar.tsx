@@ -54,7 +54,8 @@ const NavBar = () => {
           {/* Center logo */}
           <button
             onClick={() => scrollToSection("hero")}
-            className="font-serif text-lg md:text-2xl tracking-ultra text-foreground hover:text-primary transition-colors"
+            className="text-lg md:text-2xl tracking-[0.04em] text-foreground hover:text-primary transition-colors uppercase"
+            style={{ fontFamily: "'Montecatini Pro', serif" }}
           >
             RA
           </button>

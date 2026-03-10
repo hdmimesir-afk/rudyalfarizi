@@ -57,7 +57,7 @@ const ServicesSection = () => {
               <h3 className="font-display text-base md:text-2xl text-foreground group-hover:text-primary transition-colors mb-2 md:mb-4">
                 {service.title}
               </h3>
-              <p className="text-[11px] md:text-sm text-foreground/50 leading-relaxed text-left">
+              <p className="text-[11px] md:text-sm text-foreground leading-relaxed text-left">
                 {service.description}
               </p>
             </Link>
