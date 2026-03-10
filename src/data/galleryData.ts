@@ -1,6 +1,4 @@
-import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
 import alUla1 from "@/assets/al-ula-1.jpg";
 import alUla2 from "@/assets/al-ula-2.jpg";
@@ -25,6 +23,12 @@ import badr6 from "@/assets/badr-6.jpg";
 import badr7 from "@/assets/badr-7.jpg";
 import badr8 from "@/assets/badr-8.jpg";
 import badr9 from "@/assets/badr-9.jpg";
+import makkah1 from "@/assets/makkah-1.jpg";
+import makkah2 from "@/assets/makkah-2.jpg";
+import makkah3 from "@/assets/makkah-3.jpg";
+import makkah4 from "@/assets/makkah-4.jpg";
+import makkah5 from "@/assets/makkah-5.jpg";
+import makkah7 from "@/assets/makkah-7.jpg";
 
 export interface GalleryImage {
   src: string;
@@ -83,16 +87,12 @@ export const galleryLocations: GalleryLocation[] = [
     name: "Makkah",
     slug: "makkah",
     images: [
-      { src: gallery2, caption: "Masjidil Haram" },
-      { src: gallery4, caption: "Ka'bah" },
-      { src: gallery2, caption: "Tawaf" },
-      { src: gallery4, caption: "Sa'i" },
-      { src: gallery2, caption: "Zamzam" },
-      { src: gallery4, caption: "Mina" },
-      { src: gallery2, caption: "Arafah" },
-      { src: gallery4, caption: "Muzdalifah" },
-      { src: gallery2, caption: "Jabal Rahmah" },
-      { src: gallery4, caption: "Masjid Jin" },
+      { src: makkah1, caption: "Jamaah di Ka'bah" },
+      { src: makkah5, caption: "Selfie di Masjidil Haram" },
+      { src: makkah7, caption: "Foto Bersama Jamaah" },
+      { src: makkah2, caption: "Jabal Rahmah" },
+      { src: makkah3, caption: "Revelation Exhibition" },
+      { src: makkah4, caption: "Pemakaman Ma'la" },
     ],
   },
   {
