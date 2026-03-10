@@ -113,7 +113,7 @@ export const galleryLocations: GalleryLocation[] = [
   {
     name: "Jeddah",
     slug: "jeddah",
-    description: "Gerbang utama menuju Tanah Suci dengan pesona kota modern dan sejarah.",
+    description: "Gerbang Tanah Suci",
     images: [
       { src: jeddah1, caption: "Nonton Bola Al Nassr" },
       { src: jeddah2, caption: "City Tour Jeddah" },
