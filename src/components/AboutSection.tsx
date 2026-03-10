@@ -31,7 +31,7 @@ const AboutSection = () => {
             </div>
             
             <h2 className="font-['Hubhead_2'] text-2xl text-foreground leading-tight md:hidden flex items-center">
-              Ketika Pembimbing Anda Tepat, Ibadah Pun Sempurna
+              Perjalanan ke Tanah Suci yang Lebih Bermakna.
             </h2>
           </div>
 
@@ -46,34 +46,16 @@ const AboutSection = () => {
 
             <div className="lg:order-1">
               <h2 className="hidden md:block font-['Hubhead_2'] text-5xl lg:text-6xl text-foreground leading-tight mb-10">
-                Ketika Pembimbing Anda Tepat, Ibadah Pun Sempurna
+                Perjalanan ke Tanah Suci yang Lebih Bermakna.
               </h2>
 
               <div className="space-y-4 text-foreground text-xs md:text-sm leading-relaxed text-left">
                 <p>
-                  Dengan latar belakang pendidikan dari Universitas Al-Azhar, Kairo, 
-                  saya memiliki pemahaman mendalam tentang fiqih manasik, sejarah Islam, 
-                  dan seluk-beluk perjalanan spiritual ke Makkah dan Madinah.
+                  Berbekal pendidikan dari Universitas Al-Azhar Kairo, saya aktif mendampingi jamaah sebagai Mutowwif Haramain sejak tahun 2022. Dalam setiap perjalanan, saya berusaha menghadirkan bimbingan yang komunikatif, edukatif, dan mudah dipahami agar jamaah dapat menjalankan ibadah dengan tenang dan penuh pemahaman.
                 </p>
                 <p>
-                  Visi saya adalah memastikan setiap jamaah merasakan kekhusyukan ibadah 
-                  dengan bimbingan yang penuh ilmu dan kasih sayang.
+                  Saya meyakini bahwa perjalanan ke Tanah Suci bukan hanya tentang menjalankan rangkaian ibadah, tetapi juga tentang memahami sejarah, merasakan kedekatan spiritual, dan membawa pulang pengalaman yang bermakna. Karena itu, saya selalu berusaha menjelaskan sejarah Islam dan hikmah dari setiap tempat yang dikunjungi, agar perjalanan jamaah tidak hanya menjadi ibadah, tetapi juga pengalaman spiritual yang berkesan.
                 </p>
-              </div>
-
-              <div className="grid grid-cols-3 gap-4 md:gap-8 mt-10 md:mt-16 pt-6 md:pt-10 border-t border-border">
-                <div>
-                  <p className="font-serif text-2xl md:text-4xl text-foreground">500+</p>
-                  <p className="text-[9px] md:text-xs tracking-ultra uppercase text-foreground mt-1">Jamaah</p>
-                </div>
-                <div>
-                  <p className="font-serif text-2xl md:text-4xl text-foreground">2021</p>
-                  <p className="text-[9px] md:text-xs tracking-ultra uppercase text-foreground mt-1">Sejak</p>
-                </div>
-                <div>
-                  <p className="font-serif text-2xl md:text-4xl text-foreground">5.0</p>
-                  <p className="text-[9px] md:text-xs tracking-ultra uppercase text-foreground mt-1">Rating</p>
-                </div>
               </div>
             </div>
           </div>
