@@ -8,6 +8,7 @@ import TestimoniSection from "@/components/TestimoniSection";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import FooterSection from "@/components/FooterSection";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 const Index = () => {
   return (
@@ -22,6 +23,7 @@ const Index = () => {
       <FAQSection />
       <CTASection />
       <FooterSection />
+      <FloatingWhatsApp />
     </div>
   );
 };
