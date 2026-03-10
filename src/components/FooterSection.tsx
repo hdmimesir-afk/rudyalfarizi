@@ -16,23 +16,26 @@ const FooterSection = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 mb-10 md:mb-16">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <h3 className="font-serif text-xl md:text-3xl text-foreground mb-3 tracking-ultra">
+            <h3
+              className="text-xl md:text-3xl text-foreground mb-3 tracking-[0.04em] uppercase"
+              style={{ fontFamily: "'Montecatini Pro', serif" }}
+            >
               Rudy Alfarizi
             </h3>
-            <p className="text-foreground/30 text-xs leading-relaxed">
+            <p className="text-foreground text-xs leading-relaxed">
               Muthowwif profesional. Alumni Al-Azhar, Kairo.
             </p>
           </div>
 
           {/* Links */}
           <div>
-            <p className="text-[9px] md:text-xs tracking-ultra uppercase text-foreground/40 mb-4 md:mb-6">Menu</p>
+            <p className="text-[9px] md:text-xs tracking-ultra uppercase text-foreground mb-4 md:mb-6">Menu</p>
             <ul className="space-y-2">
               {["about", "services", "gallery", "faq"].map((id) => (
                 <li key={id}>
                   <button
                     onClick={() => scrollToSection(id)}
-                    className="text-xs text-foreground/40 hover:text-primary transition-colors capitalize"
+                    className="text-xs text-foreground hover:text-primary transition-colors capitalize"
                   >
                     {id === "faq" ? "FAQ" : id}
                   </button>
@@ -43,14 +46,14 @@ const FooterSection = () => {
 
           {/* Contact */}
           <div>
-            <p className="text-[9px] md:text-xs tracking-ultra uppercase text-foreground/40 mb-4 md:mb-6">Kontak</p>
+            <p className="text-[9px] md:text-xs tracking-ultra uppercase text-foreground mb-4 md:mb-6">Kontak</p>
             <ul className="space-y-2">
               <li>
                 <a
                   href="https://wa.me/6285219527294"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-xs text-foreground/40 hover:text-primary transition-colors"
+                  className="flex items-center gap-2 text-xs text-foreground hover:text-primary transition-colors"
                 >
                   <MessageCircle size={12} />
                   +62 852-1952-7294
@@ -59,7 +62,7 @@ const FooterSection = () => {
               <li>
                 <a
                   href="mailto:rudyalfarizi26@gmail.com"
-                  className="flex items-center gap-2 text-xs text-foreground/40 hover:text-primary transition-colors"
+                  className="flex items-center gap-2 text-xs text-foreground hover:text-primary transition-colors"
                 >
                   <Mail size={12} />
                   rudyalfarizi26@gmail.com
@@ -70,7 +73,7 @@ const FooterSection = () => {
                   href="https://instagram.com/rudyalfarizi26"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-xs text-foreground/40 hover:text-primary transition-colors"
+                  className="flex items-center gap-2 text-xs text-foreground hover:text-primary transition-colors"
                 >
                   <Instagram size={12} />
                   @rudyalfarizi26
@@ -80,12 +83,9 @@ const FooterSection = () => {
           </div>
         </div>
 
-        <div className="border-t border-border pt-6 flex flex-col md:flex-row justify-between items-center gap-3">
-          <p className="text-[10px] text-foreground/20">
+        <div className="border-t border-border pt-6 flex justify-center">
+          <p className="text-[10px] text-foreground">
             © {currentYear} Rudy Alfarizi
-          </p>
-          <p className="text-[10px] text-foreground/20">
-            Designed by <span className="text-primary">SYMP Studio</span>
           </p>
         </div>
       </div>

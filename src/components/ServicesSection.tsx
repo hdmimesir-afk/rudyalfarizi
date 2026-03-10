@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 
 const services = [
@@ -28,7 +27,7 @@ const services = [
     description: "Kolaborasi konten umrah untuk brand, travel, atau kebutuhan media sosial.",
   },
   {
-    slug: "content-creator",
+    slug: "talent-umrah",
     title: "Talent Umrah",
     description: "Kebutuhan talent untuk konten dan kampanye brand terkait umrah dan haji.",
   },
@@ -37,6 +36,9 @@ const services = [
 export { services };
 
 const ServicesSection = () => {
+  const getWhatsappLink = (title: string) =>
+    `https://wa.me/6285219527294?text=${encodeURIComponent(`Assalamualaikum Ustadz Rudy, saya ingin bertanya lebih lanjut tentang layanan ${title}`)}`;
+
   return (
     <section id="services" className="py-14 md:py-40 bg-background border-t border-border">
       <div className="px-6 md:px-16 lg:px-24">
@@ -48,9 +50,11 @@ const ServicesSection = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
-            <Link
+            <a
               key={index}
-              to={`/layanan/${service.slug}`}
+              href={getWhatsappLink(service.title)}
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-4 md:p-10 border border-border hover:bg-muted/30 transition-colors duration-300 group relative"
             >
               <ArrowUpRight className="absolute top-3 right-3 md:top-6 md:right-6 h-4 w-4 text-foreground/20 group-hover:text-primary transition-colors" />
@@ -60,7 +64,7 @@ const ServicesSection = () => {
               <p className="text-[11px] md:text-sm text-foreground leading-relaxed text-left">
                 {service.description}
               </p>
-            </Link>
+            </a>
           ))}
         </div>
       </div>
