@@ -115,12 +115,12 @@ export const galleryLocations: GalleryLocation[] = [
     name: "Thoif",
     slug: "thoif",
     images: [
-      { src: gallery4, caption: "Kota Thoif" },
-      { src: gallery2, caption: "Masjid Abdullah bin Abbas" },
-      { src: gallery4, caption: "Kebun Anggur" },
-      { src: gallery2, caption: "Shubra Palace" },
-      { src: gallery4, caption: "Pasar Al Hada" },
-      { src: gallery2, caption: "Al Rudaf Park" },
+      { src: jeddah1, caption: "Kota Thoif" },
+      { src: jeddah2, caption: "Masjid Abdullah bin Abbas" },
+      { src: jeddah3, caption: "Kebun Anggur" },
+      { src: jeddah4, caption: "Shubra Palace" },
+      { src: jeddah5, caption: "Pasar Al Hada" },
+      { src: jeddah6, caption: "Al Rudaf Park" },
     ],
   },
 ];
