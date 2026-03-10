@@ -66,10 +66,9 @@ const NavBar = () => {
             {/* Center logo */}
             <button
               onClick={() => scrollToSection("hero")}
-              className="text-lg md:text-2xl tracking-[0.04em] text-foreground hover:text-primary transition-colors uppercase"
-              style={{ fontFamily: "'Montecatini Pro', serif" }}
+              className="hover:opacity-80 transition-opacity"
             >
-              RA
+              <img src={rudyIcon} alt="Rudy Alfarizi" className="h-8 md:h-10 w-auto" />
             </button>
 
             {/* Right CTA - desktop */}
