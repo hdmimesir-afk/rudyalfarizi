@@ -40,6 +40,18 @@ import makkah4 from "@/assets/makkah-4.jpg";
 import makkah5 from "@/assets/makkah-5.jpg";
 import makkah7 from "@/assets/makkah-7.jpg";
 
+// Cover images
+import coverMakkah from "@/assets/cover-makkah.jpg";
+import coverMadinah from "@/assets/cover-madinah.jpg";
+import coverJabalKhandamah from "@/assets/cover-jabal-khandamah.jpg";
+import coverJabalNur from "@/assets/cover-jabal-nur.jpg";
+import coverJabalTsur from "@/assets/cover-jabal-tsur.jpg";
+import coverHudaibiyah from "@/assets/cover-hudaibiyah.jpg";
+import coverBadr from "@/assets/cover-badr.jpg";
+import coverJeddah from "@/assets/cover-jeddah.jpg";
+import coverGuideMesir from "@/assets/cover-guide-mesir.jpg";
+import coverJamaahPrivate from "@/assets/cover-jamaah-private.jpg";
+
 export interface GalleryImage {
   src: string;
   caption: string;
@@ -49,14 +61,58 @@ export interface GalleryLocation {
   name: string;
   slug: string;
   description: string;
+  cover: string;
   images: GalleryImage[];
 }
 
 export const galleryLocations: GalleryLocation[] = [
   {
+    name: "Makkah",
+    slug: "makkah",
+    description: "Tanah suci Ka'bah",
+    cover: coverMakkah,
+    images: [
+      { src: makkah1, caption: "Jamaah di Ka'bah" },
+      { src: makkah5, caption: "Selfie di Masjidil Haram" },
+      { src: makkah7, caption: "Foto Bersama Jamaah" },
+      { src: makkah2, caption: "Jabal Rahmah" },
+      { src: makkah3, caption: "Revelation Exhibition" },
+      { src: makkah4, caption: "Pemakaman Ma'la" },
+    ],
+  },
+  {
+    name: "Madinah",
+    slug: "madinah",
+    description: "Kota Nabi Muhammad ﷺ",
+    cover: coverMadinah,
+    images: [
+      { src: madinah7, caption: "Raudhah Masjid Nabawi" },
+      { src: madinah2, caption: "Stasiun Kereta Madinah" },
+      { src: madinah3, caption: "Selfie di Masjid Nabawi" },
+      { src: madinah4, caption: "Jamaah di Masjid Nabawi" },
+      { src: madinah5, caption: "Jabal Uhud" },
+      { src: madinah6, caption: "Kuliner Kebun Kurma" },
+    ],
+  },
+  {
+    name: "Thoif",
+    slug: "thoif",
+    description: "Pegunungan sejuk bersejarah",
+    cover: thoif1,
+    images: [
+      { src: thoif1, caption: "Masjid Abdullah bin Abbas" },
+      { src: thoif2, caption: "Kuliner di Thoif" },
+      { src: thoif3, caption: "Selfie di Thoif" },
+      { src: thoif4, caption: "Cable Car Al Hada" },
+      { src: thoif5, caption: "Jamaah di Miqat" },
+      { src: thoif6, caption: "Shubra Palace" },
+    ],
+  },
+  {
     name: "Al Ula",
     slug: "al-ula",
     description: "Warisan kuno UNESCO",
+    cover: alUla1,
     images: [
       { src: alUla1, caption: "Tim Al Ula" },
       { src: alUla2, caption: "Wisata Old Town" },
@@ -69,9 +125,46 @@ export const galleryLocations: GalleryLocation[] = [
     ],
   },
   {
+    name: "Jabal Khandamah",
+    slug: "jabal-khandamah",
+    description: "Gunung bersejarah di Makkah",
+    cover: coverJabalKhandamah,
+    images: [
+      { src: coverJabalKhandamah, caption: "Foto Bersama di Jabal Khandamah" },
+    ],
+  },
+  {
+    name: "Jabal Nur",
+    slug: "jabal-nur",
+    description: "Tempat turunnya wahyu pertama",
+    cover: coverJabalNur,
+    images: [
+      { src: coverJabalNur, caption: "Foto Bersama di Jabal Nur" },
+    ],
+  },
+  {
+    name: "Jabal Tsur",
+    slug: "jabal-tsur",
+    description: "Gua persembunyian Nabi ﷺ",
+    cover: coverJabalTsur,
+    images: [
+      { src: coverJabalTsur, caption: "Foto Bersama di Jabal Tsur" },
+    ],
+  },
+  {
+    name: "Hudaibiyah",
+    slug: "hudaibiyah",
+    description: "Lokasi perjanjian bersejarah",
+    cover: coverHudaibiyah,
+    images: [
+      { src: coverHudaibiyah, caption: "Foto Bersama di Hudaibiyah" },
+    ],
+  },
+  {
     name: "Badr",
     slug: "badr",
     description: "Medan perang bersejarah",
+    cover: coverBadr,
     images: [
       { src: badr1, caption: "I Love Badr" },
       { src: badr2, caption: "Selfie di Badr" },
@@ -85,35 +178,10 @@ export const galleryLocations: GalleryLocation[] = [
     ],
   },
   {
-    name: "Madinah",
-    slug: "madinah",
-    description: "Kota Nabi Muhammad",
-    images: [
-      { src: madinah7, caption: "Raudhah Masjid Nabawi" },
-      { src: madinah2, caption: "Stasiun Kereta Madinah" },
-      { src: madinah3, caption: "Selfie di Masjid Nabawi" },
-      { src: madinah4, caption: "Jamaah di Masjid Nabawi" },
-      { src: madinah5, caption: "Jabal Uhud" },
-      { src: madinah6, caption: "Kuliner Kebun Kurma" },
-    ],
-  },
-  {
-    name: "Makkah",
-    slug: "makkah",
-    description: "Tanah suci Ka'bah",
-    images: [
-      { src: makkah1, caption: "Jamaah di Ka'bah" },
-      { src: makkah5, caption: "Selfie di Masjidil Haram" },
-      { src: makkah7, caption: "Foto Bersama Jamaah" },
-      { src: makkah2, caption: "Jabal Rahmah" },
-      { src: makkah3, caption: "Revelation Exhibition" },
-      { src: makkah4, caption: "Pemakaman Ma'la" },
-    ],
-  },
-  {
     name: "Jeddah",
     slug: "jeddah",
     description: "Gerbang Tanah Suci",
+    cover: coverJeddah,
     images: [
       { src: jeddah1, caption: "Nonton Bola Al Nassr" },
       { src: jeddah2, caption: "City Tour Jeddah" },
@@ -124,16 +192,21 @@ export const galleryLocations: GalleryLocation[] = [
     ],
   },
   {
-    name: "Thoif",
-    slug: "thoif",
-    description: "Pegunungan sejuk bersejarah",
+    name: "Guide Mesir",
+    slug: "guide-mesir",
+    description: "Pemandu wisata di Mesir",
+    cover: coverGuideMesir,
     images: [
-      { src: thoif1, caption: "Masjid Abdullah bin Abbas" },
-      { src: thoif2, caption: "Kuliner di Thoif" },
-      { src: thoif3, caption: "Selfie di Thoif" },
-      { src: thoif4, caption: "Cable Car Al Hada" },
-      { src: thoif5, caption: "Jamaah di Miqat" },
-      { src: thoif6, caption: "Shubra Palace" },
+      { src: coverGuideMesir, caption: "Foto Bersama di Mesir" },
+    ],
+  },
+  {
+    name: "Jamaah Private",
+    slug: "jamaah-private",
+    description: "Momen eksklusif jamaah privat",
+    cover: coverJamaahPrivate,
+    images: [
+      { src: coverJamaahPrivate, caption: "Jamaah Private di Kereta" },
     ],
   },
 ];
