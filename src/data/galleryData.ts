@@ -100,6 +100,7 @@ export const galleryLocations: GalleryLocation[] = [
   {
     name: "Makkah",
     slug: "makkah",
+    description: "Kota suci umat Islam, tempat Ka'bah dan Masjidil Haram berada.",
     images: [
       { src: makkah1, caption: "Jamaah di Ka'bah" },
       { src: makkah5, caption: "Selfie di Masjidil Haram" },
