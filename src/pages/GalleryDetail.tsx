@@ -38,6 +38,18 @@ const GalleryDetail = () => {
     if (selectedIndex !== null) setSelectedIndex((selectedIndex - 1 + images.length) % images.length);
   };
 
+  // Keyboard navigation
+  useEffect(() => {
+    if (selectedIndex === null) return;
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setSelectedIndex(null);
+      if (e.key === "ArrowRight") goNext();
+      if (e.key === "ArrowLeft") goPrev();
+    };
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  }, [selectedIndex]);
+
   return (
     <div className="min-h-screen bg-background">
       <NavBar />
