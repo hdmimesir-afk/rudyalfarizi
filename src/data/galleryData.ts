@@ -4,6 +4,12 @@ import jeddah3 from "@/assets/jeddah-3.jpg";
 import jeddah4 from "@/assets/jeddah-4.jpg";
 import jeddah5 from "@/assets/jeddah-5.jpg";
 import jeddah6 from "@/assets/jeddah-6.jpg";
+import thoif1 from "@/assets/thoif-1.jpg";
+import thoif2 from "@/assets/thoif-2.jpg";
+import thoif3 from "@/assets/thoif-3.jpg";
+import thoif4 from "@/assets/thoif-4.jpg";
+import thoif5 from "@/assets/thoif-5.jpg";
+import thoif6 from "@/assets/thoif-6.jpg";
 import alUla1 from "@/assets/al-ula-1.jpg";
 import alUla2 from "@/assets/al-ula-2.jpg";
 import alUla3 from "@/assets/al-ula-3.jpg";
@@ -115,12 +121,12 @@ export const galleryLocations: GalleryLocation[] = [
     name: "Thoif",
     slug: "thoif",
     images: [
-      { src: jeddah1, caption: "Kota Thoif" },
-      { src: jeddah2, caption: "Masjid Abdullah bin Abbas" },
-      { src: jeddah3, caption: "Kebun Anggur" },
-      { src: jeddah4, caption: "Shubra Palace" },
-      { src: jeddah5, caption: "Pasar Al Hada" },
-      { src: jeddah6, caption: "Al Rudaf Park" },
+      { src: thoif1, caption: "Masjid Abdullah bin Abbas" },
+      { src: thoif2, caption: "Kuliner di Thoif" },
+      { src: thoif3, caption: "Selfie di Thoif" },
+      { src: thoif4, caption: "Cable Car Al Hada" },
+      { src: thoif5, caption: "Jamaah di Miqat" },
+      { src: thoif6, caption: "Shubra Palace" },
     ],
   },
 ];
