@@ -62,6 +62,13 @@ import mesir5 from "@/assets/mesir-5.jpg";
 import mesir6 from "@/assets/mesir-6.jpg";
 import mesir7 from "@/assets/mesir-7.jpg";
 import coverJamaahPrivate from "@/assets/cover-jamaah-private.jpg";
+import private1 from "@/assets/private-1.jpg";
+import private2 from "@/assets/private-2.jpg";
+import private3 from "@/assets/private-3.jpg";
+import private4 from "@/assets/private-4.jpg";
+import private5 from "@/assets/private-5.jpg";
+import private6 from "@/assets/private-6.jpg";
+import private7 from "@/assets/private-7.jpg";
 
 export interface GalleryImage {
   src: string;
@@ -229,6 +236,13 @@ export const galleryLocations: GalleryLocation[] = [
     cover: coverJamaahPrivate,
     images: [
       { src: coverJamaahPrivate, caption: "Jamaah Private di Kereta" },
+      { src: private1, caption: "Kuliner Khas Arab" },
+      { src: private2, caption: "Jamaah di Taman Kurma" },
+      { src: private3, caption: "Dinner View Ka'bah" },
+      { src: private4, caption: "Ziarah Masjid Bersejarah" },
+      { src: private5, caption: "Kumpul Bersama Tim" },
+      { src: private6, caption: "Jamaah di Jabal Uhud" },
+      { src: private7, caption: "Foto Bersama di Ka'bah" },
     ],
   },
 ];
