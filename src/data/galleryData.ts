@@ -83,7 +83,7 @@ export const galleryLocations: GalleryLocation[] = [
   {
     name: "Madinah",
     slug: "madinah",
-    description: "Kota Nabi Muhammad ﷺ",
+    description: "Madinah adalah kota penuh ketenangan, tempat Rasulullah ﷺ membangun masyarakat Islam pertama. Di sinilah Masjid Nabawi berdiri dan Raudhah menjadi tempat yang selalu dirindukan setiap jamaah.",
     cover: coverMadinah,
     images: [
       { src: madinah7, caption: "Raudhah Masjid Nabawi" },
