@@ -46,47 +46,47 @@
 
 @layer base {
   :root {
-    /* Apollo-inspired: Dark brown + cream + coral */
-    --background: 24 18% 11%;
-    --foreground: 35 25% 90%;
+    /* White-blue theme */
+    --background: 210 40% 98%;
+    --foreground: 215 25% 15%;
 
-    --card: 24 18% 14%;
-    --card-foreground: 35 25% 90%;
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
 
-    --popover: 24 18% 14%;
-    --popover-foreground: 35 25% 90%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
 
-    --primary: 8 100% 68%;
-    --primary-foreground: 24 18% 11%;
+    --primary: 215 80% 50%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 35 20% 85%;
-    --secondary-foreground: 24 18% 11%;
+    --secondary: 210 30% 92%;
+    --secondary-foreground: 215 25% 15%;
 
-    --muted: 24 12% 18%;
-    --muted-foreground: 35 15% 55%;
+    --muted: 210 25% 93%;
+    --muted-foreground: 215 15% 45%;
 
-    --gallery-bg: 24 20% 14%;
+    --gallery-bg: 210 30% 96%;
 
-    --accent: 8 100% 68%;
-    --accent-foreground: 24 18% 11%;
+    --accent: 215 80% 50%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 24 12% 20%;
-    --input: 24 12% 20%;
-    --ring: 8 100% 68%;
+    --border: 210 20% 88%;
+    --input: 210 20% 88%;
+    --ring: 215 80% 50%;
 
     --radius: 0rem;
 
-    --sidebar-background: 24 18% 9%;
-    --sidebar-foreground: 35 25% 90%;
-    --sidebar-primary: 8 100% 68%;
-    --sidebar-primary-foreground: 24 18% 11%;
-    --sidebar-accent: 24 12% 16%;
-    --sidebar-accent-foreground: 35 25% 90%;
-    --sidebar-border: 24 12% 18%;
-    --sidebar-ring: 8 100% 68%;
+    --sidebar-background: 215 30% 12%;
+    --sidebar-foreground: 210 25% 92%;
+    --sidebar-primary: 215 80% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 25% 18%;
+    --sidebar-accent-foreground: 210 25% 92%;
+    --sidebar-border: 215 20% 20%;
+    --sidebar-ring: 215 80% 55%;
   }
 }
 
