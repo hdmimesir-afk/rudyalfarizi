@@ -48,9 +48,19 @@ import khandamah2 from "@/assets/khandamah-2.jpg";
 import khandamah3 from "@/assets/khandamah-3.jpg";
 import khandamah4 from "@/assets/khandamah-4.jpg";
 import khandamah5 from "@/assets/khandamah-5.jpg";
+import khandamah6 from "@/assets/khandamah-6.jpg";
+import khandamah7 from "@/assets/khandamah-7.jpg";
+import khandamah8 from "@/assets/khandamah-8.jpg";
+import khandamah9 from "@/assets/khandamah-9.jpg";
 import coverJabalNur from "@/assets/cover-jabal-nur.jpg";
 import coverJabalTsur from "@/assets/cover-jabal-tsur.jpg";
+import tsur2 from "@/assets/tsur-2.jpg";
+import tsur3 from "@/assets/tsur-3.jpg";
+import tsur4 from "@/assets/tsur-4.jpg";
 import coverHudaibiyah from "@/assets/cover-hudaibiyah.jpg";
+import hudaibiyah1 from "@/assets/hudaibiyah-1.jpg";
+import hudaibiyah2 from "@/assets/hudaibiyah-2.jpg";
+import hudaibiyah4 from "@/assets/hudaibiyah-4.jpg";
 import coverBadr from "@/assets/cover-badr.jpg";
 import coverJeddah from "@/assets/cover-jeddah.jpg";
 import coverGuideMesir from "@/assets/cover-guide-mesir.jpg";
@@ -149,10 +159,10 @@ export const galleryLocations: GalleryLocation[] = [
     cover: coverJabalKhandamah,
     images: [
       { src: coverJabalKhandamah, caption: "Foto Bersama di Jabal Khandamah" },
-      { src: khandamah2, caption: "Jamaah di Puncak Khandamah" },
-      { src: khandamah3, caption: "Di Dalam Gua" },
-      { src: khandamah4, caption: "Panorama dari Puncak" },
-      { src: khandamah5, caption: "Pendakian Khandamah" },
+      { src: khandamah6, caption: "Jamaah Sunset di Khandamah" },
+      { src: khandamah7, caption: "Foto Bersama Jamaah" },
+      { src: khandamah8, caption: "Dinner Romantis di Khandamah" },
+      { src: khandamah9, caption: "Panorama Abraj Al-Bait" },
     ],
   },
   {
@@ -162,6 +172,10 @@ export const galleryLocations: GalleryLocation[] = [
     cover: coverJabalNur,
     images: [
       { src: coverJabalNur, caption: "Foto Bersama di Jabal Nur" },
+      { src: khandamah2, caption: "Jamaah di Puncak" },
+      { src: khandamah3, caption: "Di Dalam Gua" },
+      { src: khandamah4, caption: "Panorama dari Puncak" },
+      { src: khandamah5, caption: "Pendakian Jabal Nur" },
     ],
   },
   {
@@ -171,6 +185,9 @@ export const galleryLocations: GalleryLocation[] = [
     cover: coverJabalTsur,
     images: [
       { src: coverJabalTsur, caption: "Foto Bersama di Jabal Tsur" },
+      { src: tsur2, caption: "Jamaah di Gua Tsur" },
+      { src: tsur3, caption: "Di Depan Gua Tsur" },
+      { src: tsur4, caption: "Foto Bersama Jamaah" },
     ],
   },
   {
@@ -180,6 +197,9 @@ export const galleryLocations: GalleryLocation[] = [
     cover: coverHudaibiyah,
     images: [
       { src: coverHudaibiyah, caption: "Foto Bersama di Hudaibiyah" },
+      { src: hudaibiyah1, caption: "Bersama Unta di Hudaibiyah" },
+      { src: hudaibiyah2, caption: "Jamaah di Desa Tradisional" },
+      { src: hudaibiyah4, caption: "Foto Bersama Rombongan" },
     ],
   },
   {
