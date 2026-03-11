@@ -135,6 +135,10 @@ export const galleryLocations: GalleryLocation[] = [
     cover: coverJabalKhandamah,
     images: [
       { src: coverJabalKhandamah, caption: "Foto Bersama di Jabal Khandamah" },
+      { src: khandamah2, caption: "Jamaah di Puncak Khandamah" },
+      { src: khandamah3, caption: "Di Dalam Gua" },
+      { src: khandamah4, caption: "Panorama dari Puncak" },
+      { src: khandamah5, caption: "Pendakian Khandamah" },
     ],
   },
   {
