@@ -8,24 +8,36 @@ import {
 const FAQSection = () => {
   const faqs = [
     {
+      question: "Apa pendekatan Anda dalam membimbing jamaah?",
+      answer: "Saya menggunakan pendekatan yang komunikatif, edukatif, dan mudah dipahami. Selain manasik, saya juga menjelaskan sejarah dan hikmah tempat-tempat di Tanah Suci.",
+    },
+    {
+      question: "Apa nilai lebih yang Anda tawarkan sebagai mutowwif?",
+      answer: "Selain bimbingan manasik, saya juga memberikan penjelasan sejarah Islam secara lebih mendalam serta membantu dokumentasi foto dan video perjalanan jamaah.",
+    },
+    {
+      question: "Bagaimana Anda memastikan jamaah merasa nyaman selama perjalanan?",
+      answer: "Saya mengutamakan pelayanan yang ramah, responsif, dan penuh perhatian agar jamaah dapat beribadah dengan tenang dan nyaman.",
+    },
+    {
+      question: "Apakah Anda memiliki kemampuan tambahan yang mendukung pekerjaan sebagai mutowwif?",
+      answer: "Saya juga memiliki kemampuan dalam fotografi dan dokumentasi video untuk mengabadikan momen perjalanan ibadah jamaah.",
+    },
+    {
+      question: "Apa komitmen Anda dalam membimbing jamaah?",
+      answer: "Saya berkomitmen memberikan pelayanan yang amanah, profesional, dan bertanggung jawab agar jamaah mendapatkan pengalaman ibadah yang berkesan.",
+    },
+    {
+      question: "Apakah Anda memiliki kontrak dengan travel tertentu?",
+      answer: "Saya bekerja secara freelance dan terbuka untuk bekerja sama dengan berbagai travel dengan standar profesionalisme dan etika kerja yang baik.",
+    },
+    {
       question: "Bagaimana cara booking jadwal bimbingan?",
-      answer: "Anda bisa langsung menghubungi saya via WhatsApp untuk konsultasi jadwal. Setelah itu kita akan diskusi mengenai kebutuhan jamaah, tanggal keberangkatan, dan paket layanan yang sesuai.",
+      answer: "Silakan hubungi saya melalui WhatsApp untuk konsultasi jadwal dan kebutuhan jamaah sebelum keberangkatan.",
     },
     {
-      question: "Apakah bisa bimbingan untuk keluarga kecil?",
-      answer: "Tentu! Saya menyediakan layanan bimbingan private untuk individu, pasangan, atau keluarga kecil. Jadwal sangat fleksibel dan bimbingan lebih intensif.",
-    },
-    {
-      question: "Apa saja yang termasuk dalam layanan?",
-      answer: "Layanan meliputi: bimbingan manasik, pendampingan selama di Tanah Suci, penjelasan sejarah dan fiqih, serta doa-doa khusus.",
-    },
-    {
-      question: "Bagaimana dengan layanan Badal Umrah?",
-      answer: "Layanan Badal Umrah diperuntukkan bagi yang ingin mengumrahkan orang tua atau kerabat yang sudah wafat. Anda akan mendapat sertifikat resmi dan dokumentasi lengkap.",
-    },
-    {
-      question: "Apakah bisa bekerjasama dengan travel umrah?",
-      answer: "Ya, saya terbuka untuk kerjasama dengan travel umrah sebagai freelance muthowwif. Sudah berpengalaman handle group dari berbagai travel di Indonesia.",
+      question: "Apakah tersedia layanan badal umroh?",
+      answer: "Ya, tersedia layanan Badal Umrah untuk orang tua atau kerabat yang telah wafat atau tidak mampu berumrah, lengkap dengan dokumentasi pelaksanaannya.",
     },
   ];
 
