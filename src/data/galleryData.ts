@@ -69,7 +69,7 @@ export const galleryLocations: GalleryLocation[] = [
   {
     name: "Makkah",
     slug: "makkah",
-    description: "Tanah suci Ka'bah",
+    description: "Di kota suci inilah jutaan muslim dari seluruh dunia berkumpul menghadap Ka'bah, pusat ibadah umat Islam. Setiap langkah di Makkah mengingatkan kita pada perjalanan dakwah Rasulullah ﷺ dan perjuangan awal Islam.",
     cover: coverMakkah,
     images: [
       { src: makkah1, caption: "Jamaah di Ka'bah" },
