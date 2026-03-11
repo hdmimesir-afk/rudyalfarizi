@@ -69,7 +69,7 @@ export const galleryLocations: GalleryLocation[] = [
   {
     name: "Makkah",
     slug: "makkah",
-    description: "Tanah suci Ka'bah",
+    description: "Di kota suci inilah jutaan muslim dari seluruh dunia berkumpul menghadap Ka'bah, pusat ibadah umat Islam. Setiap langkah di Makkah mengingatkan kita pada perjalanan dakwah Rasulullah ﷺ dan perjuangan awal Islam.",
     cover: coverMakkah,
     images: [
       { src: makkah1, caption: "Jamaah di Ka'bah" },
@@ -83,7 +83,7 @@ export const galleryLocations: GalleryLocation[] = [
   {
     name: "Madinah",
     slug: "madinah",
-    description: "Kota Nabi Muhammad ﷺ",
+    description: "Madinah adalah kota penuh ketenangan, tempat Rasulullah ﷺ membangun masyarakat Islam pertama. Di sinilah Masjid Nabawi berdiri dan Raudhah menjadi tempat yang selalu dirindukan setiap jamaah.",
     cover: coverMadinah,
     images: [
       { src: madinah7, caption: "Raudhah Masjid Nabawi" },
@@ -97,7 +97,7 @@ export const galleryLocations: GalleryLocation[] = [
   {
     name: "Thoif",
     slug: "thoif",
-    description: "Pegunungan sejuk bersejarah",
+    description: "Thaif menyimpan kisah perjuangan Rasulullah ﷺ ketika berdakwah di tengah penolakan yang berat. Dari kota pegunungan yang sejuk ini, kita belajar tentang kesabaran dan keteguhan dalam menyampaikan kebenaran.",
     cover: thoif1,
     images: [
       { src: thoif1, caption: "Masjid Abdullah bin Abbas" },
@@ -111,7 +111,7 @@ export const galleryLocations: GalleryLocation[] = [
   {
     name: "Al Ula",
     slug: "al-ula",
-    description: "Warisan kuno UNESCO",
+    description: "Al Ula menghadirkan lanskap gurun yang luar biasa indah dengan jejak peradaban kuno yang masih tersisa hingga hari ini. Perjalanan ke sini terasa seperti menelusuri kisah sejarah yang membentang di tengah padang pasir.",
     cover: alUla1,
     images: [
       { src: alUla1, caption: "Tim Al Ula" },
@@ -125,18 +125,18 @@ export const galleryLocations: GalleryLocation[] = [
     ],
   },
   {
-    name: "Jabal Khandamah",
+    name: "Khandamah & Kuday",
     slug: "jabal-khandamah",
-    description: "Gunung bersejarah di Makkah",
+    description: "Dari kawasan perbukitan Khandamah dan Kuday, kita dapat melihat panorama kota Makkah yang berkembang mengelilingi Masjidil Haram. Pemandangan ini sering membuat jamaah berhenti sejenak untuk mengagumi kebesaran kota suci ini.",
     cover: coverJabalKhandamah,
     images: [
       { src: coverJabalKhandamah, caption: "Foto Bersama di Jabal Khandamah" },
     ],
   },
   {
-    name: "Jabal Nur",
+    name: "Gua Hira",
     slug: "jabal-nur",
-    description: "Tempat turunnya wahyu pertama",
+    description: "Di Gua Hira, Rasulullah ﷺ menerima wahyu pertama yang menjadi awal turunnya Al-Qur'an. Tempat ini mengingatkan kita pada momen ketika cahaya Islam pertama kali menyinari dunia.",
     cover: coverJabalNur,
     images: [
       { src: coverJabalNur, caption: "Foto Bersama di Jabal Nur" },
@@ -145,7 +145,7 @@ export const galleryLocations: GalleryLocation[] = [
   {
     name: "Jabal Tsur",
     slug: "jabal-tsur",
-    description: "Gua persembunyian Nabi ﷺ",
+    description: "Di Jabal Tsur, Rasulullah ﷺ dan Abu Bakar bersembunyi saat perjalanan hijrah menuju Madinah. Gua ini menjadi saksi kepercayaan penuh kepada pertolongan Allah di saat-saat yang paling sulit.",
     cover: coverJabalTsur,
     images: [
       { src: coverJabalTsur, caption: "Foto Bersama di Jabal Tsur" },
@@ -154,7 +154,7 @@ export const galleryLocations: GalleryLocation[] = [
   {
     name: "Hudaibiyah",
     slug: "hudaibiyah",
-    description: "Lokasi perjanjian bersejarah",
+    description: "Di tempat inilah Perjanjian Hudaibiyah terjadi, sebuah peristiwa yang tampak sederhana namun menjadi titik penting kemenangan dakwah Islam. Kisah ini mengajarkan kesabaran dan kebijaksanaan Rasulullah ﷺ dalam menghadapi tantangan.",
     cover: coverHudaibiyah,
     images: [
       { src: coverHudaibiyah, caption: "Foto Bersama di Hudaibiyah" },
@@ -163,7 +163,7 @@ export const galleryLocations: GalleryLocation[] = [
   {
     name: "Badr",
     slug: "badr",
-    description: "Medan perang bersejarah",
+    description: "Di lembah Badr inilah terjadi salah satu pertempuran paling penting dalam sejarah Islam. Kisah kemenangan kaum muslimin di tempat ini selalu menjadi pengingat tentang pertolongan Allah bagi orang-orang yang beriman.",
     cover: coverBadr,
     images: [
       { src: badr1, caption: "I Love Badr" },
@@ -180,7 +180,7 @@ export const galleryLocations: GalleryLocation[] = [
   {
     name: "Jeddah",
     slug: "jeddah",
-    description: "Gerbang Tanah Suci",
+    description: "Jeddah telah lama menjadi gerbang bagi para jamaah yang datang menuju Tanah Suci. Kota pesisir ini memadukan sejarah perjalanan haji dengan wajah modern Arab Saudi saat ini.",
     cover: coverJeddah,
     images: [
       { src: jeddah1, caption: "Nonton Bola Al Nassr" },
@@ -203,7 +203,7 @@ export const galleryLocations: GalleryLocation[] = [
   {
     name: "Jamaah Private",
     slug: "jamaah-private",
-    description: "Momen eksklusif jamaah privat",
+    description: "Pendampingan private memberikan kesempatan bagi jamaah untuk menikmati perjalanan ibadah dengan lebih tenang dan personal. Setiap lokasi dapat dijelaskan dengan lebih mendalam sesuai kebutuhan jamaah.",
     cover: coverJamaahPrivate,
     images: [
       { src: coverJamaahPrivate, caption: "Jamaah Private di Kereta" },
