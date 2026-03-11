@@ -111,7 +111,7 @@ export const galleryLocations: GalleryLocation[] = [
   {
     name: "Al Ula",
     slug: "al-ula",
-    description: "Warisan kuno UNESCO",
+    description: "Al Ula menghadirkan lanskap gurun yang luar biasa indah dengan jejak peradaban kuno yang masih tersisa hingga hari ini. Perjalanan ke sini terasa seperti menelusuri kisah sejarah yang membentang di tengah padang pasir.",
     cover: alUla1,
     images: [
       { src: alUla1, caption: "Tim Al Ula" },
