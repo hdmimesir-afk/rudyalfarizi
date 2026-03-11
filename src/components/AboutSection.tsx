@@ -16,7 +16,7 @@ const AboutSection = () => {
 
   return (
     <>
-      <section id="about" className="py-14 md:py-40 bg-background border-t border-border">
+      <section id="about" className="section-light py-14 md:py-40 border-t border-border">
         <div className="px-6 md:px-16 lg:px-24">
           <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-8 md:mb-16">About</p>
 
