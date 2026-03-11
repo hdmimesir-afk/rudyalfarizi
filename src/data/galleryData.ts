@@ -125,9 +125,9 @@ export const galleryLocations: GalleryLocation[] = [
     ],
   },
   {
-    name: "Jabal Khandamah",
+    name: "Khandamah & Kuday",
     slug: "jabal-khandamah",
-    description: "Gunung bersejarah di Makkah",
+    description: "Dari kawasan perbukitan Khandamah dan Kuday, kita dapat melihat panorama kota Makkah yang berkembang mengelilingi Masjidil Haram. Pemandangan ini sering membuat jamaah berhenti sejenak untuk mengagumi kebesaran kota suci ini.",
     cover: coverJabalKhandamah,
     images: [
       { src: coverJabalKhandamah, caption: "Foto Bersama di Jabal Khandamah" },
