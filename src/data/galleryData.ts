@@ -163,7 +163,7 @@ export const galleryLocations: GalleryLocation[] = [
   {
     name: "Badr",
     slug: "badr",
-    description: "Medan perang bersejarah",
+    description: "Di lembah Badr inilah terjadi salah satu pertempuran paling penting dalam sejarah Islam. Kisah kemenangan kaum muslimin di tempat ini selalu menjadi pengingat tentang pertolongan Allah bagi orang-orang yang beriman.",
     cover: coverBadr,
     images: [
       { src: badr1, caption: "I Love Badr" },
