@@ -180,7 +180,7 @@ export const galleryLocations: GalleryLocation[] = [
   {
     name: "Jeddah",
     slug: "jeddah",
-    description: "Gerbang Tanah Suci",
+    description: "Jeddah telah lama menjadi gerbang bagi para jamaah yang datang menuju Tanah Suci. Kota pesisir ini memadukan sejarah perjalanan haji dengan wajah modern Arab Saudi saat ini.",
     cover: coverJeddah,
     images: [
       { src: jeddah1, caption: "Nonton Bola Al Nassr" },
