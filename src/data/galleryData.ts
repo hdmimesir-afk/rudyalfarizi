@@ -44,6 +44,10 @@ import makkah7 from "@/assets/makkah-7.jpg";
 import coverMakkah from "@/assets/cover-makkah.jpg";
 import coverMadinah from "@/assets/cover-madinah.jpg";
 import coverJabalKhandamah from "@/assets/cover-jabal-khandamah.jpg";
+import khandamah2 from "@/assets/khandamah-2.jpg";
+import khandamah3 from "@/assets/khandamah-3.jpg";
+import khandamah4 from "@/assets/khandamah-4.jpg";
+import khandamah5 from "@/assets/khandamah-5.jpg";
 import coverJabalNur from "@/assets/cover-jabal-nur.jpg";
 import coverJabalTsur from "@/assets/cover-jabal-tsur.jpg";
 import coverHudaibiyah from "@/assets/cover-hudaibiyah.jpg";
@@ -131,6 +135,10 @@ export const galleryLocations: GalleryLocation[] = [
     cover: coverJabalKhandamah,
     images: [
       { src: coverJabalKhandamah, caption: "Foto Bersama di Jabal Khandamah" },
+      { src: khandamah2, caption: "Jamaah di Puncak Khandamah" },
+      { src: khandamah3, caption: "Di Dalam Gua" },
+      { src: khandamah4, caption: "Panorama dari Puncak" },
+      { src: khandamah5, caption: "Pendakian Khandamah" },
     ],
   },
   {
