@@ -197,6 +197,9 @@ export const galleryLocations: GalleryLocation[] = [
     cover: coverHudaibiyah,
     images: [
       { src: coverHudaibiyah, caption: "Foto Bersama di Hudaibiyah" },
+      { src: hudaibiyah1, caption: "Bersama Unta di Hudaibiyah" },
+      { src: hudaibiyah2, caption: "Jamaah di Desa Tradisional" },
+      { src: hudaibiyah4, caption: "Foto Bersama Rombongan" },
     ],
   },
   {
