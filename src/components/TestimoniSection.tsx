@@ -26,7 +26,7 @@ const TestimoniSection = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="md:bg-background md:p-8 flex flex-col gap-3"
+              className="md:bg-[hsl(0_0%_100%)] md:p-8 flex flex-col gap-3"
             >
               <p className="text-sm md:text-base text-foreground leading-relaxed">
                 "{testimonial.content}"
