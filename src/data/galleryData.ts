@@ -236,6 +236,13 @@ export const galleryLocations: GalleryLocation[] = [
     cover: coverJamaahPrivate,
     images: [
       { src: coverJamaahPrivate, caption: "Jamaah Private di Kereta" },
+      { src: private1, caption: "Kuliner Khas Arab" },
+      { src: private2, caption: "Jamaah di Taman Kurma" },
+      { src: private3, caption: "Dinner View Ka'bah" },
+      { src: private4, caption: "Ziarah Masjid Bersejarah" },
+      { src: private5, caption: "Kumpul Bersama Tim" },
+      { src: private6, caption: "Jamaah di Jabal Uhud" },
+      { src: private7, caption: "Foto Bersama di Ka'bah" },
     ],
   },
 ];
