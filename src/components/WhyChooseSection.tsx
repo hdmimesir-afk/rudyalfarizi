@@ -1,11 +1,11 @@
 const WhyChooseSection = () => {
   const reasons = [
-    { title: "Ilmu Mendalam", description: "Lulusan Al-Azhar dengan penguasaan fiqih manasik dan sejarah Islam." },
-    { title: "Khidmat & Sabar", description: "Melayani dengan sepenuh hati dan kasih sayang kepada setiap jamaah." },
-    { title: "Terpercaya", description: "Pengalaman membimbing ratusan jamaah dengan track record yang terjaga." },
-    { title: "Fleksibel", description: "Jadwal dapat disesuaikan dengan kebutuhan jamaah atau travel umrah." },
-    { title: "Profesional", description: "Standar pelayanan tinggi dengan dokumentasi dan koordinasi terorganisir." },
-    { title: "Privasi Terjaga", description: "Ideal untuk VVIP, tokoh publik, atau keluarga yang butuh privasi." },
+    { title: "Ilmu Mendalam", description: "Latar belakang pendidikan di Universitas Al-Azhar Kairo dengan pemahaman fiqih manasik dan sejarah Islam yang mendalam." },
+    { title: "Bimbingan yang Mudah Dipahami", description: "Pendekatan komunikatif dan jelas, sehingga jamaah dapat menjalankan ibadah dengan lebih tenang dan penuh pemahaman." },
+    { title: "Terpercaya", description: "Pengalaman membimbing ribuan jamaah dengan track record yang terjaga sejak 2022" },
+    { title: "Pelayanan dengan Ketulusan", description: "Mengutamakan pelayanan yang sabar, ramah, dan penuh perhatian terhadap setiap jamaah." },
+    { title: "Enerjik dan Mudah Beradaptasi", description: "Pendampingan yang hangat dan fleksibel untuk jamaah dari berbagai usia dan latar belakang." },
+    { title: "Dokumentasi Perjalanan Jamaah", description: "Mengabadikan momen perjalanan ibadah melalui foto dan video sebagai kenangan berharga dari Tanah Suci." },
   ];
 
   return (
