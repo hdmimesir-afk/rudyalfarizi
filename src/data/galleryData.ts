@@ -185,6 +185,9 @@ export const galleryLocations: GalleryLocation[] = [
     cover: coverJabalTsur,
     images: [
       { src: coverJabalTsur, caption: "Foto Bersama di Jabal Tsur" },
+      { src: tsur2, caption: "Jamaah di Gua Tsur" },
+      { src: tsur3, caption: "Di Depan Gua Tsur" },
+      { src: tsur4, caption: "Foto Bersama Jamaah" },
     ],
   },
   {
