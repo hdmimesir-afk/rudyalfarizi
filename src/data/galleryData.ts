@@ -54,6 +54,13 @@ import coverHudaibiyah from "@/assets/cover-hudaibiyah.jpg";
 import coverBadr from "@/assets/cover-badr.jpg";
 import coverJeddah from "@/assets/cover-jeddah.jpg";
 import coverGuideMesir from "@/assets/cover-guide-mesir.jpg";
+import mesir1 from "@/assets/mesir-1.jpg";
+import mesir2 from "@/assets/mesir-2.jpg";
+import mesir3 from "@/assets/mesir-3.jpg";
+import mesir4 from "@/assets/mesir-4.jpg";
+import mesir5 from "@/assets/mesir-5.jpg";
+import mesir6 from "@/assets/mesir-6.jpg";
+import mesir7 from "@/assets/mesir-7.jpg";
 import coverJamaahPrivate from "@/assets/cover-jamaah-private.jpg";
 
 export interface GalleryImage {
@@ -206,6 +213,13 @@ export const galleryLocations: GalleryLocation[] = [
     cover: coverGuideMesir,
     images: [
       { src: coverGuideMesir, caption: "Foto Bersama di Mesir" },
+      { src: mesir1, caption: "Jeep Safari di Gurun" },
+      { src: mesir2, caption: "Naik Unta di Piramida" },
+      { src: mesir3, caption: "Selfie di Piramida" },
+      { src: mesir4, caption: "Siwa Protected Area" },
+      { src: mesir5, caption: "Eksplorasi Tebing" },
+      { src: mesir6, caption: "City Tour Mesir" },
+      { src: mesir7, caption: "Istirahat di Oasis" },
     ],
   },
   {
