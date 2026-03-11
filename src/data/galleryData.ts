@@ -62,6 +62,13 @@ import mesir5 from "@/assets/mesir-5.jpg";
 import mesir6 from "@/assets/mesir-6.jpg";
 import mesir7 from "@/assets/mesir-7.jpg";
 import coverJamaahPrivate from "@/assets/cover-jamaah-private.jpg";
+import private1 from "@/assets/private-1.jpg";
+import private2 from "@/assets/private-2.jpg";
+import private3 from "@/assets/private-3.jpg";
+import private4 from "@/assets/private-4.jpg";
+import private5 from "@/assets/private-5.jpg";
+import private6 from "@/assets/private-6.jpg";
+import private7 from "@/assets/private-7.jpg";
 
 export interface GalleryImage {
   src: string;
