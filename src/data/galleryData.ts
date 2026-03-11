@@ -213,6 +213,13 @@ export const galleryLocations: GalleryLocation[] = [
     cover: coverGuideMesir,
     images: [
       { src: coverGuideMesir, caption: "Foto Bersama di Mesir" },
+      { src: mesir1, caption: "Jeep Safari di Gurun" },
+      { src: mesir2, caption: "Naik Unta di Piramida" },
+      { src: mesir3, caption: "Selfie di Piramida" },
+      { src: mesir4, caption: "Siwa Protected Area" },
+      { src: mesir5, caption: "Eksplorasi Tebing" },
+      { src: mesir6, caption: "City Tour Mesir" },
+      { src: mesir7, caption: "Istirahat di Oasis" },
     ],
   },
   {
