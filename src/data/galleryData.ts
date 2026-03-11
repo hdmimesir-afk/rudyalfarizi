@@ -145,7 +145,7 @@ export const galleryLocations: GalleryLocation[] = [
   {
     name: "Jabal Tsur",
     slug: "jabal-tsur",
-    description: "Gua persembunyian Nabi ﷺ",
+    description: "Di Jabal Tsur, Rasulullah ﷺ dan Abu Bakar bersembunyi saat perjalanan hijrah menuju Madinah. Gua ini menjadi saksi kepercayaan penuh kepada pertolongan Allah di saat-saat yang paling sulit.",
     cover: coverJabalTsur,
     images: [
       { src: coverJabalTsur, caption: "Foto Bersama di Jabal Tsur" },
