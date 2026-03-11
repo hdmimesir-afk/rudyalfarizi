@@ -42,7 +42,7 @@ const FAQSection = () => {
   ];
 
   return (
-    <section id="faq" className="py-14 md:py-40 bg-background border-t border-border">
+    <section id="faq" className="section-light py-14 md:py-40 border-t border-border">
       <div className="px-6 md:px-16 lg:px-24">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-24">
           <div>

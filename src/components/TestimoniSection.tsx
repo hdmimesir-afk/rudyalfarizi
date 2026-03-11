@@ -18,7 +18,7 @@ const TestimoniSection = () => {
   ];
 
   return (
-    <section id="testimonials" className="py-14 md:py-32 bg-background border-t border-border">
+    <section id="testimonials" className="section-light py-14 md:py-32 border-t border-border">
       <div className="px-6 md:px-16 lg:px-24">
         <p className="text-[10px] md:text-xs tracking-mega uppercase text-primary mb-6 md:mb-10">Testimoni</p>
 
