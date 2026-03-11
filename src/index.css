@@ -46,8 +46,8 @@
 
 @layer base {
   :root {
-    /* White-blue theme */
-    --background: 210 40% 98%;
+    /* Blue primary, white secondary */
+    --background: 0 0% 100%;
     --foreground: 215 25% 15%;
 
     --card: 0 0% 100%;
@@ -59,10 +59,10 @@
     --primary: 215 80% 50%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 30% 92%;
+    --secondary: 0 0% 100%;
     --secondary-foreground: 215 25% 15%;
 
-    --muted: 210 25% 93%;
+    --muted: 210 25% 95%;
     --muted-foreground: 215 15% 45%;
 
     --gallery-bg: 210 30% 96%;
@@ -73,19 +73,19 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 20% 88%;
-    --input: 210 20% 88%;
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
     --ring: 215 80% 50%;
 
     --radius: 0rem;
 
-    --sidebar-background: 215 30% 12%;
-    --sidebar-foreground: 210 25% 92%;
+    --sidebar-background: 215 50% 15%;
+    --sidebar-foreground: 0 0% 100%;
     --sidebar-primary: 215 80% 55%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 215 25% 18%;
-    --sidebar-accent-foreground: 210 25% 92%;
-    --sidebar-border: 215 20% 20%;
+    --sidebar-accent: 215 40% 22%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 215 30% 25%;
     --sidebar-ring: 215 80% 55%;
   }
 }
