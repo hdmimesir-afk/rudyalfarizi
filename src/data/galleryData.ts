@@ -54,6 +54,13 @@ import coverHudaibiyah from "@/assets/cover-hudaibiyah.jpg";
 import coverBadr from "@/assets/cover-badr.jpg";
 import coverJeddah from "@/assets/cover-jeddah.jpg";
 import coverGuideMesir from "@/assets/cover-guide-mesir.jpg";
+import mesir1 from "@/assets/mesir-1.jpg";
+import mesir2 from "@/assets/mesir-2.jpg";
+import mesir3 from "@/assets/mesir-3.jpg";
+import mesir4 from "@/assets/mesir-4.jpg";
+import mesir5 from "@/assets/mesir-5.jpg";
+import mesir6 from "@/assets/mesir-6.jpg";
+import mesir7 from "@/assets/mesir-7.jpg";
 import coverJamaahPrivate from "@/assets/cover-jamaah-private.jpg";
 
 export interface GalleryImage {
