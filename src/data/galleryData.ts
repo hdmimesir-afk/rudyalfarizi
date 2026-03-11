@@ -203,7 +203,7 @@ export const galleryLocations: GalleryLocation[] = [
   {
     name: "Jamaah Private",
     slug: "jamaah-private",
-    description: "Momen eksklusif jamaah privat",
+    description: "Pendampingan private memberikan kesempatan bagi jamaah untuk menikmati perjalanan ibadah dengan lebih tenang dan personal. Setiap lokasi dapat dijelaskan dengan lebih mendalam sesuai kebutuhan jamaah.",
     cover: coverJamaahPrivate,
     images: [
       { src: coverJamaahPrivate, caption: "Jamaah Private di Kereta" },
