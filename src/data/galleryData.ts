@@ -154,7 +154,7 @@ export const galleryLocations: GalleryLocation[] = [
   {
     name: "Hudaibiyah",
     slug: "hudaibiyah",
-    description: "Lokasi perjanjian bersejarah",
+    description: "Di tempat inilah Perjanjian Hudaibiyah terjadi, sebuah peristiwa yang tampak sederhana namun menjadi titik penting kemenangan dakwah Islam. Kisah ini mengajarkan kesabaran dan kebijaksanaan Rasulullah ﷺ dalam menghadapi tantangan.",
     cover: coverHudaibiyah,
     images: [
       { src: coverHudaibiyah, caption: "Foto Bersama di Hudaibiyah" },
