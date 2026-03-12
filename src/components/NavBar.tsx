@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import rudyIcon from "@/assets/rudy-icon.png";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,11 +32,17 @@ const NavBar = () => {
     }
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    setIsMobileMenuOpen(false);
+  };
+
   const navLinks = [
-    { label: "About", id: "about" },
-    { label: "Layanan", id: "services" },
-    { label: "Galeri", id: "gallery" },
-    { label: "Testimoni", id: "testimonials" },
+    { label: "Home", action: scrollToTop },
+    { label: "About", action: () => scrollToSection("about") },
+    { label: "Layanan", action: () => scrollToSection("services") },
+    { label: "Galeri", action: () => scrollToSection("gallery") },
+    { label: "Testimoni", action: () => scrollToSection("testimonials") },
   ];
 
   return (
@@ -50,12 +56,20 @@ const NavBar = () => {
       >
         <div className="px-6 md:px-16 lg:px-24">
           <div className="flex items-center justify-between h-14 md:h-20">
+            {/* Left - Rudy icon (mobile) */}
+            <button
+              onClick={scrollToTop}
+              className="md:hidden hover:opacity-80 transition-opacity"
+            >
+              <img src={rudyIcon} alt="Rudy Alfarizi" className="h-5 w-auto" />
+            </button>
+
             {/* Left nav - desktop */}
             <div className="hidden md:flex items-center gap-10">
-              {navLinks.map((link) => (
+              {navLinks.map((link, i) => (
                 <button
-                  key={link.id}
-                  onClick={() => scrollToSection(link.id)}
+                  key={i}
+                  onClick={link.action}
                   className="text-xs tracking-ultra uppercase text-foreground/60 hover:text-primary transition-colors duration-300"
                 >
                   {link.label}
@@ -63,25 +77,26 @@ const NavBar = () => {
               ))}
             </div>
 
-            {/* Center logo */}
+            {/* Center logo - desktop only */}
             <button
-              onClick={() => scrollToSection("hero")}
-              className="hover:opacity-80 transition-opacity"
+              onClick={scrollToTop}
+              className="hidden md:block hover:opacity-80 transition-opacity"
             >
-              <img src={rudyIcon} alt="Rudy Alfarizi" className="h-5 md:h-7 w-auto" />
+              <img src={rudyIcon} alt="Rudy Alfarizi" className="h-7 w-auto" />
             </button>
 
             {/* Right CTA - desktop */}
             <div className="hidden md:block">
               <button
                 onClick={() => scrollToSection("contact")}
-                className="text-xs tracking-ultra uppercase border border-primary text-primary px-6 py-3 hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                className="inline-flex items-center gap-2 text-xs tracking-ultra uppercase border border-primary text-primary px-6 py-3 hover:bg-primary hover:text-primary-foreground transition-all duration-300"
               >
+                <Phone size={12} />
                 Konsultasi
               </button>
             </div>
 
-            {/* Mobile Menu Button */}
+            {/* Mobile right - close/menu button */}
             <button
               className="md:hidden p-1.5 text-foreground z-[60]"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -95,11 +110,23 @@ const NavBar = () => {
       {/* Fullscreen Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="fixed inset-0 z-[55] bg-background flex flex-col justify-center px-10 animate-fade-in md:hidden">
+          {/* Close button top right */}
+          <button
+            className="absolute top-4 right-6 p-1.5 text-foreground/60 hover:text-foreground transition-colors"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            <X size={20} />
+          </button>
+          {/* Rudy icon top left */}
+          <div className="absolute top-4 left-6">
+            <img src={rudyIcon} alt="Rudy Alfarizi" className="h-5 w-auto" />
+          </div>
+
           <div className="flex flex-col items-start gap-8">
-            {navLinks.map((link) => (
+            {navLinks.map((link, i) => (
               <button
-                key={link.id}
-                onClick={() => scrollToSection(link.id)}
+                key={i}
+                onClick={link.action}
                 className="text-2xl tracking-ultra uppercase text-foreground/60 hover:text-primary transition-colors font-display"
               >
                 {link.label}
@@ -107,8 +134,9 @@ const NavBar = () => {
             ))}
             <button
               onClick={() => scrollToSection("contact")}
-              className="text-sm tracking-ultra uppercase border border-primary text-primary px-8 py-4 hover:bg-primary hover:text-primary-foreground transition-all mt-4"
+              className="inline-flex items-center gap-2 text-sm tracking-ultra uppercase border border-primary text-primary px-8 py-4 hover:bg-primary hover:text-primary-foreground transition-all mt-4"
             >
+              <Phone size={14} />
               Konsultasi
             </button>
           </div>

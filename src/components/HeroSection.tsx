@@ -1,4 +1,4 @@
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Phone } from "lucide-react";
 import heroKabah from "@/assets/hero-kabah.jpg";
 
 const HeroSection = () => {
