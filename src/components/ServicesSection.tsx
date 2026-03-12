@@ -35,6 +35,7 @@ const services = [
     slug: "guide-mesir",
     title: "Guide Mesir",
     description: "Berpengalaman mendampingi tamu sejak tahun 2021 ke berbagai destinasi bersejarah di Mesir, mulai dari Kairo, Alexandria, Giza, Sinai, Matruh, Siwa, Hurghada, hingga Luxor.",
+  },
 ];
 
 
