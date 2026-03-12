@@ -239,7 +239,7 @@ export const galleryLocations: GalleryLocation[] = [
     description: "Pendampingan private memberikan kesempatan bagi jamaah untuk menikmati perjalanan ibadah dengan lebih tenang dan personal. Setiap lokasi dapat dijelaskan dengan lebih mendalam sesuai kebutuhan jamaah.",
     cover: coverJamaahPrivate,
     images: [
-      { src: coverJamaahPrivate, caption: "Jamaah Private di Kereta" },
+      { src: private1, caption: "Kuliner Khas Arab" },
       { src: private1, caption: "Kuliner Khas Arab" },
       { src: private2, caption: "Jamaah di Taman Kurma" },
       { src: private3, caption: "Dinner View Ka'bah" },
