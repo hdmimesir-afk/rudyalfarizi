@@ -22,21 +22,21 @@ const HeroSection = () => {
         <img src={heroKabah} alt="" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-background/80" />
       </div>
-      <div className="relative z-10 w-full px-4 md:px-12 text-center animate-fade-in">
-        <p className="text-[10px] md:text-xs tracking-mega uppercase text-foreground mb-5 md:mb-8 opacity-0 animate-fade-in" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
+      <div className="relative z-10 w-full px-4 md:px-12 text-center">
+        <p className="text-[10px] md:text-xs tracking-mega uppercase text-foreground mb-5 md:mb-8 animate-fade-up">
           Muthowwif Profesional
         </p>
 
         <h1
-          className="text-[3rem] sm:text-6xl md:text-7xl lg:text-9xl xl:text-[12rem] text-foreground leading-[0.85] tracking-[0.02em] md:tracking-[0.04em] mb-8 md:mb-12 opacity-0 animate-fade-in uppercase"
-          style={{ fontFamily: "'Montecatini Pro', serif", animationDelay: '0.4s', animationFillMode: 'forwards' }}
+          className="text-[3rem] sm:text-6xl md:text-7xl lg:text-9xl xl:text-[12rem] text-foreground leading-[0.85] tracking-[0.02em] md:tracking-[0.04em] mb-8 md:mb-12 animate-fade-up uppercase"
+          style={{ fontFamily: "'Montecatini Pro', serif", animationDelay: '0.15s' }}
         >
           RUDY
           <br />
           ALFARIZI
         </h1>
 
-        <div className="flex items-center justify-between max-w-xs sm:max-w-sm md:max-w-2xl lg:max-w-4xl mx-auto mb-8 md:mb-12 opacity-0 animate-fade-in" style={{ animationDelay: '0.6s', animationFillMode: 'forwards' }}>
+        <div className="flex items-center justify-between max-w-xs sm:max-w-sm md:max-w-2xl lg:max-w-4xl mx-auto mb-8 md:mb-12 animate-fade-up" style={{ animationDelay: '0.3s' }}>
           <p className="text-[9px] md:text-xs tracking-widest md:tracking-ultra uppercase text-foreground text-left">
             Pembimbing Ibadah
             <br />
@@ -53,8 +53,8 @@ const HeroSection = () => {
           href={whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 mt-4 md:mt-8 text-[10px] md:text-xs tracking-widest md:tracking-ultra uppercase border border-primary text-primary px-7 py-3 md:px-10 md:py-4 rounded-md hover:bg-primary hover:text-primary-foreground transition-all duration-300 opacity-0 animate-fade-in"
-          style={{ animationDelay: '0.8s', animationFillMode: 'forwards' }}
+          className="inline-flex items-center gap-2 mt-4 md:mt-8 text-[10px] md:text-xs tracking-widest md:tracking-ultra uppercase border border-primary text-primary px-7 py-3 md:px-10 md:py-4 rounded-md hover:bg-primary hover:text-primary-foreground transition-all duration-300 animate-fade-up"
+          style={{ animationDelay: '0.45s' }}
         >
           <Phone size={14} />
           Konsultasi Jadwal
