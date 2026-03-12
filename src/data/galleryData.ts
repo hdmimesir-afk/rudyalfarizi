@@ -128,7 +128,7 @@ export const galleryLocations: GalleryLocation[] = [
     description: "Thaif menyimpan kisah perjuangan Rasulullah ﷺ ketika berdakwah di tengah penolakan yang berat. Dari kota pegunungan yang sejuk ini, kita belajar tentang kesabaran dan keteguhan dalam menyampaikan kebenaran.",
     cover: thoif1,
     images: [
-      { src: thoif1, caption: "Masjid Abdullah bin Abbas" },
+      { src: thoif2, caption: "Kuliner di Thoif" },
       { src: thoif2, caption: "Kuliner di Thoif" },
       { src: thoif3, caption: "Selfie di Thoif" },
       { src: thoif4, caption: "Cable Car Al Hada" },
@@ -142,7 +142,7 @@ export const galleryLocations: GalleryLocation[] = [
     description: "Al Ula menghadirkan lanskap gurun yang luar biasa indah dengan jejak peradaban kuno yang masih tersisa hingga hari ini. Perjalanan ke sini terasa seperti menelusuri kisah sejarah yang membentang di tengah padang pasir.",
     cover: alUla1,
     images: [
-      { src: alUla1, caption: "Tim Al Ula" },
+      { src: alUla2, caption: "Wisata Old Town" },
       { src: alUla2, caption: "Wisata Old Town" },
       { src: alUla3, caption: "Old Town Al Ula" },
       { src: alUla4, caption: "Maraya Concert Hall" },
@@ -158,7 +158,7 @@ export const galleryLocations: GalleryLocation[] = [
     description: "Dari kawasan perbukitan Khandamah dan Kuday, kita dapat melihat panorama kota Makkah yang berkembang mengelilingi Masjidil Haram. Pemandangan ini sering membuat jamaah berhenti sejenak untuk mengagumi kebesaran kota suci ini.",
     cover: coverJabalKhandamah,
     images: [
-      { src: coverJabalKhandamah, caption: "Foto Bersama di Jabal Khandamah" },
+      { src: khandamah6, caption: "Jamaah Sunset di Khandamah" },
       { src: khandamah6, caption: "Jamaah Sunset di Khandamah" },
       { src: khandamah7, caption: "Foto Bersama Jamaah" },
       { src: khandamah8, caption: "Dinner Romantis di Khandamah" },
@@ -171,7 +171,7 @@ export const galleryLocations: GalleryLocation[] = [
     description: "Di Gua Hira, Rasulullah ﷺ menerima wahyu pertama yang menjadi awal turunnya Al-Qur'an. Tempat ini mengingatkan kita pada momen ketika cahaya Islam pertama kali menyinari dunia.",
     cover: coverJabalNur,
     images: [
-      { src: coverJabalNur, caption: "Foto Bersama di Jabal Nur" },
+      { src: khandamah2, caption: "Jamaah di Puncak" },
       { src: khandamah2, caption: "Jamaah di Puncak" },
       { src: khandamah3, caption: "Di Dalam Gua" },
       { src: khandamah4, caption: "Panorama dari Puncak" },
@@ -184,7 +184,7 @@ export const galleryLocations: GalleryLocation[] = [
     description: "Di Jabal Tsur, Rasulullah ﷺ dan Abu Bakar bersembunyi saat perjalanan hijrah menuju Madinah. Gua ini menjadi saksi kepercayaan penuh kepada pertolongan Allah di saat-saat yang paling sulit.",
     cover: coverJabalTsur,
     images: [
-      { src: coverJabalTsur, caption: "Foto Bersama di Jabal Tsur" },
+      { src: tsur2, caption: "Jamaah di Gua Tsur" },
       { src: tsur2, caption: "Jamaah di Gua Tsur" },
       { src: tsur3, caption: "Di Depan Gua Tsur" },
       { src: tsur4, caption: "Foto Bersama Jamaah" },
@@ -196,7 +196,7 @@ export const galleryLocations: GalleryLocation[] = [
     description: "Di tempat inilah Perjanjian Hudaibiyah terjadi, sebuah peristiwa yang tampak sederhana namun menjadi titik penting kemenangan dakwah Islam. Kisah ini mengajarkan kesabaran dan kebijaksanaan Rasulullah ﷺ dalam menghadapi tantangan.",
     cover: coverHudaibiyah,
     images: [
-      { src: coverHudaibiyah, caption: "Foto Bersama di Hudaibiyah" },
+      { src: hudaibiyah1, caption: "Bersama Unta di Hudaibiyah" },
       { src: hudaibiyah1, caption: "Bersama Unta di Hudaibiyah" },
       { src: hudaibiyah2, caption: "Jamaah di Desa Tradisional" },
       { src: hudaibiyah4, caption: "Foto Bersama Rombongan" },
@@ -239,7 +239,7 @@ export const galleryLocations: GalleryLocation[] = [
     description: "Pendampingan private memberikan kesempatan bagi jamaah untuk menikmati perjalanan ibadah dengan lebih tenang dan personal. Setiap lokasi dapat dijelaskan dengan lebih mendalam sesuai kebutuhan jamaah.",
     cover: coverJamaahPrivate,
     images: [
-      { src: coverJamaahPrivate, caption: "Jamaah Private di Kereta" },
+      { src: private1, caption: "Kuliner Khas Arab" },
       { src: private1, caption: "Kuliner Khas Arab" },
       { src: private2, caption: "Jamaah di Taman Kurma" },
       { src: private3, caption: "Dinner View Ka'bah" },
@@ -255,7 +255,7 @@ export const galleryLocations: GalleryLocation[] = [
     description: "Berpengalaman mendampingi tamu sejak tahun 2021 ke berbagai destinasi bersejarah di Mesir, mulai dari Kairo, Alexandria, Giza, Sinai, Matruh, Siwa, Hurghada, hingga Luxor",
     cover: coverGuideMesir,
     images: [
-      { src: coverGuideMesir, caption: "Foto Bersama di Mesir" },
+      { src: mesir1, caption: "Jeep Safari di Gurun" },
       { src: mesir1, caption: "Jeep Safari di Gurun" },
       { src: mesir2, caption: "Naik Unta di Piramida" },
       { src: mesir3, caption: "Selfie di Piramida" },
