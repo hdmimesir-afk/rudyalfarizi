@@ -31,6 +31,15 @@ const services = [
     title: "Talent Umrah",
     description: "Kebutuhan talent untuk konten dan kampanye brand terkait umrah dan haji.",
   },
+  {
+    slug: "guide-mesir",
+    title: "Guide Mesir",
+    description: "Berpengalaman mendampingi tamu sejak tahun 2021 ke berbagai destinasi bersejarah di Mesir, mulai dari Kairo, Alexandria, Giza, Sinai, Matruh, Siwa, Hurghada, hingga Luxor.",
+  },
+    slug: "talent-umrah",
+    title: "Talent Umrah",
+    description: "Kebutuhan talent untuk konten dan kampanye brand terkait umrah dan haji.",
+  },
 ];
 
 export { services };
