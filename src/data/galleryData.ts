@@ -171,7 +171,7 @@ export const galleryLocations: GalleryLocation[] = [
     description: "Di Gua Hira, Rasulullah ﷺ menerima wahyu pertama yang menjadi awal turunnya Al-Qur'an. Tempat ini mengingatkan kita pada momen ketika cahaya Islam pertama kali menyinari dunia.",
     cover: coverJabalNur,
     images: [
-      { src: coverJabalNur, caption: "Foto Bersama di Jabal Nur" },
+      { src: khandamah2, caption: "Jamaah di Puncak" },
       { src: khandamah2, caption: "Jamaah di Puncak" },
       { src: khandamah3, caption: "Di Dalam Gua" },
       { src: khandamah4, caption: "Panorama dari Puncak" },
