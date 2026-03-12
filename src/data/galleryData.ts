@@ -196,7 +196,7 @@ export const galleryLocations: GalleryLocation[] = [
     description: "Di tempat inilah Perjanjian Hudaibiyah terjadi, sebuah peristiwa yang tampak sederhana namun menjadi titik penting kemenangan dakwah Islam. Kisah ini mengajarkan kesabaran dan kebijaksanaan Rasulullah ﷺ dalam menghadapi tantangan.",
     cover: coverHudaibiyah,
     images: [
-      { src: coverHudaibiyah, caption: "Foto Bersama di Hudaibiyah" },
+      { src: hudaibiyah1, caption: "Bersama Unta di Hudaibiyah" },
       { src: hudaibiyah1, caption: "Bersama Unta di Hudaibiyah" },
       { src: hudaibiyah2, caption: "Jamaah di Desa Tradisional" },
       { src: hudaibiyah4, caption: "Foto Bersama Rombongan" },
