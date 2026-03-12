@@ -142,7 +142,7 @@ export const galleryLocations: GalleryLocation[] = [
     description: "Al Ula menghadirkan lanskap gurun yang luar biasa indah dengan jejak peradaban kuno yang masih tersisa hingga hari ini. Perjalanan ke sini terasa seperti menelusuri kisah sejarah yang membentang di tengah padang pasir.",
     cover: alUla1,
     images: [
-      { src: alUla1, caption: "Tim Al Ula" },
+      { src: alUla2, caption: "Wisata Old Town" },
       { src: alUla2, caption: "Wisata Old Town" },
       { src: alUla3, caption: "Old Town Al Ula" },
       { src: alUla4, caption: "Maraya Concert Hall" },
