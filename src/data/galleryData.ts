@@ -255,7 +255,7 @@ export const galleryLocations: GalleryLocation[] = [
     description: "Berpengalaman mendampingi tamu sejak tahun 2021 ke berbagai destinasi bersejarah di Mesir, mulai dari Kairo, Alexandria, Giza, Sinai, Matruh, Siwa, Hurghada, hingga Luxor",
     cover: coverGuideMesir,
     images: [
-      { src: coverGuideMesir, caption: "Foto Bersama di Mesir" },
+      { src: mesir1, caption: "Jeep Safari di Gurun" },
       { src: mesir1, caption: "Jeep Safari di Gurun" },
       { src: mesir2, caption: "Naik Unta di Piramida" },
       { src: mesir3, caption: "Selfie di Piramida" },
