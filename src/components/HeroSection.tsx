@@ -1,4 +1,4 @@
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Phone } from "lucide-react";
 import heroKabah from "@/assets/hero-kabah.jpg";
 
 const HeroSection = () => {
@@ -53,9 +53,10 @@ const HeroSection = () => {
           href={whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block mt-4 md:mt-8 text-[10px] md:text-xs tracking-widest md:tracking-ultra uppercase border border-primary text-primary px-7 py-3 md:px-10 md:py-4 rounded-md hover:bg-primary hover:text-primary-foreground transition-all duration-300 animate-fade-up"
+          className="inline-flex items-center gap-2 mt-4 md:mt-8 text-[10px] md:text-xs tracking-widest md:tracking-ultra uppercase border border-primary text-primary px-7 py-3 md:px-10 md:py-4 rounded-md hover:bg-primary hover:text-primary-foreground transition-all duration-300 animate-fade-up"
           style={{ animationDelay: '0.45s' }}
         >
+          <Phone size={14} />
           Konsultasi Jadwal
         </a>
       </div>

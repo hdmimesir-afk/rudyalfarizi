@@ -23,7 +23,7 @@ const FooterSection = () => {
               Rudy Alfarizi
             </h3>
             <p className="text-foreground text-xs leading-relaxed">
-              Muthowwif profesional. Alumni Al-Azhar, Kairo.
+              Muthowwif profesional.
             </p>
           </div>
 
