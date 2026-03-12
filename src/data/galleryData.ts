@@ -128,7 +128,7 @@ export const galleryLocations: GalleryLocation[] = [
     description: "Thaif menyimpan kisah perjuangan Rasulullah ﷺ ketika berdakwah di tengah penolakan yang berat. Dari kota pegunungan yang sejuk ini, kita belajar tentang kesabaran dan keteguhan dalam menyampaikan kebenaran.",
     cover: thoif1,
     images: [
-      { src: thoif1, caption: "Masjid Abdullah bin Abbas" },
+      { src: thoif2, caption: "Kuliner di Thoif" },
       { src: thoif2, caption: "Kuliner di Thoif" },
       { src: thoif3, caption: "Selfie di Thoif" },
       { src: thoif4, caption: "Cable Car Al Hada" },
