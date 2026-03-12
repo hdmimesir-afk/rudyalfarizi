@@ -184,7 +184,7 @@ export const galleryLocations: GalleryLocation[] = [
     description: "Di Jabal Tsur, Rasulullah ﷺ dan Abu Bakar bersembunyi saat perjalanan hijrah menuju Madinah. Gua ini menjadi saksi kepercayaan penuh kepada pertolongan Allah di saat-saat yang paling sulit.",
     cover: coverJabalTsur,
     images: [
-      { src: coverJabalTsur, caption: "Foto Bersama di Jabal Tsur" },
+      { src: tsur2, caption: "Jamaah di Gua Tsur" },
       { src: tsur2, caption: "Jamaah di Gua Tsur" },
       { src: tsur3, caption: "Di Depan Gua Tsur" },
       { src: tsur4, caption: "Foto Bersama Jamaah" },
