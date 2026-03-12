@@ -158,7 +158,7 @@ export const galleryLocations: GalleryLocation[] = [
     description: "Dari kawasan perbukitan Khandamah dan Kuday, kita dapat melihat panorama kota Makkah yang berkembang mengelilingi Masjidil Haram. Pemandangan ini sering membuat jamaah berhenti sejenak untuk mengagumi kebesaran kota suci ini.",
     cover: coverJabalKhandamah,
     images: [
-      { src: coverJabalKhandamah, caption: "Foto Bersama di Jabal Khandamah" },
+      { src: khandamah6, caption: "Jamaah Sunset di Khandamah" },
       { src: khandamah6, caption: "Jamaah Sunset di Khandamah" },
       { src: khandamah7, caption: "Foto Bersama Jamaah" },
       { src: khandamah8, caption: "Dinner Romantis di Khandamah" },
