@@ -93,7 +93,7 @@ const GalleryDetail = () => {
               <div
                 key={index}
                 onClick={() => setSelectedIndex(index)}
-                className="group relative aspect-[4/3] overflow-hidden cursor-pointer"
+                className={`group relative overflow-hidden cursor-pointer ${image.portrait ? "aspect-[3/4]" : "aspect-[4/3]"}`}
               >
                 <img
                   src={image.src}

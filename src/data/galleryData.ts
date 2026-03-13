@@ -91,7 +91,7 @@ import jabalNur2 from "@/assets/jabal-nur-new-2.jpg";
 import jabalNur3 from "@/assets/jabal-nur-new-3.jpg";
 import jabalNur4 from "@/assets/jabal-nur-new-4.jpg";
 import coverJabalTsur from "@/assets/cover-jabal-tsur.jpg";
-import tsur2 from "@/assets/tsur-2.jpg";
+import tsurInput from "@/assets/jabal-tsur-input.jpg";
 import tsur3 from "@/assets/tsur-3.jpg";
 import tsur4 from "@/assets/tsur-4.jpg";
 import hudaibiyah1 from "@/assets/hudaibiyah-new-1.jpg";
@@ -134,10 +134,12 @@ import private13 from "@/assets/private-new-13.jpg";
 import private14 from "@/assets/private-new-14.jpg";
 import private15 from "@/assets/private-new-15.jpg";
 import private16 from "@/assets/private-new-16.jpg";
+import heiff from "@/assets/heiff.jpg";
 
 export interface GalleryImage {
   src: string;
   caption: string;
+  portrait?: boolean;
 }
 
 export interface GalleryLocation {
@@ -167,9 +169,9 @@ export const galleryLocations: GalleryLocation[] = [
       { src: makkah10, caption: "Selfie Bersama Jamaah" },
       { src: makkah11, caption: "Pemakaman Ma'la" },
       { src: makkah12, caption: "Jamaah di Jabal Rahmah" },
-      { src: makkah13, caption: "Kuliner Bersama Tim" },
       { src: makkah14, caption: "Berdoa di Masjidil Haram" },
       { src: makkah15, caption: "Foto Bersama di Masjidil Haram" },
+      { src: heiff, caption: "Foto Bersama Jamaah di Haramain" },
     ],
   },
   {
@@ -205,7 +207,7 @@ export const galleryLocations: GalleryLocation[] = [
     description: "Thaif menyimpan kisah perjuangan Rasulullah ﷺ ketika berdakwah di tengah penolakan yang berat. Dari kota pegunungan yang sejuk ini, kita belajar tentang kesabaran dan keteguhan dalam menyampaikan kebenaran.",
     cover: thoif9,
     images: [
-      { src: thoif1, caption: "Taman Mawar Thoif" },
+      { src: thoif1, caption: "Taman Mawar Thoif", portrait: true },
       { src: thoif2, caption: "Ziarah Masjid di Thoif" },
       { src: thoif3, caption: "Cable Car Al Hada" },
       { src: thoif4, caption: "Foto Bersama Jamaah di Thoif" },
@@ -226,9 +228,9 @@ export const galleryLocations: GalleryLocation[] = [
       { src: alUla1, caption: "Old Town Al Ula" },
       { src: alUla2, caption: "Bandara Internasional Al Ula" },
       { src: alUla3, caption: "Ngarai Batu Al Ula" },
-      { src: alUla4, caption: "Al Ula Old Town" },
+      { src: alUla4, caption: "Al Ula Old Town", portrait: true },
       { src: alUla5, caption: "Kuliner di Al Ula" },
-      { src: alUla6, caption: "Desert Safari Al Ula" },
+      { src: alUla6, caption: "Desert Safari Al Ula", portrait: true },
       { src: alUla7, caption: "Maraya Mirror Building" },
       { src: alUla8, caption: "Elephant Rock Al Ula" },
       { src: alUla9, caption: "Foto Bersama Tim di Al Ula" },
@@ -239,7 +241,7 @@ export const galleryLocations: GalleryLocation[] = [
     name: "Khandamah & Kuday",
     slug: "jabal-khandamah",
     description: "Dari kawasan perbukitan Khandamah dan Kuday, kita dapat melihat panorama kota Makkah yang berkembang mengelilingi Masjidil Haram. Pemandangan ini sering membuat jamaah berhenti sejenak untuk mengagumi kebesaran kota suci ini.",
-    cover: kn7,
+    cover: kn4,
     images: [
       { src: kn1, caption: "Pemandangan Makkah dari Khandamah" },
       { src: kn2, caption: "Foto di Puncak Khandamah" },
@@ -259,10 +261,10 @@ export const galleryLocations: GalleryLocation[] = [
     name: "Gua Hira",
     slug: "jabal-nur",
     description: "Di Gua Hira, Rasulullah ﷺ menerima wahyu pertama yang menjadi awal turunnya Al-Qur'an. Tempat ini mengingatkan kita pada momen ketika cahaya Islam pertama kali menyinari dunia.",
-    cover: jabalNur4,
+    cover: jabalNur2,
     images: [
       { src: jabalNur1, caption: "Foto Bersama di Jabal Nur" },
-      { src: jabalNur2, caption: "Di Dalam Gua Hira" },
+      { src: jabalNur2, caption: "Di Dalam Gua Hira", portrait: true },
       { src: jabalNur3, caption: "Panorama Makkah dari Puncak" },
       { src: jabalNur4, caption: "Pendakian Bersama Jamaah" },
     ],
@@ -274,7 +276,7 @@ export const galleryLocations: GalleryLocation[] = [
     cover: coverJabalTsur,
     images: [
       { src: coverJabalTsur, caption: "Foto Bersama di Jabal Tsur" },
-      { src: tsur2, caption: "Jamaah di Gua Tsur" },
+      { src: tsurInput, caption: "Jamaah di Gua Tsur" },
       { src: tsur3, caption: "Di Depan Gua Tsur" },
       { src: tsur4, caption: "Foto Bersama Jamaah" },
     ],
@@ -301,7 +303,7 @@ export const galleryLocations: GalleryLocation[] = [
     name: "Badr",
     slug: "badr",
     description: "Di lembah Badr inilah terjadi salah satu pertempuran paling penting dalam sejarah Islam. Kisah kemenangan kaum muslimin di tempat ini selalu menjadi pengingat tentang pertolongan Allah bagi orang-orang yang beriman.",
-    cover: badr2,
+    cover: badr6,
     images: [
       { src: badr1, caption: "Kuliner Bersama Jamaah di Badr" },
       { src: badr2, caption: "Foto Bersama Jamaah di Badr" },
@@ -341,7 +343,6 @@ export const galleryLocations: GalleryLocation[] = [
       { src: private1, caption: "Maraya Mirror Building Al Ula" },
       { src: private2, caption: "Umrah VIP Tamasya Indah di Jabal Rahmah" },
       { src: private3, caption: "Santai Bersama Tim" },
-      { src: private4, caption: "Jamaah di Kereta Haramain" },
       { src: private5, caption: "Hilwa Wisata Private di Badr" },
       { src: private6, caption: "Keluarga di Masjid Quba" },
       { src: private7, caption: "Siap Berangkat Umrah" },
@@ -360,7 +361,7 @@ export const galleryLocations: GalleryLocation[] = [
     name: "Guide Mesir",
     slug: "guide-mesir",
     description: "Berpengalaman mendampingi tamu sejak tahun 2021 ke berbagai destinasi bersejarah di Mesir, mulai dari Kairo, Alexandria, Giza, Sinai, Matruh, Siwa, Hurghada, hingga Luxor",
-    cover: mesirN4,
+    cover: mesirN12,
     images: [
       { src: mesirN1, caption: "Selfie di Piramida Giza" },
       { src: mesirN2, caption: "Siwa Protected Area" },
