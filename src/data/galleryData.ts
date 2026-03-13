@@ -89,6 +89,12 @@ import hudaibiyah1 from "@/assets/hudaibiyah-new-1.jpg";
 import hudaibiyah2 from "@/assets/hudaibiyah-new-2.jpg";
 import hudaibiyah3 from "@/assets/hudaibiyah-new-3.jpg";
 import hudaibiyah4 from "@/assets/hudaibiyah-new-4.jpg";
+import hudaibiyah5 from "@/assets/hudaibiyah-new-5.jpg";
+import hudaibiyah6 from "@/assets/hudaibiyah-new-6.jpg";
+import hudaibiyah7 from "@/assets/hudaibiyah-new-7.jpg";
+import hudaibiyah8 from "@/assets/hudaibiyah-new-8.jpg";
+import hudaibiyah9 from "@/assets/hudaibiyah-new-9.jpg";
+import hudaibiyah10 from "@/assets/hudaibiyah-new-10.jpg";
 import coverBadr from "@/assets/cover-badr.jpg";
 import coverJeddah from "@/assets/cover-jeddah.jpg";
 import coverGuideMesir from "@/assets/cover-guide-mesir.jpg";
@@ -263,6 +269,12 @@ export const galleryLocations: GalleryLocation[] = [
       { src: hudaibiyah2, caption: "Jamaah di Hudaibiyah" },
       { src: hudaibiyah3, caption: "Naik Unta di Hudaibiyah" },
       { src: hudaibiyah4, caption: "Foto Bersama Rombongan di Hudaibiyah" },
+      { src: hudaibiyah5, caption: "Foto Bersama di Kandang Unta" },
+      { src: hudaibiyah6, caption: "Naik Unta Bersama Jamaah" },
+      { src: hudaibiyah7, caption: "Umrah Ramadhan Marwah Tour di Hudaibiyah" },
+      { src: hudaibiyah8, caption: "Pakaian Tradisional Arab" },
+      { src: hudaibiyah9, caption: "Ziarah Situs Bersejarah Hudaibiyah" },
+      { src: hudaibiyah10, caption: "Rombongan Jamaah di Wadi Hudaibiyah" },
     ],
   },
   {
