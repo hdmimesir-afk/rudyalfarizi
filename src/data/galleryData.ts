@@ -1,9 +1,11 @@
-import jeddah1 from "@/assets/jeddah-1.jpg";
-import jeddah2 from "@/assets/jeddah-2.jpg";
-import jeddah3 from "@/assets/jeddah-3.jpg";
-import jeddah4 from "@/assets/jeddah-4.jpg";
-import jeddah5 from "@/assets/jeddah-5.jpg";
-import jeddah6 from "@/assets/jeddah-6.jpg";
+import jeddah1 from "@/assets/jeddah-new-1.jpg";
+import jeddah2 from "@/assets/jeddah-new-2.jpg";
+import jeddah3 from "@/assets/jeddah-new-3.jpg";
+import jeddah4 from "@/assets/jeddah-new-4.jpg";
+import jeddah5 from "@/assets/jeddah-new-5.jpg";
+import jeddah6 from "@/assets/jeddah-new-6.jpg";
+import jeddah7 from "@/assets/jeddah-new-7.jpg";
+import jeddah8 from "@/assets/jeddah-new-8.jpg";
 import thoif1 from "@/assets/thoif-1.jpg";
 import thoif2 from "@/assets/thoif-2.jpg";
 import thoif3 from "@/assets/thoif-3.jpg";
@@ -225,12 +227,14 @@ export const galleryLocations: GalleryLocation[] = [
     description: "Jeddah telah lama menjadi gerbang bagi para jamaah yang datang menuju Tanah Suci. Kota pesisir ini memadukan sejarah perjalanan haji dengan wajah modern Arab Saudi saat ini.",
     cover: coverJeddah,
     images: [
-      { src: jeddah1, caption: "Nonton Bola Al Nassr" },
-      { src: jeddah2, caption: "City Tour Jeddah" },
-      { src: jeddah3, caption: "Nonton Timnas Indonesia" },
+      { src: jeddah1, caption: "Kuliner Bersama Jamaah" },
+      { src: jeddah2, caption: "Rombongan Asar Travel di Jeddah" },
+      { src: jeddah3, caption: "Nonton Bola Al Nassr" },
       { src: jeddah4, caption: "Bandara King Abdulaziz" },
-      { src: jeddah5, caption: "Kuliner di Jeddah" },
-      { src: jeddah6, caption: "Tiba di Jeddah" },
+      { src: jeddah5, caption: "Tiba di Jeddah" },
+      { src: jeddah6, caption: "Nonton Timnas Indonesia" },
+      { src: jeddah7, caption: "Selebrasi Bareng Supporter" },
+      { src: jeddah8, caption: "Foto Bersama Jamaah" },
     ],
   },
   {
