@@ -5,6 +5,7 @@ import { Menu, X, Phone } from "lucide-react";
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [menuKey, setMenuKey] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -103,8 +104,12 @@ const NavBar = () => {
 
             {/* Mobile right - close/menu button */}
             <button
-              className="md:hidden p-1.5 text-foreground z-[60]"
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="md:hidden p-1.5 text-foreground z-[60] transition-transform duration-300"
+              onClick={() => {
+                const opening = !isMobileMenuOpen;
+                setIsMobileMenuOpen(opening);
+                if (opening) setMenuKey((k) => k + 1);
+              }}
             >
               {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
@@ -133,7 +138,7 @@ const NavBar = () => {
           <div className="flex flex-col items-start gap-8">
             {navLinks.map((link, i) => (
               <button
-                key={i}
+                key={`${menuKey}-${i}`}
                 onClick={link.action}
                 style={{ animationDelay: `${i * 80}ms` }}
                 className={`nav-fade-in text-2xl tracking-ultra uppercase hover:text-primary transition-colors font-display ${
@@ -144,8 +149,10 @@ const NavBar = () => {
               </button>
             ))}
             <button
+              key={`${menuKey}-cta`}
               onClick={() => scrollToSection("contact")}
-              className="inline-flex items-center gap-2 text-sm tracking-ultra uppercase border border-primary text-primary px-8 py-4 hover:bg-primary hover:text-primary-foreground transition-all mt-4"
+              style={{ animationDelay: `${navLinks.length * 80}ms` }}
+              className="nav-fade-in inline-flex items-center gap-2 text-sm tracking-ultra uppercase border border-primary text-primary px-8 py-4 hover:bg-primary hover:text-primary-foreground transition-all mt-4"
             >
               <Phone size={14} />
               Konsultasi
