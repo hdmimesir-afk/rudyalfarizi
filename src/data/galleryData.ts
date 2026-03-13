@@ -74,15 +74,22 @@ import makkah15 from "@/assets/makkah-new-15.jpg";
 // Cover images
 import coverMakkah from "@/assets/cover-makkah.jpg";
 import coverMadinah from "@/assets/cover-madinah.jpg";
-import coverJabalKhandamah from "@/assets/cover-jabal-khandamah.jpg";
+import kn1 from "@/assets/khandamah-new-1.jpg";
+import kn2 from "@/assets/khandamah-new-2.jpg";
+import kn3 from "@/assets/khandamah-new-3.jpg";
+import kn4 from "@/assets/khandamah-new-4.jpg";
+import kn5 from "@/assets/khandamah-new-5.jpg";
+import kn6 from "@/assets/khandamah-new-6.jpg";
+import kn7 from "@/assets/khandamah-new-7.jpg";
+import kn8 from "@/assets/khandamah-new-8.jpg";
+import kn9 from "@/assets/khandamah-new-9.jpg";
+import kn10 from "@/assets/khandamah-new-10.jpg";
+import kn11 from "@/assets/khandamah-new-11.jpg";
+import kn12 from "@/assets/khandamah-new-12.jpg";
 import khandamah2 from "@/assets/khandamah-2.jpg";
 import khandamah3 from "@/assets/khandamah-3.jpg";
 import khandamah4 from "@/assets/khandamah-4.jpg";
 import khandamah5 from "@/assets/khandamah-5.jpg";
-import khandamah6 from "@/assets/khandamah-6.jpg";
-import khandamah7 from "@/assets/khandamah-7.jpg";
-import khandamah8 from "@/assets/khandamah-8.jpg";
-import khandamah9 from "@/assets/khandamah-9.jpg";
 import coverJabalNur from "@/assets/cover-jabal-nur.jpg";
 import coverJabalTsur from "@/assets/cover-jabal-tsur.jpg";
 import tsur2 from "@/assets/tsur-2.jpg";
@@ -229,13 +236,20 @@ export const galleryLocations: GalleryLocation[] = [
     name: "Khandamah & Kuday",
     slug: "jabal-khandamah",
     description: "Dari kawasan perbukitan Khandamah dan Kuday, kita dapat melihat panorama kota Makkah yang berkembang mengelilingi Masjidil Haram. Pemandangan ini sering membuat jamaah berhenti sejenak untuk mengagumi kebesaran kota suci ini.",
-    cover: coverJabalKhandamah,
+    cover: kn1,
     images: [
-      { src: coverJabalKhandamah, caption: "Foto Bersama di Jabal Khandamah" },
-      { src: khandamah6, caption: "Jamaah Sunset di Khandamah" },
-      { src: khandamah7, caption: "Foto Bersama Jamaah" },
-      { src: khandamah8, caption: "Dinner Romantis di Khandamah" },
-      { src: khandamah9, caption: "Panorama Abraj Al-Bait" },
+      { src: kn1, caption: "Pemandangan Makkah dari Khandamah" },
+      { src: kn2, caption: "Foto di Puncak Khandamah" },
+      { src: kn3, caption: "Siluet Senja di Khandamah" },
+      { src: kn4, caption: "Foto Bersama Keluarga di Khandamah" },
+      { src: kn5, caption: "Foto Bersama dengan Latar Abraj Al-Bait" },
+      { src: kn6, caption: "Picnic Malam di Khandamah" },
+      { src: kn7, caption: "Picnic Sore di Khandamah" },
+      { src: kn8, caption: "Foto dengan Latar Menara Jam Makkah" },
+      { src: kn9, caption: "Foto Bersama Jamaah di Khandamah" },
+      { src: kn10, caption: "Sunset Keluarga di Khandamah" },
+      { src: kn11, caption: "Foto di Khandamah dengan Latar Menara" },
+      { src: kn12, caption: "Panorama Malam Kota Makkah" },
     ],
   },
   {
