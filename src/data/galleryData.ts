@@ -20,12 +20,25 @@ import alUla5 from "@/assets/al-ula-5.jpg";
 import alUla6 from "@/assets/al-ula-6.jpg";
 import alUla7 from "@/assets/al-ula-7.jpg";
 import alUla8 from "@/assets/al-ula-8.jpg";
-import madinah2 from "@/assets/madinah-2.jpg";
-import madinah3 from "@/assets/madinah-3.jpg";
-import madinah4 from "@/assets/madinah-4.jpg";
-import madinah5 from "@/assets/madinah-5.jpg";
-import madinah6 from "@/assets/madinah-6.jpg";
-import madinah7 from "@/assets/madinah-7.jpg";
+import madinah1 from "@/assets/madinah-new-1.jpg";
+import madinah2 from "@/assets/madinah-new-2.jpg";
+import madinah3 from "@/assets/madinah-new-3.jpg";
+import madinah4 from "@/assets/madinah-new-4.jpg";
+import madinah5 from "@/assets/madinah-new-5.jpg";
+import madinah6 from "@/assets/madinah-new-6.jpg";
+import madinah7 from "@/assets/madinah-new-7.jpg";
+import madinah8 from "@/assets/madinah-new-8.jpg";
+import madinah9 from "@/assets/madinah-new-9.jpg";
+import madinah10 from "@/assets/madinah-new-10.jpg";
+import madinah11 from "@/assets/madinah-new-11.jpg";
+import madinah12 from "@/assets/madinah-new-12.jpg";
+import madinah13 from "@/assets/madinah-new-13.jpg";
+import madinah14 from "@/assets/madinah-new-14.jpg";
+import madinah15 from "@/assets/madinah-new-15.jpg";
+import madinah16 from "@/assets/madinah-new-16.jpg";
+import madinah17 from "@/assets/madinah-new-17.jpg";
+import madinah18 from "@/assets/madinah-new-18.jpg";
+import madinah19 from "@/assets/madinah-new-19.jpg";
 import badr1 from "@/assets/badr-1.jpg";
 import badr2 from "@/assets/badr-2.jpg";
 import badr3 from "@/assets/badr-3.jpg";
@@ -74,13 +87,22 @@ import mesir5 from "@/assets/mesir-5.jpg";
 import mesir6 from "@/assets/mesir-6.jpg";
 import mesir7 from "@/assets/mesir-7.jpg";
 import coverJamaahPrivate from "@/assets/cover-jamaah-private.jpg";
-import private1 from "@/assets/private-1.jpg";
-import private2 from "@/assets/private-2.jpg";
-import private3 from "@/assets/private-3.jpg";
-import private4 from "@/assets/private-4.jpg";
-import private5 from "@/assets/private-5.jpg";
-import private6 from "@/assets/private-6.jpg";
-import private7 from "@/assets/private-7.jpg";
+import private1 from "@/assets/private-new-1.jpg";
+import private2 from "@/assets/private-new-2.jpg";
+import private3 from "@/assets/private-new-3.jpg";
+import private4 from "@/assets/private-new-4.jpg";
+import private5 from "@/assets/private-new-5.jpg";
+import private6 from "@/assets/private-new-6.jpg";
+import private7 from "@/assets/private-new-7.jpg";
+import private8 from "@/assets/private-new-8.jpg";
+import private9 from "@/assets/private-new-9.jpg";
+import private10 from "@/assets/private-new-10.jpg";
+import private11 from "@/assets/private-new-11.jpg";
+import private12 from "@/assets/private-new-12.jpg";
+import private13 from "@/assets/private-new-13.jpg";
+import private14 from "@/assets/private-new-14.jpg";
+import private15 from "@/assets/private-new-15.jpg";
+import private16 from "@/assets/private-new-16.jpg";
 
 export interface GalleryImage {
   src: string;
@@ -116,12 +138,25 @@ export const galleryLocations: GalleryLocation[] = [
     description: "Madinah adalah kota penuh ketenangan, tempat Rasulullah ﷺ membangun masyarakat Islam pertama. Di sinilah Masjid Nabawi berdiri dan Raudhah menjadi tempat yang selalu dirindukan setiap jamaah.",
     cover: coverMadinah,
     images: [
-      { src: madinah7, caption: "Raudhah Masjid Nabawi" },
-      { src: madinah2, caption: "Stasiun Kereta Madinah" },
-      { src: madinah3, caption: "Selfie di Masjid Nabawi" },
-      { src: madinah4, caption: "Jamaah di Masjid Nabawi" },
-      { src: madinah5, caption: "Jabal Uhud" },
-      { src: madinah6, caption: "Kuliner Kebun Kurma" },
+      { src: madinah1, caption: "Jamaah di Masjid Nabawi" },
+      { src: madinah2, caption: "Selfie di Masjid Nabawi" },
+      { src: madinah3, caption: "Foto Bersama di Madinah" },
+      { src: madinah4, caption: "Raudhah Masjid Nabawi" },
+      { src: madinah5, caption: "Suasana Masjid Nabawi" },
+      { src: madinah6, caption: "Jabal Uhud" },
+      { src: madinah7, caption: "Kebun Kurma Madinah" },
+      { src: madinah8, caption: "Miqat Dzul Hulaifah" },
+      { src: madinah9, caption: "Masjid Quba" },
+      { src: madinah10, caption: "Kuliner Khas Madinah" },
+      { src: madinah11, caption: "Stasiun Haramain Madinah" },
+      { src: madinah12, caption: "Ziarah Makam Baqi" },
+      { src: madinah13, caption: "Foto Bersama Jamaah" },
+      { src: madinah14, caption: "Panorama Kota Madinah" },
+      { src: madinah15, caption: "Masjid Qiblatayn" },
+      { src: madinah16, caption: "Selfie Bersama Jamaah" },
+      { src: madinah17, caption: "Ziarah di Madinah" },
+      { src: madinah18, caption: "Santai di Madinah" },
+      { src: madinah19, caption: "Kenangan Indah di Madinah" },
     ],
   },
   {
@@ -244,13 +279,22 @@ export const galleryLocations: GalleryLocation[] = [
     cover: coverJamaahPrivate,
     images: [
       { src: coverJamaahPrivate, caption: "Jamaah Private di Kereta" },
-      { src: private1, caption: "Kuliner Khas Arab" },
-      { src: private2, caption: "Jamaah di Taman Kurma" },
-      { src: private3, caption: "Dinner View Ka'bah" },
-      { src: private4, caption: "Ziarah Masjid Bersejarah" },
-      { src: private5, caption: "Kumpul Bersama Tim" },
-      { src: private6, caption: "Jamaah di Jabal Uhud" },
-      { src: private7, caption: "Foto Bersama di Ka'bah" },
+      { src: private1, caption: "Maraya Mirror Building Al Ula" },
+      { src: private2, caption: "Umrah VIP Tamasya Indah di Jabal Rahmah" },
+      { src: private3, caption: "Santai Bersama Tim" },
+      { src: private4, caption: "Jamaah di Kereta Haramain" },
+      { src: private5, caption: "Hilwa Wisata Private di Badr" },
+      { src: private6, caption: "Keluarga di Masjid Quba" },
+      { src: private7, caption: "Siap Berangkat Umrah" },
+      { src: private8, caption: "Keluarga di Ka'bah Malam Hari" },
+      { src: private9, caption: "Kuliner Khas Arab" },
+      { src: private10, caption: "Jamaah di Kebun Kurma" },
+      { src: private11, caption: "Santai di Kebun Kurma" },
+      { src: private12, caption: "Wisata Kota Al Ula" },
+      { src: private13, caption: "Dinner View Ka'bah" },
+      { src: private14, caption: "Zaina Corp di Jabal Nur" },
+      { src: private15, caption: "Ziarah Masjid Bersejarah" },
+      { src: private16, caption: "Selfie di Masjid Quba" },
     ],
   },
   {
