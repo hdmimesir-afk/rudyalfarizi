@@ -88,17 +88,17 @@ const GalleryDetail = () => {
             </span>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1">
+          <div className="columns-2 md:columns-3 lg:columns-4 gap-1">
             {images.map((image, index) => (
               <div
                 key={index}
                 onClick={() => setSelectedIndex(index)}
-                className={`group relative overflow-hidden cursor-pointer ${image.portrait ? "aspect-[3/4]" : "aspect-[4/3]"}`}
+                className="group relative overflow-hidden cursor-pointer break-inside-avoid mb-1"
               >
                 <img
                   src={image.src}
                   alt={image.caption}
-                  className="w-full h-full object-cover object-center group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                  className="w-full h-auto block group-hover:scale-[1.03] transition-transform duration-700 ease-out"
                   loading="lazy"
                   decoding="async"
                 />
