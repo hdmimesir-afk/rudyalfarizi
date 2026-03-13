@@ -131,7 +131,9 @@ const NavBar = () => {
               <button
                 key={i}
                 onClick={link.action}
-                className="text-2xl tracking-ultra uppercase text-foreground/60 hover:text-primary transition-colors font-display"
+                className={`text-2xl tracking-ultra uppercase hover:text-primary transition-colors font-display ${
+                  link.label === "Home" ? "text-white" : "text-foreground/60"
+                }`}
               >
                 {link.label}
               </button>
