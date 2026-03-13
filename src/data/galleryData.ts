@@ -203,7 +203,7 @@ export const galleryLocations: GalleryLocation[] = [
     name: "Thoif",
     slug: "thoif",
     description: "Thaif menyimpan kisah perjuangan Rasulullah ﷺ ketika berdakwah di tengah penolakan yang berat. Dari kota pegunungan yang sejuk ini, kita belajar tentang kesabaran dan keteguhan dalam menyampaikan kebenaran.",
-    cover: thoif1,
+    cover: thoif9,
     images: [
       { src: thoif1, caption: "Taman Mawar Thoif" },
       { src: thoif2, caption: "Ziarah Masjid di Thoif" },
@@ -221,7 +221,7 @@ export const galleryLocations: GalleryLocation[] = [
     name: "Al Ula",
     slug: "al-ula",
     description: "Al Ula menghadirkan lanskap gurun yang luar biasa indah dengan jejak peradaban kuno yang masih tersisa hingga hari ini. Perjalanan ke sini terasa seperti menelusuri kisah sejarah yang membentang di tengah padang pasir.",
-    cover: alUla1,
+    cover: alUla10,
     images: [
       { src: alUla1, caption: "Old Town Al Ula" },
       { src: alUla2, caption: "Bandara Internasional Al Ula" },
@@ -239,7 +239,7 @@ export const galleryLocations: GalleryLocation[] = [
     name: "Khandamah & Kuday",
     slug: "jabal-khandamah",
     description: "Dari kawasan perbukitan Khandamah dan Kuday, kita dapat melihat panorama kota Makkah yang berkembang mengelilingi Masjidil Haram. Pemandangan ini sering membuat jamaah berhenti sejenak untuk mengagumi kebesaran kota suci ini.",
-    cover: kn1,
+    cover: kn7,
     images: [
       { src: kn1, caption: "Pemandangan Makkah dari Khandamah" },
       { src: kn2, caption: "Foto di Puncak Khandamah" },
@@ -259,7 +259,7 @@ export const galleryLocations: GalleryLocation[] = [
     name: "Gua Hira",
     slug: "jabal-nur",
     description: "Di Gua Hira, Rasulullah ﷺ menerima wahyu pertama yang menjadi awal turunnya Al-Qur'an. Tempat ini mengingatkan kita pada momen ketika cahaya Islam pertama kali menyinari dunia.",
-    cover: jabalNur1,
+    cover: jabalNur4,
     images: [
       { src: jabalNur1, caption: "Foto Bersama di Jabal Nur" },
       { src: jabalNur2, caption: "Di Dalam Gua Hira" },
@@ -301,7 +301,7 @@ export const galleryLocations: GalleryLocation[] = [
     name: "Badr",
     slug: "badr",
     description: "Di lembah Badr inilah terjadi salah satu pertempuran paling penting dalam sejarah Islam. Kisah kemenangan kaum muslimin di tempat ini selalu menjadi pengingat tentang pertolongan Allah bagi orang-orang yang beriman.",
-    cover: badr1,
+    cover: badr2,
     images: [
       { src: badr1, caption: "Kuliner Bersama Jamaah di Badr" },
       { src: badr2, caption: "Foto Bersama Jamaah di Badr" },
@@ -360,7 +360,7 @@ export const galleryLocations: GalleryLocation[] = [
     name: "Guide Mesir",
     slug: "guide-mesir",
     description: "Berpengalaman mendampingi tamu sejak tahun 2021 ke berbagai destinasi bersejarah di Mesir, mulai dari Kairo, Alexandria, Giza, Sinai, Matruh, Siwa, Hurghada, hingga Luxor",
-    cover: mesirN1,
+    cover: mesirN4,
     images: [
       { src: mesirN1, caption: "Selfie di Piramida Giza" },
       { src: mesirN2, caption: "Siwa Protected Area" },
