@@ -6,12 +6,16 @@ import jeddah5 from "@/assets/jeddah-new-5.jpg";
 import jeddah6 from "@/assets/jeddah-new-6.jpg";
 import jeddah7 from "@/assets/jeddah-new-7.jpg";
 import jeddah8 from "@/assets/jeddah-new-8.jpg";
-import thoif1 from "@/assets/thoif-1.jpg";
-import thoif2 from "@/assets/thoif-2.jpg";
-import thoif3 from "@/assets/thoif-3.jpg";
-import thoif4 from "@/assets/thoif-4.jpg";
-import thoif5 from "@/assets/thoif-5.jpg";
-import thoif6 from "@/assets/thoif-6.jpg";
+import thoif1 from "@/assets/thoif-new-1.jpg";
+import thoif2 from "@/assets/thoif-new-2.jpg";
+import thoif3 from "@/assets/thoif-new-3.jpg";
+import thoif4 from "@/assets/thoif-new-4.jpg";
+import thoif5 from "@/assets/thoif-new-5.jpg";
+import thoif6 from "@/assets/thoif-new-6.jpg";
+import thoif7 from "@/assets/thoif-new-7.jpg";
+import thoif8 from "@/assets/thoif-new-8.jpg";
+import thoif9 from "@/assets/thoif-new-9.jpg";
+import thoif10 from "@/assets/thoif-new-10.jpg";
 import alUla1 from "@/assets/al-ula-1.jpg";
 import alUla2 from "@/assets/al-ula-2.jpg";
 import alUla3 from "@/assets/al-ula-3.jpg";
@@ -183,12 +187,16 @@ export const galleryLocations: GalleryLocation[] = [
     description: "Thaif menyimpan kisah perjuangan Rasulullah ﷺ ketika berdakwah di tengah penolakan yang berat. Dari kota pegunungan yang sejuk ini, kita belajar tentang kesabaran dan keteguhan dalam menyampaikan kebenaran.",
     cover: thoif1,
     images: [
-      { src: thoif1, caption: "Masjid Abdullah bin Abbas" },
-      { src: thoif2, caption: "Kuliner di Thoif" },
-      { src: thoif3, caption: "Selfie di Thoif" },
-      { src: thoif4, caption: "Cable Car Al Hada" },
-      { src: thoif5, caption: "Jamaah di Miqat" },
-      { src: thoif6, caption: "Shubra Palace" },
+      { src: thoif1, caption: "Taman Mawar Thoif" },
+      { src: thoif2, caption: "Ziarah Masjid di Thoif" },
+      { src: thoif3, caption: "Cable Car Al Hada" },
+      { src: thoif4, caption: "Foto Bersama Jamaah di Thoif" },
+      { src: thoif5, caption: "Foto Bersama Rombongan di Thoif" },
+      { src: thoif6, caption: "Kuliner Khas Thoif" },
+      { src: thoif7, caption: "Makan Bersama di Thoif" },
+      { src: thoif8, caption: "Wisata Benteng Thoif" },
+      { src: thoif9, caption: "Sled Ride di Thoif" },
+      { src: thoif10, caption: "Masjid Abdullah bin Abbas" },
     ],
   },
   {
