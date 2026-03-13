@@ -106,14 +106,18 @@ import hudaibiyah8 from "@/assets/hudaibiyah-new-8.jpg";
 import hudaibiyah9 from "@/assets/hudaibiyah-new-9.jpg";
 import hudaibiyah10 from "@/assets/hudaibiyah-new-10.jpg";
 import coverJeddah from "@/assets/cover-jeddah.jpg";
-import coverGuideMesir from "@/assets/cover-guide-mesir.jpg";
-import mesir1 from "@/assets/mesir-1.jpg";
-import mesir2 from "@/assets/mesir-2.jpg";
-import mesir3 from "@/assets/mesir-3.jpg";
-import mesir4 from "@/assets/mesir-4.jpg";
-import mesir5 from "@/assets/mesir-5.jpg";
-import mesir6 from "@/assets/mesir-6.jpg";
-import mesir7 from "@/assets/mesir-7.jpg";
+import mesirN1 from "@/assets/mesir-new-1.jpg";
+import mesirN2 from "@/assets/mesir-new-2.jpg";
+import mesirN3 from "@/assets/mesir-new-3.jpg";
+import mesirN4 from "@/assets/mesir-new-4.jpg";
+import mesirN5 from "@/assets/mesir-new-5.jpg";
+import mesirN6 from "@/assets/mesir-new-6.jpg";
+import mesirN7 from "@/assets/mesir-new-7.jpg";
+import mesirN8 from "@/assets/mesir-new-8.jpg";
+import mesirN9 from "@/assets/mesir-new-9.jpg";
+import mesirN10 from "@/assets/mesir-new-10.jpg";
+import mesirN11 from "@/assets/mesir-new-11.jpg";
+import mesirN12 from "@/assets/mesir-new-12.jpg";
 import coverJamaahPrivate from "@/assets/cover-jamaah-private.jpg";
 import private1 from "@/assets/private-new-1.jpg";
 import private2 from "@/assets/private-new-2.jpg";
@@ -358,16 +362,20 @@ export const galleryLocations: GalleryLocation[] = [
     name: "Guide Mesir",
     slug: "guide-mesir",
     description: "Berpengalaman mendampingi tamu sejak tahun 2021 ke berbagai destinasi bersejarah di Mesir, mulai dari Kairo, Alexandria, Giza, Sinai, Matruh, Siwa, Hurghada, hingga Luxor",
-    cover: coverGuideMesir,
+    cover: mesirN1,
     images: [
-      { src: coverGuideMesir, caption: "Foto Bersama di Mesir" },
-      { src: mesir1, caption: "Jeep Safari di Gurun" },
-      { src: mesir2, caption: "Naik Unta di Piramida" },
-      { src: mesir3, caption: "Selfie di Piramida" },
-      { src: mesir4, caption: "Siwa Protected Area" },
-      { src: mesir5, caption: "Eksplorasi Tebing" },
-      { src: mesir6, caption: "City Tour Mesir" },
-      { src: mesir7, caption: "Istirahat di Oasis" },
+      { src: mesirN1, caption: "Selfie di Piramida Giza" },
+      { src: mesirN2, caption: "Siwa Protected Area" },
+      { src: mesirN3, caption: "Eksplorasi Ngarai Batu" },
+      { src: mesirN4, caption: "City Tour Mesir" },
+      { src: mesirN5, caption: "Naik Kuda di Padang Pasir" },
+      { src: mesirN6, caption: "Istirahat di Oasis" },
+      { src: mesirN7, caption: "Jeep Safari di Gurun" },
+      { src: mesirN8, caption: "Ziarah Makam Nabi Harun" },
+      { src: mesirN9, caption: "Sunrise di Jabal Musa" },
+      { src: mesirN10, caption: "Sunset di Tepi Danau Siwa" },
+      { src: mesirN11, caption: "Danau Garam Siwa" },
+      { src: mesirN12, caption: "Kamel & Kuda di Piramida" },
     ],
   },
 ];
