@@ -95,13 +95,30 @@ const GalleryDetail = () => {
                 onClick={() => setSelectedIndex(index)}
                 className={`group relative overflow-hidden cursor-pointer ${image.portrait ? "aspect-[3/4]" : "aspect-[4/3]"}`}
               >
-                <img
-                  src={image.src}
-                  alt={image.caption}
-                  className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out"
-                  loading="lazy"
-                  decoding="async"
-                />
+                {image.portrait ? (
+                  <img
+                    src={image.src}
+                    alt={image.caption}
+                    className="absolute object-cover"
+                    style={{
+                      width: "133.33%",
+                      height: "75%",
+                      top: "12.5%",
+                      left: "-16.67%",
+                      transform: "rotate(90deg)",
+                    }}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                ) : (
+                  <img
+                    src={image.src}
+                    alt={image.caption}
+                    className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                )}
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-500 flex items-end">
                   <p className="text-[10px] md:text-xs text-foreground/0 group-hover:text-foreground/90 tracking-wide px-3 pb-3 transition-colors duration-500">
                     {image.caption}
