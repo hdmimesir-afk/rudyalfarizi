@@ -86,11 +86,10 @@ import kn9 from "@/assets/khandamah-new-9.jpg";
 import kn10 from "@/assets/khandamah-new-10.jpg";
 import kn11 from "@/assets/khandamah-new-11.jpg";
 import kn12 from "@/assets/khandamah-new-12.jpg";
-import khandamah2 from "@/assets/khandamah-2.jpg";
-import khandamah3 from "@/assets/khandamah-3.jpg";
-import khandamah4 from "@/assets/khandamah-4.jpg";
-import khandamah5 from "@/assets/khandamah-5.jpg";
-import coverJabalNur from "@/assets/cover-jabal-nur.jpg";
+import jabalNur1 from "@/assets/jabal-nur-new-1.jpg";
+import jabalNur2 from "@/assets/jabal-nur-new-2.jpg";
+import jabalNur3 from "@/assets/jabal-nur-new-3.jpg";
+import jabalNur4 from "@/assets/jabal-nur-new-4.jpg";
 import coverJabalTsur from "@/assets/cover-jabal-tsur.jpg";
 import tsur2 from "@/assets/tsur-2.jpg";
 import tsur3 from "@/assets/tsur-3.jpg";
@@ -260,13 +259,12 @@ export const galleryLocations: GalleryLocation[] = [
     name: "Gua Hira",
     slug: "jabal-nur",
     description: "Di Gua Hira, Rasulullah ﷺ menerima wahyu pertama yang menjadi awal turunnya Al-Qur'an. Tempat ini mengingatkan kita pada momen ketika cahaya Islam pertama kali menyinari dunia.",
-    cover: coverJabalNur,
+    cover: jabalNur1,
     images: [
-      { src: coverJabalNur, caption: "Foto Bersama di Jabal Nur" },
-      { src: khandamah2, caption: "Jamaah di Puncak" },
-      { src: khandamah3, caption: "Di Dalam Gua" },
-      { src: khandamah4, caption: "Panorama dari Puncak" },
-      { src: khandamah5, caption: "Pendakian Jabal Nur" },
+      { src: jabalNur1, caption: "Foto Bersama di Jabal Nur" },
+      { src: jabalNur2, caption: "Di Dalam Gua Hira" },
+      { src: jabalNur3, caption: "Panorama Makkah dari Puncak" },
+      { src: jabalNur4, caption: "Pendakian Bersama Jamaah" },
     ],
   },
   {
