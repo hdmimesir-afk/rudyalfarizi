@@ -10,20 +10,21 @@ import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import FooterSection from "@/components/FooterSection";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
+import SlideInSection from "@/components/SlideInSection";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <NavBar />
       <HeroSection />
-      <WhyChooseSection />
-      <AboutSection />
-      <ExperienceSection />
-      <ServicesSection />
-      <GallerySection />
-      <TestimoniSection />
-      <FAQSection />
-      <CTASection />
+      <SlideInSection><WhyChooseSection /></SlideInSection>
+      <SlideInSection><AboutSection /></SlideInSection>
+      <SlideInSection><ExperienceSection /></SlideInSection>
+      <SlideInSection><ServicesSection /></SlideInSection>
+      <SlideInSection><GallerySection /></SlideInSection>
+      <SlideInSection><TestimoniSection /></SlideInSection>
+      <SlideInSection><FAQSection /></SlideInSection>
+      <SlideInSection><CTASection /></SlideInSection>
       <FooterSection />
       <FloatingWhatsApp />
     </div>
