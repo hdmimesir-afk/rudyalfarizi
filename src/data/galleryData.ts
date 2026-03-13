@@ -48,12 +48,21 @@ import badr6 from "@/assets/badr-6.jpg";
 import badr7 from "@/assets/badr-7.jpg";
 import badr8 from "@/assets/badr-8.jpg";
 import badr9 from "@/assets/badr-9.jpg";
-import makkah1 from "@/assets/makkah-1.jpg";
-import makkah2 from "@/assets/makkah-2.jpg";
-import makkah3 from "@/assets/makkah-3.jpg";
-import makkah4 from "@/assets/makkah-4.jpg";
-import makkah5 from "@/assets/makkah-5.jpg";
-import makkah7 from "@/assets/makkah-7.jpg";
+import makkah1 from "@/assets/makkah-new-1.jpg";
+import makkah2 from "@/assets/makkah-new-2.jpg";
+import makkah3 from "@/assets/makkah-new-3.jpg";
+import makkah4 from "@/assets/makkah-new-4.jpg";
+import makkah5 from "@/assets/makkah-new-5.jpg";
+import makkah6 from "@/assets/makkah-new-6.jpg";
+import makkah7 from "@/assets/makkah-new-7.jpg";
+import makkah8 from "@/assets/makkah-new-8.jpg";
+import makkah9 from "@/assets/makkah-new-9.jpg";
+import makkah10 from "@/assets/makkah-new-10.jpg";
+import makkah11 from "@/assets/makkah-new-11.jpg";
+import makkah12 from "@/assets/makkah-new-12.jpg";
+import makkah13 from "@/assets/makkah-new-13.jpg";
+import makkah14 from "@/assets/makkah-new-14.jpg";
+import makkah15 from "@/assets/makkah-new-15.jpg";
 
 // Cover images
 import coverMakkah from "@/assets/cover-makkah.jpg";
@@ -124,12 +133,21 @@ export const galleryLocations: GalleryLocation[] = [
     description: "Di kota suci inilah jutaan muslim dari seluruh dunia berkumpul menghadap Ka'bah, pusat ibadah umat Islam. Setiap langkah di Makkah mengingatkan kita pada perjalanan dakwah Rasulullah ﷺ dan perjuangan awal Islam.",
     cover: coverMakkah,
     images: [
-      { src: makkah1, caption: "Jamaah di Ka'bah" },
-      { src: makkah5, caption: "Selfie di Masjidil Haram" },
-      { src: makkah7, caption: "Foto Bersama Jamaah" },
-      { src: makkah2, caption: "Jabal Rahmah" },
-      { src: makkah3, caption: "Revelation Exhibition" },
-      { src: makkah4, caption: "Pemakaman Ma'la" },
+      { src: makkah1, caption: "Belanja Oleh-Oleh di Makkah" },
+      { src: makkah2, caption: "Menyentuh Kiswah Ka'bah" },
+      { src: makkah3, caption: "Foto Bersama di Makkah" },
+      { src: makkah4, caption: "Jamaah Marwah Tour" },
+      { src: makkah5, caption: "Selfie di Ka'bah" },
+      { src: makkah6, caption: "Zamzam Sabeel Malam Hari" },
+      { src: makkah7, caption: "Setelah Tahallul" },
+      { src: makkah8, caption: "Jamaah di Jabal Thawr" },
+      { src: makkah9, caption: "Revelation Exhibition" },
+      { src: makkah10, caption: "Selfie Bersama Jamaah" },
+      { src: makkah11, caption: "Pemakaman Ma'la" },
+      { src: makkah12, caption: "Jamaah di Jabal Rahmah" },
+      { src: makkah13, caption: "Kuliner Bersama Tim" },
+      { src: makkah14, caption: "Berdoa di Masjidil Haram" },
+      { src: makkah15, caption: "Foto Bersama di Masjidil Haram" },
     ],
   },
   {
