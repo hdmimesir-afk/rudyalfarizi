@@ -150,7 +150,7 @@ const NavBar = () => {
             </button>
           </div>
         </div>
-      )}
+      </div>
     </>
   );
 };
