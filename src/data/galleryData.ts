@@ -16,14 +16,16 @@ import thoif7 from "@/assets/thoif-new-7.jpg";
 import thoif8 from "@/assets/thoif-new-8.jpg";
 import thoif9 from "@/assets/thoif-new-9.jpg";
 import thoif10 from "@/assets/thoif-new-10.jpg";
-import alUla1 from "@/assets/al-ula-1.jpg";
-import alUla2 from "@/assets/al-ula-2.jpg";
-import alUla3 from "@/assets/al-ula-3.jpg";
-import alUla4 from "@/assets/al-ula-4.jpg";
-import alUla5 from "@/assets/al-ula-5.jpg";
-import alUla6 from "@/assets/al-ula-6.jpg";
-import alUla7 from "@/assets/al-ula-7.jpg";
-import alUla8 from "@/assets/al-ula-8.jpg";
+import alUla1 from "@/assets/al-ula-new-1.jpg";
+import alUla2 from "@/assets/al-ula-new-2.jpg";
+import alUla3 from "@/assets/al-ula-new-3.jpg";
+import alUla4 from "@/assets/al-ula-new-4.jpg";
+import alUla5 from "@/assets/al-ula-new-5.jpg";
+import alUla6 from "@/assets/al-ula-new-6.jpg";
+import alUla7 from "@/assets/al-ula-new-7.jpg";
+import alUla8 from "@/assets/al-ula-new-8.jpg";
+import alUla9 from "@/assets/al-ula-new-9.jpg";
+import alUla10 from "@/assets/al-ula-new-10.jpg";
 import madinah1 from "@/assets/madinah-new-1.jpg";
 import madinah2 from "@/assets/madinah-new-2.jpg";
 import madinah3 from "@/assets/madinah-new-3.jpg";
@@ -211,14 +213,16 @@ export const galleryLocations: GalleryLocation[] = [
     description: "Al Ula menghadirkan lanskap gurun yang luar biasa indah dengan jejak peradaban kuno yang masih tersisa hingga hari ini. Perjalanan ke sini terasa seperti menelusuri kisah sejarah yang membentang di tengah padang pasir.",
     cover: alUla1,
     images: [
-      { src: alUla1, caption: "Tim Al Ula" },
-      { src: alUla2, caption: "Wisata Old Town" },
-      { src: alUla3, caption: "Old Town Al Ula" },
-      { src: alUla4, caption: "Maraya Concert Hall" },
-      { src: alUla5, caption: "Kuliner Al Ula" },
-      { src: alUla6, caption: "Desert Safari" },
-      { src: alUla7, caption: "Jamaah di Al Ula" },
-      { src: alUla8, caption: "Bandara Al Ula" },
+      { src: alUla1, caption: "Old Town Al Ula" },
+      { src: alUla2, caption: "Bandara Internasional Al Ula" },
+      { src: alUla3, caption: "Ngarai Batu Al Ula" },
+      { src: alUla4, caption: "Al Ula Old Town" },
+      { src: alUla5, caption: "Kuliner di Al Ula" },
+      { src: alUla6, caption: "Desert Safari Al Ula" },
+      { src: alUla7, caption: "Maraya Mirror Building" },
+      { src: alUla8, caption: "Elephant Rock Al Ula" },
+      { src: alUla9, caption: "Foto Bersama Tim di Al Ula" },
+      { src: alUla10, caption: "Selfie di Elephant Rock" },
     ],
   },
   {
