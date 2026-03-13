@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { X, ChevronLeft, ChevronRight, ArrowLeft } from "lucide-react";
 import { galleryLocations } from "@/data/galleryData";
@@ -14,23 +14,34 @@ const GalleryDetail = () => {
   const images = location?.images ?? [];
   const selectedImage = selectedIndex !== null ? images[selectedIndex] : null;
 
-  const goNext = () => {
-    if (selectedIndex !== null) setSelectedIndex((selectedIndex + 1) % images.length);
-  };
-  const goPrev = () => {
-    if (selectedIndex !== null) setSelectedIndex((selectedIndex - 1 + images.length) % images.length);
-  };
+  const goNext = useCallback(() => {
+    setSelectedIndex((prev) => prev !== null ? (prev + 1) % images.length : null);
+  }, [images.length]);
 
-  // Keyboard navigation
+  const goPrev = useCallback(() => {
+    setSelectedIndex((prev) => prev !== null ? (prev - 1 + images.length) % images.length : null);
+  }, [images.length]);
+
+  const closeLightbox = useCallback(() => setSelectedIndex(null), []);
+
   useEffect(() => {
     if (selectedIndex === null) return;
     const handleKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setSelectedIndex(null);
+      if (e.key === "Escape") closeLightbox();
       if (e.key === "ArrowRight") goNext();
       if (e.key === "ArrowLeft") goPrev();
     };
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
+  }, [selectedIndex, goNext, goPrev, closeLightbox]);
+
+  useEffect(() => {
+    if (selectedIndex !== null) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => { document.body.style.overflow = ""; };
   }, [selectedIndex]);
 
   if (!location) {
@@ -55,7 +66,6 @@ const GalleryDetail = () => {
 
       <section className="pt-28 md:pt-40 pb-14 md:pb-40">
         <div className="px-6 md:px-16 lg:px-24">
-          {/* Back + Title */}
           <button
             onClick={() => navigate("/#gallery")}
             className="group flex items-center gap-2 text-[10px] md:text-xs tracking-widest uppercase text-foreground/40 hover:text-foreground transition-colors mb-8 md:mb-16"
@@ -78,7 +88,6 @@ const GalleryDetail = () => {
             </span>
           </div>
 
-          {/* Full Grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1">
             {images.map((image, index) => (
               <div
@@ -91,6 +100,7 @@ const GalleryDetail = () => {
                   alt={image.caption}
                   className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out"
                   loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-500 flex items-end">
                   <p className="text-[10px] md:text-xs text-foreground/0 group-hover:text-foreground/90 tracking-wide px-3 pb-3 transition-colors duration-500">
@@ -105,15 +115,15 @@ const GalleryDetail = () => {
 
       <FooterSection />
 
-      {/* Lightbox */}
       {selectedImage && (
         <div
           className="fixed inset-0 z-[100] bg-background/95 backdrop-blur-md flex items-center justify-center animate-fade-in"
-          onClick={() => setSelectedIndex(null)}
+          onClick={closeLightbox}
         >
           <button
-            onClick={() => setSelectedIndex(null)}
+            onClick={closeLightbox}
             className="absolute top-6 right-6 text-foreground/40 hover:text-foreground transition-colors z-10"
+            aria-label="Tutup"
           >
             <X size={20} />
           </button>
@@ -125,6 +135,7 @@ const GalleryDetail = () => {
           <button
             onClick={(e) => { e.stopPropagation(); goPrev(); }}
             className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 text-foreground/30 hover:text-foreground transition-colors"
+            aria-label="Sebelumnya"
           >
             <ChevronLeft size={28} />
           </button>
@@ -132,6 +143,7 @@ const GalleryDetail = () => {
           <button
             onClick={(e) => { e.stopPropagation(); goNext(); }}
             className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 text-foreground/30 hover:text-foreground transition-colors"
+            aria-label="Berikutnya"
           >
             <ChevronRight size={28} />
           </button>

@@ -19,7 +19,7 @@ const HeroSection = () => {
     >
       {/* Background image */}
       <div className="absolute inset-0">
-        <img src={heroKabah} alt="" className="w-full h-full object-cover" />
+        <img src={heroKabah} alt="" className="w-full h-full object-cover" fetchpriority="high" />
         <div className="absolute inset-0 bg-background/80" />
       </div>
       <div className="relative z-10 w-full px-4 md:px-12 text-center">
