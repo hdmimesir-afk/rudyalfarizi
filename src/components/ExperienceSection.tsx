@@ -35,7 +35,7 @@ const ExperienceSection = () => {
           Pengalaman Nyata Membimbing Jamaah di Tanah Suci.
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
           {experiences.map((exp, index) => (
             <div
               key={index}
