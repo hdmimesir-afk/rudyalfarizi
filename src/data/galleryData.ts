@@ -81,10 +81,10 @@ import coverJabalTsur from "@/assets/cover-jabal-tsur.jpg";
 import tsur2 from "@/assets/tsur-2.jpg";
 import tsur3 from "@/assets/tsur-3.jpg";
 import tsur4 from "@/assets/tsur-4.jpg";
-import coverHudaibiyah from "@/assets/cover-hudaibiyah.jpg";
-import hudaibiyah1 from "@/assets/hudaibiyah-1.jpg";
-import hudaibiyah2 from "@/assets/hudaibiyah-2.jpg";
-import hudaibiyah4 from "@/assets/hudaibiyah-4.jpg";
+import hudaibiyah1 from "@/assets/hudaibiyah-new-1.jpg";
+import hudaibiyah2 from "@/assets/hudaibiyah-new-2.jpg";
+import hudaibiyah3 from "@/assets/hudaibiyah-new-3.jpg";
+import hudaibiyah4 from "@/assets/hudaibiyah-new-4.jpg";
 import coverBadr from "@/assets/cover-badr.jpg";
 import coverJeddah from "@/assets/cover-jeddah.jpg";
 import coverGuideMesir from "@/assets/cover-guide-mesir.jpg";
@@ -249,12 +249,12 @@ export const galleryLocations: GalleryLocation[] = [
     name: "Hudaibiyah",
     slug: "hudaibiyah",
     description: "Di tempat inilah Perjanjian Hudaibiyah terjadi, sebuah peristiwa yang tampak sederhana namun menjadi titik penting kemenangan dakwah Islam. Kisah ini mengajarkan kesabaran dan kebijaksanaan Rasulullah ﷺ dalam menghadapi tantangan.",
-    cover: coverHudaibiyah,
+    cover: hudaibiyah1,
     images: [
-      { src: coverHudaibiyah, caption: "Foto Bersama di Hudaibiyah" },
       { src: hudaibiyah1, caption: "Bersama Unta di Hudaibiyah" },
-      { src: hudaibiyah2, caption: "Jamaah di Desa Tradisional" },
-      { src: hudaibiyah4, caption: "Foto Bersama Rombongan" },
+      { src: hudaibiyah2, caption: "Jamaah di Hudaibiyah" },
+      { src: hudaibiyah3, caption: "Naik Unta di Hudaibiyah" },
+      { src: hudaibiyah4, caption: "Foto Bersama Rombongan di Hudaibiyah" },
     ],
   },
   {
