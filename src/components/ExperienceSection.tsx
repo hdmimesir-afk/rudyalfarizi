@@ -35,11 +35,11 @@ const ExperienceSection = () => {
           Pengalaman Nyata Membimbing Jamaah di Tanah Suci.
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="p-4 md:p-8 border border-border"
+              className="p-4 md:p-10 border border-border"
             >
               <div className="flex items-start gap-3 mb-3">
                 <Check className="h-4 w-4 md:h-5 md:w-5 text-primary flex-shrink-0 mt-0.5" />

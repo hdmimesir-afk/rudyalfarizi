@@ -112,8 +112,11 @@ const NavBar = () => {
       </nav>
 
       {/* Fullscreen Mobile Menu */}
-      {isMobileMenuOpen && (
-        <div className="fixed inset-0 z-[55] bg-background flex flex-col justify-center px-10 animate-fade-in md:hidden">
+      <div
+        className={`fixed inset-0 z-[55] bg-background flex flex-col justify-center px-10 md:hidden transition-transform duration-300 ease-out ${
+          isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
+        }`}
+      >
           {/* Close button top right */}
           <button
             className="absolute top-4 right-6 p-1.5 text-foreground/60 hover:text-foreground transition-colors"
@@ -146,8 +149,7 @@ const NavBar = () => {
               Konsultasi
             </button>
           </div>
-        </div>
-      )}
+      </div>
     </>
   );
 };
