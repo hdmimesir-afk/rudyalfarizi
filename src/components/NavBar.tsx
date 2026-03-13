@@ -149,7 +149,6 @@ const NavBar = () => {
               Konsultasi
             </button>
           </div>
-        </div>
       </div>
     </>
   );
