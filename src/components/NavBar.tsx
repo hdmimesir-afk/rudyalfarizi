@@ -119,8 +119,8 @@ const NavBar = () => {
 
       {/* Fullscreen Mobile Menu */}
       <div
-        className={`fixed inset-0 z-[55] bg-background flex flex-col justify-center px-10 md:hidden transition-transform duration-300 ease-out ${
-          isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
+        className={`fixed inset-0 z-[55] bg-background flex flex-col justify-center px-10 md:hidden transition-opacity duration-300 ease-out ${
+          isMobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
       >
           {/* Close button top right */}
