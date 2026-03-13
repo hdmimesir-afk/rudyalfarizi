@@ -17,10 +17,6 @@ const experiences = [
     title: "10+ Lokasi Sejarah Islam Dibimbing",
     description: "Termasuk Makkah, Madinah, Thaif, Hudaibiyah, Badr, dan Al Ula.",
   },
-  {
-    title: "Lulusan Universitas Al-Azhar Kairo",
-    description: "Dengan pemahaman fiqh manasik dan sejarah Islam.",
-  },
 ];
 
 const ExperienceSection = () => {
