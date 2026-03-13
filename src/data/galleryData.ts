@@ -45,15 +45,16 @@ import madinah16 from "@/assets/madinah-new-16.jpg";
 import madinah17 from "@/assets/madinah-new-17.jpg";
 import madinah18 from "@/assets/madinah-new-18.jpg";
 import madinah19 from "@/assets/madinah-new-19.jpg";
-import badr1 from "@/assets/badr-1.jpg";
-import badr2 from "@/assets/badr-2.jpg";
-import badr3 from "@/assets/badr-3.jpg";
-import badr4 from "@/assets/badr-4.jpg";
-import badr5 from "@/assets/badr-5.jpg";
-import badr6 from "@/assets/badr-6.jpg";
-import badr7 from "@/assets/badr-7.jpg";
-import badr8 from "@/assets/badr-8.jpg";
-import badr9 from "@/assets/badr-9.jpg";
+import badr1 from "@/assets/badr-new-1.jpg";
+import badr2 from "@/assets/badr-new-2.jpg";
+import badr3 from "@/assets/badr-new-3.jpg";
+import badr4 from "@/assets/badr-new-4.jpg";
+import badr5 from "@/assets/badr-new-5.jpg";
+import badr6 from "@/assets/badr-new-6.jpg";
+import badr7 from "@/assets/badr-new-7.jpg";
+import badr8 from "@/assets/badr-new-8.jpg";
+import badr9 from "@/assets/badr-new-9.jpg";
+import badr10 from "@/assets/badr-new-10.jpg";
 import makkah1 from "@/assets/makkah-new-1.jpg";
 import makkah2 from "@/assets/makkah-new-2.jpg";
 import makkah3 from "@/assets/makkah-new-3.jpg";
@@ -97,7 +98,6 @@ import hudaibiyah7 from "@/assets/hudaibiyah-new-7.jpg";
 import hudaibiyah8 from "@/assets/hudaibiyah-new-8.jpg";
 import hudaibiyah9 from "@/assets/hudaibiyah-new-9.jpg";
 import hudaibiyah10 from "@/assets/hudaibiyah-new-10.jpg";
-import coverBadr from "@/assets/cover-badr.jpg";
 import coverJeddah from "@/assets/cover-jeddah.jpg";
 import coverGuideMesir from "@/assets/cover-guide-mesir.jpg";
 import mesir1 from "@/assets/mesir-1.jpg";
@@ -285,17 +285,18 @@ export const galleryLocations: GalleryLocation[] = [
     name: "Badr",
     slug: "badr",
     description: "Di lembah Badr inilah terjadi salah satu pertempuran paling penting dalam sejarah Islam. Kisah kemenangan kaum muslimin di tempat ini selalu menjadi pengingat tentang pertolongan Allah bagi orang-orang yang beriman.",
-    cover: coverBadr,
+    cover: badr1,
     images: [
-      { src: badr1, caption: "I Love Badr" },
-      { src: badr2, caption: "Selfie di Badr" },
-      { src: badr3, caption: "Jamaah di Gunung Badr" },
-      { src: badr4, caption: "Sumur Badr" },
-      { src: badr5, caption: "Maqam Syuhada Badr" },
-      { src: badr6, caption: "Bukit Pasir Badr" },
-      { src: badr7, caption: "Masjid Badr" },
-      { src: badr8, caption: "Kuliner di Badr" },
-      { src: badr9, caption: "Foto Bersama Jamaah" },
+      { src: badr1, caption: "Kuliner Bersama Jamaah di Badr" },
+      { src: badr2, caption: "Foto Bersama Jamaah di Badr" },
+      { src: badr3, caption: "Kunjungan ke Lokasi Bersejarah Badr" },
+      { src: badr4, caption: "Foto di Bukit Pasir Badr" },
+      { src: badr5, caption: "Masjid di Kawasan Badr" },
+      { src: badr6, caption: "Di Depan Prasasti Syuhada Badr" },
+      { src: badr7, caption: "I Love Badr" },
+      { src: badr8, caption: "Sumur Badr" },
+      { src: badr9, caption: "Foto Bersama Jamaah Sore Hari" },
+      { src: badr10, caption: "Foto Bersama Jamaah di Gerbang Badr" },
     ],
   },
   {
