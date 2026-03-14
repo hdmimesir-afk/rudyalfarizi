@@ -144,11 +144,14 @@ const GalleryDetail = () => {
             <ChevronRight size={28} />
           </button>
 
-          <div className="max-w-5xl w-full px-16" onClick={(e) => e.stopPropagation()}>
+          <div
+            className="flex items-center justify-center w-full h-full px-14 md:px-20 py-16"
+            onClick={(e) => e.stopPropagation()}
+          >
             <img
               src={selectedImage.src}
               alt={selectedImage.caption}
-              className="w-full h-auto max-h-[75vh] object-contain"
+              className="max-w-full max-h-[88vh] w-auto h-auto object-contain"
             />
           </div>
         </div>
