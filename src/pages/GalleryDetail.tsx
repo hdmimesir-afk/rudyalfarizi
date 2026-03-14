@@ -102,11 +102,7 @@ const GalleryDetail = () => {
                   loading="lazy"
                   decoding="async"
                 />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-500 flex items-end">
-                  <p className="text-[10px] md:text-xs text-foreground/0 group-hover:text-foreground/90 tracking-wide px-3 pb-3 transition-colors duration-500">
-                    {image.caption}
-                  </p>
-                </div>
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500" />
               </div>
             ))}
           </div>
@@ -154,14 +150,6 @@ const GalleryDetail = () => {
               alt={selectedImage.caption}
               className="w-full h-auto max-h-[75vh] object-contain"
             />
-            <div className="mt-4 text-center">
-              <p className="text-[8px] md:text-[10px] tracking-widest uppercase text-primary mb-1">
-                {location.name}
-              </p>
-              <p className="text-[10px] md:text-sm tracking-wide text-foreground/60 font-light">
-                {selectedImage.caption}
-              </p>
-            </div>
           </div>
         </div>
       )}
